@@ -1,0 +1,35 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Linked",
+            "color": "white",
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false
+          }
+        ]
+      ],
+      "replace": true
+    },
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "powers:temp"
+      },
+      "ops": [
+        {
+          "source": "ender_link",
+          "target": "link",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

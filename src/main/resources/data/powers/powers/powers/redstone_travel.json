@@ -1,0 +1,614 @@
+{
+    "0": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run function powers:powers/redstone_travel/loop"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[tag=prevpos]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~ ~ ~ {Tags:[\"prevpos\"]}"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "inverted": true,
+                        "type": "origins:command",
+                        "command": "execute if block ~ ~ ~ #powers:redstone run scoreboard players get 1 num",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute at @s run function powers:powers/redstone_travel/exit"
+                            },
+                            {
+                                "type": "origins:damage",
+                                "amount": 5,
+                                "source": {
+                                    "name": "generic"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "1": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:power",
+                                "power": "powers:powers/redstone",
+                                "source": "apoli:command"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:command",
+                                "command": "execute if block ~ ~ ~ #powers:outputs run scoreboard players get 1 num",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute at @s run setblock ~ ~ ~ air destroy"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "execute at @s run function powers:powers/redstone_travel/exit"
+                            },
+                            {
+                                "type": "origins:damage",
+                                "amount": 5,
+                                "source": {
+                                    "name": "generic"
+                                }
+                            }
+                        ]
+                    },
+                    "else_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "tag @s add self"
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:power",
+                                            "power": "powers:powers/redstone",
+                                            "source": "apoli:command"
+                                        }
+                                    ]
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function powers:powers/redstone_travel/survival"
+                                        }
+                                    ]
+                                },
+                                "else_action": {
+                                    "type": "origins:raycast",
+                                    "distance": 6,
+                                    "block": true,
+                                    "entity": false,
+                                    "shape_type": "outline",
+                                    "fluid_handling": "any",
+                                    "block_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "function powers:powers/redstone_travel/spectator"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "tag @s remove self"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "9": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "powered",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "power",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 10
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "powered",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "power",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 20
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:strength",
+                            "duration": 21,
+                            "amplifier": 0,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "duration": 21,
+                            "amplifier": 0,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:regeneration",
+                            "duration": 21,
+                            "amplifier": 0,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "left": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute anchored eyes positioned ^1.1 ^ ^ align xyz positioned ~0.5 ~ ~0.5 run function powers:powers/redstone_travel/lowpowered"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.left",
+            "continuous": true
+        }
+    },
+    "right": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute anchored eyes positioned ^-1.1 ^ ^ align xyz positioned ~0.5 ~ ~0.5 run function powers:powers/redstone_travel/lowpowered"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.right",
+            "continuous": true
+        }
+    },
+    "backwords": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute anchored eyes positioned ^ ^ ^-1.1 align xyz positioned ~0.5 ~ ~0.5 run function powers:powers/redstone_travel/lowpowered"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.back",
+            "continuous": true
+        }
+    },
+    "up": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute anchored eyes positioned ~ ~1.1 ~ align xyz positioned ~0.5 ~ ~0.5 run function powers:powers/redstone_travel/lowpowered"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.jump",
+            "continuous": true
+        }
+    },
+    "down": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute anchored eyes positioned ~ ~-1.1 ~ align xyz positioned ~0.5 ~ ~0.5 run function powers:powers/redstone_travel/lowpowered"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    },
+    "down_": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute positioned ~ ~-1 ~ run function powers:powers/redstone_travel/powerit"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        }
+    },
+    "forword_": {
+        "condition": {
+            "type": "origins:power",
+            "power": "powers:powers/redstone",
+            "source": "apoli:command"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute anchored eyes positioned ^ ^ ^1.1 align xyz positioned ~0.5 ~ ~0.5 run function powers:powers/redstone_travel/lowpowered"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.forward",
+            "continuous": true
+        }
+    },
+    "9_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "powered",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "power",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 20
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "powered",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "power",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:strength",
+                            "duration": 21,
+                            "amplifier": 1,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "duration": 21,
+                            "amplifier": 1,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:regeneration",
+                            "duration": 21,
+                            "amplifier": 1,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "9__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "powered",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "power",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "radius": 10,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:strength",
+                            "duration": 21,
+                            "amplifier": 2,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "duration": 21,
+                            "amplifier": 2,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:regeneration",
+                            "duration": 21,
+                            "amplifier": 2,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:black_bed[facing=north,occupied=true,part=head] run scoreboard players set block bsc 1321
+execute if block ~ ~ ~ minecraft:black_bed[facing=north,occupied=true,part=foot] run scoreboard players set block bsc 1322
+execute if block ~ ~ ~ minecraft:black_bed[facing=north,occupied=false,part=head] run scoreboard players set block bsc 1323
+execute if block ~ ~ ~ minecraft:black_bed[facing=north,occupied=false,part=foot] run scoreboard players set block bsc 1324
+execute if block ~ ~ ~ minecraft:black_bed[facing=south,occupied=true,part=head] run scoreboard players set block bsc 1325
+execute if block ~ ~ ~ minecraft:black_bed[facing=south,occupied=true,part=foot] run scoreboard players set block bsc 1326
+execute if block ~ ~ ~ minecraft:black_bed[facing=south,occupied=false,part=head] run scoreboard players set block bsc 1327
+execute if block ~ ~ ~ minecraft:black_bed[facing=south,occupied=false,part=foot] run scoreboard players set block bsc 1328
+execute if block ~ ~ ~ minecraft:black_bed[facing=west,occupied=true,part=head] run scoreboard players set block bsc 1329
+execute if block ~ ~ ~ minecraft:black_bed[facing=west,occupied=true,part=foot] run scoreboard players set block bsc 1330
+execute if block ~ ~ ~ minecraft:black_bed[facing=west,occupied=false,part=head] run scoreboard players set block bsc 1331
+execute if block ~ ~ ~ minecraft:black_bed[facing=west,occupied=false,part=foot] run scoreboard players set block bsc 1332
+execute if block ~ ~ ~ minecraft:black_bed[facing=east,occupied=true,part=head] run scoreboard players set block bsc 1333
+execute if block ~ ~ ~ minecraft:black_bed[facing=east,occupied=true,part=foot] run scoreboard players set block bsc 1334
+execute if block ~ ~ ~ minecraft:black_bed[facing=east,occupied=false,part=head] run scoreboard players set block bsc 1335
+execute if block ~ ~ ~ minecraft:black_bed[facing=east,occupied=false,part=foot] run scoreboard players set block bsc 1336

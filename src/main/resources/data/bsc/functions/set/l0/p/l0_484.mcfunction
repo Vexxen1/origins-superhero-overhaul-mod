@@ -1,0 +1,16 @@
+execute if score block bsc matches 17518 run setblock ~ ~ ~ minecraft:cyan_candle[candles=1,lit=true,waterlogged=true]{candles:1,lit:true,waterlogged:true}
+execute if score block bsc matches 17519 run setblock ~ ~ ~ minecraft:cyan_candle[candles=1,lit=true,waterlogged=false]{candles:1,lit:true,waterlogged:false}
+execute if score block bsc matches 17520 run setblock ~ ~ ~ minecraft:cyan_candle[candles=1,lit=false,waterlogged=true]{candles:1,lit:false,waterlogged:true}
+execute if score block bsc matches 17521 run setblock ~ ~ ~ minecraft:cyan_candle[candles=1,lit=false,waterlogged=false]{candles:1,lit:false,waterlogged:false}
+execute if score block bsc matches 17522 run setblock ~ ~ ~ minecraft:cyan_candle[candles=2,lit=true,waterlogged=true]{candles:2,lit:true,waterlogged:true}
+execute if score block bsc matches 17523 run setblock ~ ~ ~ minecraft:cyan_candle[candles=2,lit=true,waterlogged=false]{candles:2,lit:true,waterlogged:false}
+execute if score block bsc matches 17524 run setblock ~ ~ ~ minecraft:cyan_candle[candles=2,lit=false,waterlogged=true]{candles:2,lit:false,waterlogged:true}
+execute if score block bsc matches 17525 run setblock ~ ~ ~ minecraft:cyan_candle[candles=2,lit=false,waterlogged=false]{candles:2,lit:false,waterlogged:false}
+execute if score block bsc matches 17526 run setblock ~ ~ ~ minecraft:cyan_candle[candles=3,lit=true,waterlogged=true]{candles:3,lit:true,waterlogged:true}
+execute if score block bsc matches 17527 run setblock ~ ~ ~ minecraft:cyan_candle[candles=3,lit=true,waterlogged=false]{candles:3,lit:true,waterlogged:false}
+execute if score block bsc matches 17528 run setblock ~ ~ ~ minecraft:cyan_candle[candles=3,lit=false,waterlogged=true]{candles:3,lit:false,waterlogged:true}
+execute if score block bsc matches 17529 run setblock ~ ~ ~ minecraft:cyan_candle[candles=3,lit=false,waterlogged=false]{candles:3,lit:false,waterlogged:false}
+execute if score block bsc matches 17530 run setblock ~ ~ ~ minecraft:cyan_candle[candles=4,lit=true,waterlogged=true]{candles:4,lit:true,waterlogged:true}
+execute if score block bsc matches 17531 run setblock ~ ~ ~ minecraft:cyan_candle[candles=4,lit=true,waterlogged=false]{candles:4,lit:true,waterlogged:false}
+execute if score block bsc matches 17532 run setblock ~ ~ ~ minecraft:cyan_candle[candles=4,lit=false,waterlogged=true]{candles:4,lit:false,waterlogged:true}
+execute if score block bsc matches 17533 run setblock ~ ~ ~ minecraft:cyan_candle[candles=4,lit=false,waterlogged=false]{candles:4,lit:false,waterlogged:false}

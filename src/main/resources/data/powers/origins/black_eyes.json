@@ -1,0 +1,14 @@
+{
+    "name": "§6§nRed Eyes",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cPower Locking Gaze\n§3By pressing primary you lock your gaze on the player you are looking at. Press primary again to unlock. When you are gazing at a player there power is disabled unless it's a part of their body. If they walk behind blocks or glass, it stops working. \n\n§cPower Crystal\n§3Make a power crystal by holding an empty one, then pressing primary. ",
+    "powers": [
+        "powers:powers/power_disable/power_disable",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:barrier",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

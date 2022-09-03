@@ -1,0 +1,283 @@
+{
+    "0": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "primary",
+        "retain_state": true
+    },
+    "1": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:phasing",
+        "render_type": "none",
+        "view_distance": 10,
+        "phase_down_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:creative_flying"
+                }
+            ]
+        }
+    },
+    "2": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:invisibility",
+        "render_armor": false
+    },
+    "3": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:creative_flight"
+    },
+    "4": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:night_vision",
+        "strength": 1
+    },
+    "5": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:model_color",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "alpha": 0.25
+    },
+    "6": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:out_of_world"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:name",
+                            "name": "anvil"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "arrow"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "badRespawnPoint"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "cactus"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "cramming"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "dragonBreath"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "drown"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "dryout"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "explosion"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "fallingBlock"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "fireball"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "fireworks"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "generic"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "indirectMagic"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "inWall"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "lightningBolt"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "mob"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "player"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "stalagmite"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "sting"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "sweetBerryBush"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "thorns"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "trident"
+                        },
+                        {
+                            "type": "origins:name",
+                            "name": "witherSkull"
+                        },
+                        {
+                            "type": "origins:from_falling"
+                        }
+                    ]
+                }
+            ]
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.25
+        },
+        "damage_armor_condition": {
+            "inverted": true,
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "7": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:prevent_entity_collision",
+        "bientity_condition": {
+            "type": "origins:can_see"
+        }
+    },
+    "8": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:prevent_block_selection"
+    },
+    "10": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:prevent_item_use"
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "8_": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_0"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:blaze_powder"
+                            }
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:modify",
+                            "modifier": "powers:power_powder/ghost"
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:blaze_powder"
+                                }
+                            }
+                        },
+                        "if_action": {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "offhand",
+                            "action": {
+                                "type": "origins:modify",
+                                "modifier": "powers:power_powder/ghost"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:weakness",
+                        "duration": 10,
+                        "amplifier": 10,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                }
+            ]
+        }
+    }
+}

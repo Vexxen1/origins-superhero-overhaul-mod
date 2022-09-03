@@ -1,0 +1,22 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "y": 1,
+                "space": "world",
+                "client": true,
+                "server": true,
+                "set": true
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "power revoke @s powers:powers/earth_bending/launch"
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "§6§nHealing",
+    "description": "§c§lRarity: §rCommon\n\n§cPassive Healing\n§3Everyone on your friends list gains low level regeneration when near you.\n\n§cActive Healing\n§3By pressing primary you give powerful instant health to everyone on your friends list near you. 50 second cooldown",
+    "powers": [
+        "powers:powers/healing"
+    ],
+    "icon": {
+        "item": "minecraft:ghast_tear",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

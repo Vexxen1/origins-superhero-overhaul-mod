@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_east] run scoreboard players set block bsc 15993
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_north] run scoreboard players set block bsc 15994
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_south] run scoreboard players set block bsc 15995
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_west] run scoreboard players set block bsc 15996
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_east] run scoreboard players set block bsc 15997
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_north] run scoreboard players set block bsc 15998
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_south] run scoreboard players set block bsc 15999
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_west] run scoreboard players set block bsc 16000
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=west_up] run scoreboard players set block bsc 16001
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=east_up] run scoreboard players set block bsc 16002
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=north_up] run scoreboard players set block bsc 16003
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=south_up] run scoreboard players set block bsc 16004

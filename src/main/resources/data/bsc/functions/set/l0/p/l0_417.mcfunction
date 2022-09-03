@@ -1,0 +1,12 @@
+execute if score block bsc matches 15071 run setblock ~ ~ ~ minecraft:grindstone[face=floor,facing=north]{face:floor,facing:north}
+execute if score block bsc matches 15072 run setblock ~ ~ ~ minecraft:grindstone[face=floor,facing=south]{face:floor,facing:south}
+execute if score block bsc matches 15073 run setblock ~ ~ ~ minecraft:grindstone[face=floor,facing=west]{face:floor,facing:west}
+execute if score block bsc matches 15074 run setblock ~ ~ ~ minecraft:grindstone[face=floor,facing=east]{face:floor,facing:east}
+execute if score block bsc matches 15075 run setblock ~ ~ ~ minecraft:grindstone[face=wall,facing=north]{face:wall,facing:north}
+execute if score block bsc matches 15076 run setblock ~ ~ ~ minecraft:grindstone[face=wall,facing=south]{face:wall,facing:south}
+execute if score block bsc matches 15077 run setblock ~ ~ ~ minecraft:grindstone[face=wall,facing=west]{face:wall,facing:west}
+execute if score block bsc matches 15078 run setblock ~ ~ ~ minecraft:grindstone[face=wall,facing=east]{face:wall,facing:east}
+execute if score block bsc matches 15079 run setblock ~ ~ ~ minecraft:grindstone[face=ceiling,facing=north]{face:ceiling,facing:north}
+execute if score block bsc matches 15080 run setblock ~ ~ ~ minecraft:grindstone[face=ceiling,facing=south]{face:ceiling,facing:south}
+execute if score block bsc matches 15081 run setblock ~ ~ ~ minecraft:grindstone[face=ceiling,facing=west]{face:ceiling,facing:west}
+execute if score block bsc matches 15082 run setblock ~ ~ ~ minecraft:grindstone[face=ceiling,facing=east]{face:ceiling,facing:east}

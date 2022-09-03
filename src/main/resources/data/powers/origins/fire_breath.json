@@ -1,0 +1,13 @@
+{
+    "name": "§6§nFire Breath",
+    "description": "§c§lRarity: §r§bRare\n\n§cFire ball\n§3By pressing primary you shoot a fire ball. This has an infinite range. \n\n§cFire Breath\n§3By holding secondary, shoot a waterfall of fire from your mouth. Will also make power powder. \n",
+    "powers": [
+        "powers:powers/fire_breath"
+    ],
+    "icon": {
+        "item": "minecraft:fire_charge",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

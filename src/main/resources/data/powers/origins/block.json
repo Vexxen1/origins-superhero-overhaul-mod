@@ -1,0 +1,13 @@
+{
+    "name": "§6§nBlock",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cBlock Placing\n§3When you press primary, you toggle block placing. By pressing left click with an empty hand you place an invisible block. This invisible block, blocks arrows, and attacks. They have health and can't be mined with a pick. They will disappear when no players are nearby. \n",
+    "powers": [
+        "powers:powers/block"
+    ],
+    "icon": {
+        "item": "minecraft:stone",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

@@ -1,0 +1,74 @@
+{
+    "0": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0
+        }
+    },
+    "6": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:levitation",
+                "duration": 10,
+                "amplifier": -1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        }
+    },
+    "7": {
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:constant",
+            "value": true
+        },
+        "render_type": "none",
+        "view_distance": 10,
+        "phase_down_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0______": {
+        "type": "origins:invisibility",
+        "render_armor": false
+    },
+    "0_": {
+        "type": "origins:prevent_block_selection"
+    },
+    "0__": {
+        "type": "origins:prevent_entity_collision",
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 10
+        }
+    },
+    "0___": {
+        "type": "origins:prevent_entity_use",
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 10
+        }
+    },
+    "0____": {
+        "type": "origins:prevent_item_use"
+    },
+    "0_____": {
+        "type": "origins:prevent_sleep",
+        "message": "You are merged with redstone",
+        "set_spawn_point": false
+    }
+}

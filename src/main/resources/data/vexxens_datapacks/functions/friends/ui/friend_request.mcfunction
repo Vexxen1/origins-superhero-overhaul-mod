@@ -1,0 +1,5 @@
+tellraw @s ["",{"text":"[","color":"gold"},{"selector":"@p","color":"gold"},{"text":" has sent you a friend request. Do you accept? Respond within 15 seconds.]","color":"gold"},{"text":"\n"},{"text":"[Yes]","color":"dark_green","clickEvent":{"action":"run_command","value":"/tag @s add FR.y"}},{"text":" ","color":"dark_green"},{"text":"[No]","color":"dark_red","clickEvent":{"action":"run_command","value":"/tag @s add FR.n"}}]
+tellraw @p ["",{"text":"[You have sent ","color":"gold"},{"selector":"@s","color":"gold"},{"text":" a friend request. If your friend does not respond in 15 seconds it will exspire.]","color":"gold"},{"text":"\n"},{"text":"[Cancel]","color":"dark_red","clickEvent":{"action":"run_command","value":"/tag @p add FR.c"}}]
+
+title @s actionbar ["",{"text":"[","color":"gold"},{"selector":"@p","color":"gold"},{"text":" has sent you a friend request.]","color":"gold"}]
+playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 2 1

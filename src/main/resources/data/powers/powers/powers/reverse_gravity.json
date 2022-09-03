@@ -1,0 +1,67 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "gravity set up"
+                }
+            ]
+        }
+    },
+    "1": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~2 ~ minecraft:oak_leaves[persistent=true]"
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "gravity set down"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "gravity set down"
+        },
+        "entity_action_respawned": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~2 ~ minecraft:oak_leaves[persistent=true]"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute store result score @s y run data get entity @s Pos[1]"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "y",
+                        "comparison": ">=",
+                        "compare_to": 1000
+                    },
+                    "if_action": {
+                        "type": "origins:damage",
+                        "amount": 4,
+                        "source": {
+                            "name": "outOfWorld",
+                            "out_of_world": true
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

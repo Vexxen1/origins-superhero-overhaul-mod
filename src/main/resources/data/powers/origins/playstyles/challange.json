@@ -1,0 +1,13 @@
+{
+    "name": "Challange",
+    "description": "You want new challanges in the game, and want it too be harder. This can bring that. Wether it be not leaving the water without dieing, or being so big it causes issues. This playstyle can bring you many challanges, but its not for the faint of heart. ",
+    "icon": {
+        "item": "minecraft:dragon_egg",
+        "amount": 1
+    },
+    "powers": [
+        "powers:playstyles/random_challange"
+    ],
+    "order": 3,
+    "impact": 0
+}

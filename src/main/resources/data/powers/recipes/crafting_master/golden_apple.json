@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "GEG",
+        "#G#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:enchanted_book"
+        },
+        "G": {
+            "item": "minecraft:ghast_tear"
+        },
+        "E": {
+            "item": "minecraft:golden_apple"
+        }
+    },
+    "result": {
+        "item": "minecraft:enchanted_golden_apple",
+        "count": 1
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "ICI"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_warped_hyphae"
+        },
+        "E": {
+            "item": "minecraft:enchanted_book"
+        },
+        "I": {
+            "item": "minecraft:end_stone"
+        },
+        "C": {
+            "item": "minecraft:crying_obsidian"
+        }
+    },
+    "result": {
+        "item": "minecraft:end_portal_frame",
+        "count": 1
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "oso",
+  "version": "${version}",
+
+  "name": "Origins Superhero Overhaul",
+  "description": "A MASSIVE datapack turned into a mod that replaces origins with superpowers. More Info: https://docs.google.com/document/d/1kU5r7kQTMBYbiQ-MilyqukQ79UYXLtHjdXMYRtfdQ_8/edit?usp=sharing",
+  "authors": [
+    "Vexxen"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/T3xwZDUd9Z",
+    "sources": "https://github.com/Vexxen1/origins-superhero-overhaul-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/oso/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.vexxen.oso.Mod"
+    ]
+  },
+  "mixins": [
+    "oso.mixin.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.7",
+    "minecraft": "~1.19",
+    "java": ">=17",
+    "origins": "*",
+    "pehkui": "*",
+    "nbtcrafting": "*"
+  },
+  "suggests": {
+    "gravity_api": "*",
+    "simplechunkloader": "*"
+  }
+}

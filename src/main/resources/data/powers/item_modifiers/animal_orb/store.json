@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "powers:mob"
+      },
+      "ops": [
+        {
+          "source": "temp.animal",
+          "target": "animal",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

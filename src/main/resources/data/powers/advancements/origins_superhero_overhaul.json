@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Origins Superhero Overhaul",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Version 1.6"
+        },
+        "icon": {
+            "item": "minecraft:blaze_powder",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "parent": "vexxens_datapacks:root"
+}

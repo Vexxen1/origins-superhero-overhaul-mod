@@ -1,0 +1,16 @@
+execute if score block bsc matches 17390 run setblock ~ ~ ~ minecraft:orange_candle[candles=1,lit=true,waterlogged=true]{candles:1,lit:true,waterlogged:true}
+execute if score block bsc matches 17391 run setblock ~ ~ ~ minecraft:orange_candle[candles=1,lit=true,waterlogged=false]{candles:1,lit:true,waterlogged:false}
+execute if score block bsc matches 17392 run setblock ~ ~ ~ minecraft:orange_candle[candles=1,lit=false,waterlogged=true]{candles:1,lit:false,waterlogged:true}
+execute if score block bsc matches 17393 run setblock ~ ~ ~ minecraft:orange_candle[candles=1,lit=false,waterlogged=false]{candles:1,lit:false,waterlogged:false}
+execute if score block bsc matches 17394 run setblock ~ ~ ~ minecraft:orange_candle[candles=2,lit=true,waterlogged=true]{candles:2,lit:true,waterlogged:true}
+execute if score block bsc matches 17395 run setblock ~ ~ ~ minecraft:orange_candle[candles=2,lit=true,waterlogged=false]{candles:2,lit:true,waterlogged:false}
+execute if score block bsc matches 17396 run setblock ~ ~ ~ minecraft:orange_candle[candles=2,lit=false,waterlogged=true]{candles:2,lit:false,waterlogged:true}
+execute if score block bsc matches 17397 run setblock ~ ~ ~ minecraft:orange_candle[candles=2,lit=false,waterlogged=false]{candles:2,lit:false,waterlogged:false}
+execute if score block bsc matches 17398 run setblock ~ ~ ~ minecraft:orange_candle[candles=3,lit=true,waterlogged=true]{candles:3,lit:true,waterlogged:true}
+execute if score block bsc matches 17399 run setblock ~ ~ ~ minecraft:orange_candle[candles=3,lit=true,waterlogged=false]{candles:3,lit:true,waterlogged:false}
+execute if score block bsc matches 17400 run setblock ~ ~ ~ minecraft:orange_candle[candles=3,lit=false,waterlogged=true]{candles:3,lit:false,waterlogged:true}
+execute if score block bsc matches 17401 run setblock ~ ~ ~ minecraft:orange_candle[candles=3,lit=false,waterlogged=false]{candles:3,lit:false,waterlogged:false}
+execute if score block bsc matches 17402 run setblock ~ ~ ~ minecraft:orange_candle[candles=4,lit=true,waterlogged=true]{candles:4,lit:true,waterlogged:true}
+execute if score block bsc matches 17403 run setblock ~ ~ ~ minecraft:orange_candle[candles=4,lit=true,waterlogged=false]{candles:4,lit:true,waterlogged:false}
+execute if score block bsc matches 17404 run setblock ~ ~ ~ minecraft:orange_candle[candles=4,lit=false,waterlogged=true]{candles:4,lit:false,waterlogged:true}
+execute if score block bsc matches 17405 run setblock ~ ~ ~ minecraft:orange_candle[candles=4,lit=false,waterlogged=false]{candles:4,lit:false,waterlogged:false}

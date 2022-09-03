@@ -1,0 +1,48 @@
+{
+    "name": "Recipes:",
+    "type": "origins:multiple",
+    "hidden": true,
+    "tag_": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add crafting_master"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove recipes"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove crafting_master"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove recipes"
+                }
+            ]
+        },
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add crafting_master"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove recipes"
+                }
+            ]
+        }
+    }
+}

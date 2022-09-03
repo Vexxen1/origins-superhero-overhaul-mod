@@ -1,0 +1,13 @@
+{
+    "name": "Small",
+    "description": "You want too play it chill, and not deal with anything that crazy. You can only get weak or small powers with this playstyle. ",
+    "icon": {
+        "item": "minecraft:grass_block",
+        "amount": 1
+    },
+    "powers": [
+        "powers:playstyles/random_small"
+    ],
+    "order": 4,
+    "impact": 0
+}

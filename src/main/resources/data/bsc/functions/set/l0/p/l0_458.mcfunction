@@ -1,0 +1,9 @@
+execute if score block bsc matches 16005 run setblock ~ ~ ~ minecraft:composter[level=0]{level:0}
+execute if score block bsc matches 16006 run setblock ~ ~ ~ minecraft:composter[level=1]{level:1}
+execute if score block bsc matches 16007 run setblock ~ ~ ~ minecraft:composter[level=2]{level:2}
+execute if score block bsc matches 16008 run setblock ~ ~ ~ minecraft:composter[level=3]{level:3}
+execute if score block bsc matches 16009 run setblock ~ ~ ~ minecraft:composter[level=4]{level:4}
+execute if score block bsc matches 16010 run setblock ~ ~ ~ minecraft:composter[level=5]{level:5}
+execute if score block bsc matches 16011 run setblock ~ ~ ~ minecraft:composter[level=6]{level:6}
+execute if score block bsc matches 16012 run setblock ~ ~ ~ minecraft:composter[level=7]{level:7}
+execute if score block bsc matches 16013 run setblock ~ ~ ~ minecraft:composter[level=8]{level:8}

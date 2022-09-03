@@ -1,0 +1,13 @@
+{
+    "name": "§6§nFlight",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cCreative Flight\n§3You can fly like in creative mode. \n",
+    "powers": [
+        "powers:powers/flight"
+    ],
+    "icon": {
+        "item": "minecraft:feather",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

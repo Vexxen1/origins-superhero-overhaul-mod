@@ -1,0 +1,14 @@
+{
+    "name": "§6§nProjectile Control",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cTarget Locking\n§3By pressing/holding primary you lock all projectiles you own onto what you are looking at. Making the projectiles go towards the target, even if the target moves, or you are no longer near them. They will keep following until some physical barrier stops them, or they hit their target. Once a projectile has a target it can't change its target until you press secondary. This button can be held down or pressed. \n\n§cTarget Unlocking\n§3By pressing secondary, you change all targeting projectiles back to normal projectiles.\n\n§cProjectile Ownership\n§3When pressing/holding primary all projectiles near you, and all projectiles you are looking at, become your own and can be controlled. ",
+    "powers": [
+        "powers:powers/aim",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:arrow",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

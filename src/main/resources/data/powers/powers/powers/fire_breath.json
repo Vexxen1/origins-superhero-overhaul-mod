@@ -1,0 +1,97 @@
+{
+    "0": {
+        "type": "origins:fire_projectile",
+        "entity_type": "minecraft:small_fireball",
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 1.5,
+        "divergence": 0,
+        "sound": "minecraft:entity.blaze.shoot",
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "1": {
+        "type": "origins:fire_projectile",
+        "entity_type": "minecraft:snowball",
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "count": 10,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 1,
+        "divergence": 10,
+        "sound": "minecraft:entity.horse.breathe",
+        "tag": "{Fire:999999,HasVisualFire:1b,Tags:[\"flame\"],Item:{id:\"minecraft:fire_charge\",Count:1b}}",
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true
+        }
+    },
+    "2": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:blaze_powder"
+                            }
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:modify",
+                            "modifier": "powers:power_powder/fire"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:blaze_powder"
+                            }
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:modify",
+                            "modifier": "powers:power_powder/fire"
+                        }
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "§6§nSize Control",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cSize Changing\n§3By pressing primary you grow. By pressing secondary you shrink. You will gain abilities depending on size. \n",
+    "powers": [
+        "powers:powers/size_changer"
+    ],
+    "icon": {
+        "item": "minecraft:iron_ingot",
+        "amount": 1,
+        "tag": "{Enchantments:[{}]}"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

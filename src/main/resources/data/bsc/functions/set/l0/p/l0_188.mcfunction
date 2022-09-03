@@ -1,0 +1,10 @@
+execute if score block bsc matches 6934 run setblock ~ ~ ~ minecraft:hopper[enabled=true,facing=down]{enabled:true,facing:down}
+execute if score block bsc matches 6935 run setblock ~ ~ ~ minecraft:hopper[enabled=true,facing=north]{enabled:true,facing:north}
+execute if score block bsc matches 6936 run setblock ~ ~ ~ minecraft:hopper[enabled=true,facing=south]{enabled:true,facing:south}
+execute if score block bsc matches 6937 run setblock ~ ~ ~ minecraft:hopper[enabled=true,facing=west]{enabled:true,facing:west}
+execute if score block bsc matches 6938 run setblock ~ ~ ~ minecraft:hopper[enabled=true,facing=east]{enabled:true,facing:east}
+execute if score block bsc matches 6939 run setblock ~ ~ ~ minecraft:hopper[enabled=false,facing=down]{enabled:false,facing:down}
+execute if score block bsc matches 6940 run setblock ~ ~ ~ minecraft:hopper[enabled=false,facing=north]{enabled:false,facing:north}
+execute if score block bsc matches 6941 run setblock ~ ~ ~ minecraft:hopper[enabled=false,facing=south]{enabled:false,facing:south}
+execute if score block bsc matches 6942 run setblock ~ ~ ~ minecraft:hopper[enabled=false,facing=west]{enabled:false,facing:west}
+execute if score block bsc matches 6943 run setblock ~ ~ ~ minecraft:hopper[enabled=false,facing=east]{enabled:false,facing:east}

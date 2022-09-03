@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:comparator[facing=north,mode=compare,powered=true] run scoreboard players set block bsc 6884
+execute if block ~ ~ ~ minecraft:comparator[facing=north,mode=compare,powered=false] run scoreboard players set block bsc 6885
+execute if block ~ ~ ~ minecraft:comparator[facing=north,mode=subtract,powered=true] run scoreboard players set block bsc 6886
+execute if block ~ ~ ~ minecraft:comparator[facing=north,mode=subtract,powered=false] run scoreboard players set block bsc 6887
+execute if block ~ ~ ~ minecraft:comparator[facing=south,mode=compare,powered=true] run scoreboard players set block bsc 6888
+execute if block ~ ~ ~ minecraft:comparator[facing=south,mode=compare,powered=false] run scoreboard players set block bsc 6889
+execute if block ~ ~ ~ minecraft:comparator[facing=south,mode=subtract,powered=true] run scoreboard players set block bsc 6890
+execute if block ~ ~ ~ minecraft:comparator[facing=south,mode=subtract,powered=false] run scoreboard players set block bsc 6891
+execute if block ~ ~ ~ minecraft:comparator[facing=west,mode=compare,powered=true] run scoreboard players set block bsc 6892
+execute if block ~ ~ ~ minecraft:comparator[facing=west,mode=compare,powered=false] run scoreboard players set block bsc 6893
+execute if block ~ ~ ~ minecraft:comparator[facing=west,mode=subtract,powered=true] run scoreboard players set block bsc 6894
+execute if block ~ ~ ~ minecraft:comparator[facing=west,mode=subtract,powered=false] run scoreboard players set block bsc 6895
+execute if block ~ ~ ~ minecraft:comparator[facing=east,mode=compare,powered=true] run scoreboard players set block bsc 6896
+execute if block ~ ~ ~ minecraft:comparator[facing=east,mode=compare,powered=false] run scoreboard players set block bsc 6897
+execute if block ~ ~ ~ minecraft:comparator[facing=east,mode=subtract,powered=true] run scoreboard players set block bsc 6898
+execute if block ~ ~ ~ minecraft:comparator[facing=east,mode=subtract,powered=false] run scoreboard players set block bsc 6899

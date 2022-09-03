@@ -1,0 +1,12 @@
+execute if score block bsc matches 15993 run setblock ~ ~ ~ minecraft:jigsaw[orientation=down_east]{orientation:down_east}
+execute if score block bsc matches 15994 run setblock ~ ~ ~ minecraft:jigsaw[orientation=down_north]{orientation:down_north}
+execute if score block bsc matches 15995 run setblock ~ ~ ~ minecraft:jigsaw[orientation=down_south]{orientation:down_south}
+execute if score block bsc matches 15996 run setblock ~ ~ ~ minecraft:jigsaw[orientation=down_west]{orientation:down_west}
+execute if score block bsc matches 15997 run setblock ~ ~ ~ minecraft:jigsaw[orientation=up_east]{orientation:up_east}
+execute if score block bsc matches 15998 run setblock ~ ~ ~ minecraft:jigsaw[orientation=up_north]{orientation:up_north}
+execute if score block bsc matches 15999 run setblock ~ ~ ~ minecraft:jigsaw[orientation=up_south]{orientation:up_south}
+execute if score block bsc matches 16000 run setblock ~ ~ ~ minecraft:jigsaw[orientation=up_west]{orientation:up_west}
+execute if score block bsc matches 16001 run setblock ~ ~ ~ minecraft:jigsaw[orientation=west_up]{orientation:west_up}
+execute if score block bsc matches 16002 run setblock ~ ~ ~ minecraft:jigsaw[orientation=east_up]{orientation:east_up}
+execute if score block bsc matches 16003 run setblock ~ ~ ~ minecraft:jigsaw[orientation=north_up]{orientation:north_up}
+execute if score block bsc matches 16004 run setblock ~ ~ ~ minecraft:jigsaw[orientation=south_up]{orientation:south_up}

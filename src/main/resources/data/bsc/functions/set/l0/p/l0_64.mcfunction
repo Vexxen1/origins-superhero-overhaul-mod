@@ -1,0 +1,12 @@
+execute if score block bsc matches 1404 run setblock ~ ~ ~ minecraft:piston[extended=true,facing=north]{extended:true,facing:north}
+execute if score block bsc matches 1405 run setblock ~ ~ ~ minecraft:piston[extended=true,facing=east]{extended:true,facing:east}
+execute if score block bsc matches 1406 run setblock ~ ~ ~ minecraft:piston[extended=true,facing=south]{extended:true,facing:south}
+execute if score block bsc matches 1407 run setblock ~ ~ ~ minecraft:piston[extended=true,facing=west]{extended:true,facing:west}
+execute if score block bsc matches 1408 run setblock ~ ~ ~ minecraft:piston[extended=true,facing=up]{extended:true,facing:up}
+execute if score block bsc matches 1409 run setblock ~ ~ ~ minecraft:piston[extended=true,facing=down]{extended:true,facing:down}
+execute if score block bsc matches 1410 run setblock ~ ~ ~ minecraft:piston[extended=false,facing=north]{extended:false,facing:north}
+execute if score block bsc matches 1411 run setblock ~ ~ ~ minecraft:piston[extended=false,facing=east]{extended:false,facing:east}
+execute if score block bsc matches 1412 run setblock ~ ~ ~ minecraft:piston[extended=false,facing=south]{extended:false,facing:south}
+execute if score block bsc matches 1413 run setblock ~ ~ ~ minecraft:piston[extended=false,facing=west]{extended:false,facing:west}
+execute if score block bsc matches 1414 run setblock ~ ~ ~ minecraft:piston[extended=false,facing=up]{extended:false,facing:up}
+execute if score block bsc matches 1415 run setblock ~ ~ ~ minecraft:piston[extended=false,facing=down]{extended:false,facing:down}

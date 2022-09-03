@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:pink_bed[facing=north,occupied=true,part=head] run scoreboard players set block bsc 1177
+execute if block ~ ~ ~ minecraft:pink_bed[facing=north,occupied=true,part=foot] run scoreboard players set block bsc 1178
+execute if block ~ ~ ~ minecraft:pink_bed[facing=north,occupied=false,part=head] run scoreboard players set block bsc 1179
+execute if block ~ ~ ~ minecraft:pink_bed[facing=north,occupied=false,part=foot] run scoreboard players set block bsc 1180
+execute if block ~ ~ ~ minecraft:pink_bed[facing=south,occupied=true,part=head] run scoreboard players set block bsc 1181
+execute if block ~ ~ ~ minecraft:pink_bed[facing=south,occupied=true,part=foot] run scoreboard players set block bsc 1182
+execute if block ~ ~ ~ minecraft:pink_bed[facing=south,occupied=false,part=head] run scoreboard players set block bsc 1183
+execute if block ~ ~ ~ minecraft:pink_bed[facing=south,occupied=false,part=foot] run scoreboard players set block bsc 1184
+execute if block ~ ~ ~ minecraft:pink_bed[facing=west,occupied=true,part=head] run scoreboard players set block bsc 1185
+execute if block ~ ~ ~ minecraft:pink_bed[facing=west,occupied=true,part=foot] run scoreboard players set block bsc 1186
+execute if block ~ ~ ~ minecraft:pink_bed[facing=west,occupied=false,part=head] run scoreboard players set block bsc 1187
+execute if block ~ ~ ~ minecraft:pink_bed[facing=west,occupied=false,part=foot] run scoreboard players set block bsc 1188
+execute if block ~ ~ ~ minecraft:pink_bed[facing=east,occupied=true,part=head] run scoreboard players set block bsc 1189
+execute if block ~ ~ ~ minecraft:pink_bed[facing=east,occupied=true,part=foot] run scoreboard players set block bsc 1190
+execute if block ~ ~ ~ minecraft:pink_bed[facing=east,occupied=false,part=head] run scoreboard players set block bsc 1191
+execute if block ~ ~ ~ minecraft:pink_bed[facing=east,occupied=false,part=foot] run scoreboard players set block bsc 1192

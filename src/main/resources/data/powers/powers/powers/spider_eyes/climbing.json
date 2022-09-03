@@ -1,0 +1,96 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "climbing": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:collided_horizontally"
+                },
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "gravity",
+                    "comparison": "==",
+                    "compare_to": -1
+                }
+            ]
+        },
+        "type": "origins:climbing",
+        "allow_holding": true,
+        "hold_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.01,
+                            "offset_y": 0,
+                            "offset_z": 0.01
+                        },
+                        {
+                            "type": "origins:in_block_anywhere",
+                            "block_condition": {
+                                "type": "origins:in_tag",
+                                "tag": "origins:cobwebs"
+                            },
+                            "comparison": ">=",
+                            "compare_to": 1
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": -0.01,
+                            "offset_y": 0,
+                            "offset_z": -0.01
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0,
+                            "offset_y": 0.01,
+                            "offset_z": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "climbing_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:collided_horizontally"
+                },
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "gravity",
+                    "comparison": "!=",
+                    "compare_to": -1
+                }
+            ]
+        },
+        "type": "origins:climbing",
+        "allow_holding": true,
+        "hold_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:in_block_anywhere",
+                            "block_condition": {
+                                "type": "origins:in_tag",
+                                "tag": "origins:cobwebs"
+                            },
+                            "comparison": ">=",
+                            "compare_to": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,12 @@
+execute if score block bsc matches 1385 run setblock ~ ~ ~ minecraft:sticky_piston[extended=true,facing=north]{extended:true,facing:north}
+execute if score block bsc matches 1386 run setblock ~ ~ ~ minecraft:sticky_piston[extended=true,facing=east]{extended:true,facing:east}
+execute if score block bsc matches 1387 run setblock ~ ~ ~ minecraft:sticky_piston[extended=true,facing=south]{extended:true,facing:south}
+execute if score block bsc matches 1388 run setblock ~ ~ ~ minecraft:sticky_piston[extended=true,facing=west]{extended:true,facing:west}
+execute if score block bsc matches 1389 run setblock ~ ~ ~ minecraft:sticky_piston[extended=true,facing=up]{extended:true,facing:up}
+execute if score block bsc matches 1390 run setblock ~ ~ ~ minecraft:sticky_piston[extended=true,facing=down]{extended:true,facing:down}
+execute if score block bsc matches 1391 run setblock ~ ~ ~ minecraft:sticky_piston[extended=false,facing=north]{extended:false,facing:north}
+execute if score block bsc matches 1392 run setblock ~ ~ ~ minecraft:sticky_piston[extended=false,facing=east]{extended:false,facing:east}
+execute if score block bsc matches 1393 run setblock ~ ~ ~ minecraft:sticky_piston[extended=false,facing=south]{extended:false,facing:south}
+execute if score block bsc matches 1394 run setblock ~ ~ ~ minecraft:sticky_piston[extended=false,facing=west]{extended:false,facing:west}
+execute if score block bsc matches 1395 run setblock ~ ~ ~ minecraft:sticky_piston[extended=false,facing=up]{extended:false,facing:up}
+execute if score block bsc matches 1396 run setblock ~ ~ ~ minecraft:sticky_piston[extended=false,facing=down]{extended:false,facing:down}

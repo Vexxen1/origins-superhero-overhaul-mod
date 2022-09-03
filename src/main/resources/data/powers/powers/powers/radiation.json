@@ -1,0 +1,93 @@
+{
+    "1": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute at @s if entity @e[tag=nuke,distance=..50] run scoreboard players get 1 num",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:wither",
+                            "duration": 21,
+                            "amplifier": 2,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute at @s if entity @e[tag=nuke,distance=50..100] run scoreboard players get 1 num",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:wither",
+                            "duration": 21,
+                            "amplifier": 1,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute at @s if entity @e[tag=nuke,distance=100..200] run scoreboard players get 1 num",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:wither",
+                            "duration": 21,
+                            "amplifier": 0,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    }
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:weakness",
+                        "duration": 20,
+                        "amplifier": 0,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "1_": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_respawned": {
+            "type": "origins:revoke_power",
+            "power": "powers:powers/radiation",
+            "source": "apoli:command"
+        }
+    }
+}

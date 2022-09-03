@@ -1,0 +1,13 @@
+{
+    "name": "§6§nStrengthen",
+    "description": "§c§lRarity: §rCommon\n\n§cPassive Strengthening\n§3Everyone of your friends list, when near you, will gain a low level of strength and resistance. ",
+    "powers": [
+        "powers:powers/strengthen"
+    ],
+    "icon": {
+        "item": "minecraft:blaze_powder",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

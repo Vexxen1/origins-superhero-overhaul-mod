@@ -1,0 +1,849 @@
+{
+    "0": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{NoGravity: 1b,Tags:[\"glow\"]}"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:nbt",
+                                "nbt": "{Tags:[\"aim_arrow\"]}"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 0.25,
+        "green": 0.52,
+        "blue": 0.96
+    },
+    "2": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:blaze_powder"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{power:8}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:blaze_powder"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{power:8}"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run tag @s add grav"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run power revoke @s powers:powers/gravity/glowing"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run data remove entity @s NoGravity"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8,tag=!grav] unless data entity @s NoGravity run power grant @s powers:powers/gravity/glowing"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8,tag=!grav] unless data entity @s NoGravity run data modify entity @s NoGravity set value 1b"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] run tag @s remove grav"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] at @s run particle minecraft:portal ~ ~ ~ 0.25 0.25 0.25 0 100"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon area_effect_cloud ~ ~ ~ {Particle:\"dust 0.161 0.098 1.000 1\",Radius:0.1f,RadiusPerTick:0.4f,RadiusOnUse:0f,Duration:22,DurationOnUse:0f}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 4 2"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{power:8}"
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "10": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:blaze_powder"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{power:1}"
+                    }
+                ]
+            }
+        },
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "power grant @s powers:powers/gold_touch/gold_coveredp"
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0___": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{Glowing:1b}"
+                            },
+                            {
+                                "type": "origins:entity_type",
+                                "entity_type": "minecraft:shulker"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    },
+    "0_": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:power_active",
+                        "power": "powers:powers/glowing/glowing"
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 0.94,
+        "green": 0.9,
+        "blue": 0.54
+    },
+    "0__": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{Tags:[\"aim_arrow\"]}"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    },
+    "2_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:35}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:35}"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "power_id",
+                    "comparison": "!=",
+                    "compare_to": 35
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run summon creeper ~ ~ ~ {NoGravity:1b,powered:1b,Fuse:1,ignited:1b}"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{power:35}"
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "2____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:30}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:30}"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "power_id",
+                    "comparison": "!=",
+                    "compare_to": 35
+                }
+            ]
+        },
+        "type": "origins:fire_projectile",
+        "entity_type": "minecraft:snowball",
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "count": 50,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 1,
+        "divergence": 10,
+        "sound": "minecraft:entity.horse.breathe",
+        "tag": "{Fire:999999,HasVisualFire:1b,Tags:[\"flame\"],Item:{id:\"minecraft:fire_charge\",Count:1b}}",
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "2___": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:18}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:18}"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run function powers:powers/teleporter/primary"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove used_primary"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{power:18}"
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "2__": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:blaze_powder"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{power:36}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:blaze_powder"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{power:36}"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "power grant @s powers:other/ghost"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{power:36}"
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "2_____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:30}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:30}"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "power_id",
+                    "comparison": "!=",
+                    "compare_to": 35
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:blaze_powder"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{power:30}"
+                                    }
+                                ]
+                            }
+                        },
+                        "if_action": {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "mainhand",
+                            "action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            }
+                        },
+                        "else_action": {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "offhand",
+                            "action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            }
+                        }
+                    },
+                    "ticks": 1
+                }
+            ]
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "10_": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:blaze_powder"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{power:1}"
+                    }
+                ]
+            }
+        },
+        "type": "origins:action_on_block_use",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "powers:gold_touch/dont_replace"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "powers:gold_touch/plate"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "mainhand",
+            "action": {
+                "type": "origins:consume",
+                "amount": 1
+            }
+        },
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "function powers:powers/gold_touch/gold"
+        },
+        "action_result": "success"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "fire",
+                        "comparison": "==",
+                        "compare_to": 0
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:extinguish"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power revoke @s powers:fire"
+                            }
+                        ]
+                    },
+                    "else_action": {
+                        "type": "origins:execute_command",
+                        "command": "scoreboard players remove @s fire 1"
+                    }
+                }
+            ]
+        },
+        "rising_action": {
+            "type": "origins:set_on_fire",
+            "duration": 999
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

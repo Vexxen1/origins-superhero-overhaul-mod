@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=north,powered=true] run scoreboard players set block bsc 5465
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=north,powered=false] run scoreboard players set block bsc 5466
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=south,powered=true] run scoreboard players set block bsc 5467
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=south,powered=false] run scoreboard players set block bsc 5468
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=west,powered=true] run scoreboard players set block bsc 5469
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=west,powered=false] run scoreboard players set block bsc 5470
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=east,powered=true] run scoreboard players set block bsc 5471
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=true,facing=east,powered=false] run scoreboard players set block bsc 5472
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=north,powered=true] run scoreboard players set block bsc 5473
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=north,powered=false] run scoreboard players set block bsc 5474
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=south,powered=true] run scoreboard players set block bsc 5475
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=south,powered=false] run scoreboard players set block bsc 5476
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=west,powered=true] run scoreboard players set block bsc 5477
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=west,powered=false] run scoreboard players set block bsc 5478
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=east,powered=true] run scoreboard players set block bsc 5479
+execute if block ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=east,powered=false] run scoreboard players set block bsc 5480

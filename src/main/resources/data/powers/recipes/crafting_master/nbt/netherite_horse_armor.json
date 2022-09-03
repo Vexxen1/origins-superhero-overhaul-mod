@@ -1,0 +1,13 @@
+{
+    "type": "nbtcrafting:smithing",
+    "base": {
+        "item": "minecraft:diamond_horse_armor"
+    },
+    "ingredient": {
+        "item": "minecraft:netherite_ingot"
+    },
+    "result": {
+        "item": "minecraft:leather_horse_armor",
+        "data": "{display:{Name:'{\"text\":\"Netherite Horse Armor\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',color:3618103},HideFlags:66,netherite:1,AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-538329799,-259898276,-1083892323,273235659],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:8,Operation:0,UUID:[I;-1037027330,-579845241,-1626869010,-763545497],Slot:\"chest\"}]}"
+    }
+}

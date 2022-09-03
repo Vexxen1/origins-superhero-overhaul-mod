@@ -1,0 +1,8 @@
+execute if score block bsc matches 4568 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:infested_stone",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4569 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:infested_cobblestone",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4570 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:infested_stone_bricks",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4571 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:infested_mossy_stone_bricks",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4572 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:infested_cracked_stone_bricks",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4573 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:infested_chiseled_stone_bricks",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4574..4637 run function bsc:falling/l0/p/l0_125
+execute if score block bsc matches 4638..4701 run function bsc:falling/l0/p/l0_126

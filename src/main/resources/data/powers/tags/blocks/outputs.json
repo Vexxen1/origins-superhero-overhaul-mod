@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:redstone_wire",
+        "minecraft:dispenser",
+        "minecraft:dropper",
+        "minecraft:piston",
+        "minecraft:sticky_piston"
+    ]
+}

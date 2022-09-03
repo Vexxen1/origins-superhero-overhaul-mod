@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " / ",
+        " B "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:obsidian"
+        },
+        "/": {
+            "item": "minecraft:blaze_rod"
+        },
+        "B": {
+            "item": "minecraft:blaze_powder"
+        }
+    },
+    "result": {
+        "item": "minecraft:tipped_arrow",
+        "count": 4,
+        "data": "{display:{Name:'{\"text\":\"Blazing Arrow\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},HideFlags:127,blz:1,Enchantments:[{}],CustomPotionColor:16748800}"
+    }
+}

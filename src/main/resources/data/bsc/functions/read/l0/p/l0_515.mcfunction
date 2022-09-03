@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=north] run scoreboard players set block bsc 9487
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=east] run scoreboard players set block bsc 9488
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=south] run scoreboard players set block bsc 9489
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=west] run scoreboard players set block bsc 9490
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=up] run scoreboard players set block bsc 9491
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=down] run scoreboard players set block bsc 9492
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=north] run scoreboard players set block bsc 9493
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=east] run scoreboard players set block bsc 9494
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=south] run scoreboard players set block bsc 9495
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=west] run scoreboard players set block bsc 9496
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=up] run scoreboard players set block bsc 9497
+execute if block ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=down] run scoreboard players set block bsc 9498

@@ -1,0 +1,13 @@
+{
+    "name": "§6§nGlowing",
+    "description": "§c§lRarity: §rCommon\n\n§cGlow\n§3You glow too all except yourself.\n\n§cPower Crystal\n§3You can make a power crystal by holding a empty power crystal and pressing primary",
+    "powers": [
+        "powers:powers/glowing/glowing"
+    ],
+    "icon": {
+        "item": "minecraft:glow_berries",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

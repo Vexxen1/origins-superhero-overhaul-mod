@@ -1,0 +1,50 @@
+{
+    "1": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_stun_timer",
+                    "change": 1,
+                    "operation": "add"
+                }
+            ]
+        }
+    },
+    "2": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "<=",
+            "compare_to": 30
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "data modify entity @s NoAI set value 1b"
+        },
+        "falling_action": {
+            "type": "origins:execute_command",
+            "command": "data modify entity @s NoAI set value 0b"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "stun_timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "power revoke @s powers:powers/stun/stuned"
+        }
+    }
+}

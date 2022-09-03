@@ -1,0 +1,14 @@
+execute if score block bsc matches 232 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=1,persistent=true]{distance:1,persistent:true}
+execute if score block bsc matches 233 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=1,persistent=false]{distance:1,persistent:false}
+execute if score block bsc matches 234 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=2,persistent=true]{distance:2,persistent:true}
+execute if score block bsc matches 235 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=2,persistent=false]{distance:2,persistent:false}
+execute if score block bsc matches 236 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=3,persistent=true]{distance:3,persistent:true}
+execute if score block bsc matches 237 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=3,persistent=false]{distance:3,persistent:false}
+execute if score block bsc matches 238 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=4,persistent=true]{distance:4,persistent:true}
+execute if score block bsc matches 239 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=4,persistent=false]{distance:4,persistent:false}
+execute if score block bsc matches 240 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=5,persistent=true]{distance:5,persistent:true}
+execute if score block bsc matches 241 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=5,persistent=false]{distance:5,persistent:false}
+execute if score block bsc matches 242 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=6,persistent=true]{distance:6,persistent:true}
+execute if score block bsc matches 243 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=6,persistent=false]{distance:6,persistent:false}
+execute if score block bsc matches 244 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=7,persistent=true]{distance:7,persistent:true}
+execute if score block bsc matches 245 run setblock ~ ~ ~ minecraft:azalea_leaves[distance=7,persistent=false]{distance:7,persistent:false}

@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:black_candle[candles=1,lit=true,waterlogged=true] run scoreboard players set block bsc 17614
+execute if block ~ ~ ~ minecraft:black_candle[candles=1,lit=true,waterlogged=false] run scoreboard players set block bsc 17615
+execute if block ~ ~ ~ minecraft:black_candle[candles=1,lit=false,waterlogged=true] run scoreboard players set block bsc 17616
+execute if block ~ ~ ~ minecraft:black_candle[candles=1,lit=false,waterlogged=false] run scoreboard players set block bsc 17617
+execute if block ~ ~ ~ minecraft:black_candle[candles=2,lit=true,waterlogged=true] run scoreboard players set block bsc 17618
+execute if block ~ ~ ~ minecraft:black_candle[candles=2,lit=true,waterlogged=false] run scoreboard players set block bsc 17619
+execute if block ~ ~ ~ minecraft:black_candle[candles=2,lit=false,waterlogged=true] run scoreboard players set block bsc 17620
+execute if block ~ ~ ~ minecraft:black_candle[candles=2,lit=false,waterlogged=false] run scoreboard players set block bsc 17621
+execute if block ~ ~ ~ minecraft:black_candle[candles=3,lit=true,waterlogged=true] run scoreboard players set block bsc 17622
+execute if block ~ ~ ~ minecraft:black_candle[candles=3,lit=true,waterlogged=false] run scoreboard players set block bsc 17623
+execute if block ~ ~ ~ minecraft:black_candle[candles=3,lit=false,waterlogged=true] run scoreboard players set block bsc 17624
+execute if block ~ ~ ~ minecraft:black_candle[candles=3,lit=false,waterlogged=false] run scoreboard players set block bsc 17625
+execute if block ~ ~ ~ minecraft:black_candle[candles=4,lit=true,waterlogged=true] run scoreboard players set block bsc 17626
+execute if block ~ ~ ~ minecraft:black_candle[candles=4,lit=true,waterlogged=false] run scoreboard players set block bsc 17627
+execute if block ~ ~ ~ minecraft:black_candle[candles=4,lit=false,waterlogged=true] run scoreboard players set block bsc 17628
+execute if block ~ ~ ~ minecraft:black_candle[candles=4,lit=false,waterlogged=false] run scoreboard players set block bsc 17629

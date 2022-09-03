@@ -1,0 +1,303 @@
+{
+    "1": {
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": -0.02
+        }
+    },
+    "2": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 0.05,
+                    "space": "local",
+                    "client": true,
+                    "server": true
+                }
+            ]
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.forward",
+            "continuous": true
+        }
+    },
+    "9": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run tag @s add grav"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run power revoke @s powers:powers/gravity/glowing"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run tag @s remove glow"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] if data entity @s NoGravity run data remove entity @s NoGravity"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8,tag=!grav] unless data entity @s NoGravity run power grant @s powers:powers/gravity/glowing"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8,tag=!grav] unless data entity @s NoGravity run tag @s add glow"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8,tag=!grav] unless data entity @s NoGravity run data modify entity @s NoGravity set value 1b"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] run tag @s remove grav"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[distance=0.01..8] at @s run particle minecraft:portal ~ ~ ~ 0.25 0.25 0.25 0 100"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon area_effect_cloud ~ ~ ~ {Particle:\"dust 0.161 0.098 1.000 1\",Radius:0.1f,RadiusPerTick:0.4f,RadiusOnUse:0f,Duration:22,DurationOnUse:0f}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 4 2"
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:power_powder/gravity"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:shulker_spawn_egg"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:power_crystal/gravity"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "offhand",
+                                "action": {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:power_powder/gravity"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:shulker_spawn_egg"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "offhand",
+                                "action": {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:power_crystal/gravity"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:levitation",
+                "duration": 2,
+                "amplifier": -1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        }
+    },
+    "2_": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "z": -0.05,
+            "space": "local",
+            "client": true,
+            "server": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.back",
+            "continuous": true
+        }
+    },
+    "2__": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "x": 0.05,
+            "space": "local",
+            "client": true,
+            "server": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.left",
+            "continuous": true
+        }
+    },
+    "2___": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "x": -0.05,
+            "space": "local",
+            "client": true,
+            "server": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.right",
+            "continuous": true
+        }
+    },
+    "2____": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "y": 0.05,
+            "space": "world",
+            "client": true,
+            "server": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.jump",
+            "continuous": true
+        }
+    },
+    "2_____": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "y": -0.05,
+            "space": "world",
+            "client": true,
+            "server": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    },
+    "2______": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "z": 0.05,
+            "space": "local",
+            "client": true,
+            "server": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.sprint",
+            "continuous": true
+        }
+    }
+}

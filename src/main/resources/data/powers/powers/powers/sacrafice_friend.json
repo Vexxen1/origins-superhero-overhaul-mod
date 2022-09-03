@@ -1,0 +1,667 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "0___": {
+        "type": "origins:prevent_death"
+    },
+    "0__": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 1"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 1
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 2"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 2
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0________________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 3"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 3
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_______________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 4
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 4"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 4
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0______________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 5
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 5"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 5
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_____________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 6
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 6"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 6
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0____________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 7
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 7"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 7
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0___________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 8
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 8"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 8
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0__________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 9
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 9"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 9
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 10
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 10"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 10
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0________________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 11
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 11"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 11
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_______________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 12
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 12"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 12
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0______________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 13
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 13"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 13
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_____________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 14
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 14"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 14
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0____________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 15
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 15"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 15
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0___________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 16
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 16"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 16
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0__________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 17
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 17"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 17
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 18
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 18"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 18
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0________________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 19
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 19"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 19
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_______________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 20
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 20"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 20
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0______________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 21
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 21"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 21
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_____________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 22
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 22"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 22
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0____________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 23
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 23"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 23
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0___________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 24
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 24"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 24
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0__________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 25
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 25"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 25
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 26
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 26"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 26
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0________________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 27
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 27"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 27
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_______________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 28
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 28"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 28
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0______________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 29
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 29"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 29
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "0_____________________________": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">=",
+            "compare_to": 30
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add @s damage_taken 30"
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 30
+                }
+            ]
+        },
+        "cooldown": 1
+    }
+}

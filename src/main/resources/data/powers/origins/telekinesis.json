@@ -1,0 +1,14 @@
+{
+    "name": "§6§nTelekinesis",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cGrab\n§3You can look at a spot and hold left click too grab. Anything near the spot will be pulled into the center, and can be moved around. Hold primary to bring the spot closer to you, secondary too push it further. \n",
+    "powers": [
+        "powers:powers/telekinesis",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:phantom_membrane",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

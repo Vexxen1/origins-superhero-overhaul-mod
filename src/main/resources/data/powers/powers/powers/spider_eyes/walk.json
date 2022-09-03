@@ -1,0 +1,104 @@
+{
+    "2": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        }
+    },
+    "3": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "power revoke @s powers:powers/spider_eyes/climbing"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "gravity setdefault down"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "2__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "gravity",
+                    "comparison": "!=",
+                    "compare_to": -1
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute as @s at @s run function powers:powers/spider/climb_walls"
+        },
+        "falling_action": {
+            "type": "origins:execute_command",
+            "command": "gravity setdefault down"
+        }
+    },
+    "2_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "gravity",
+                    "comparison": "!=",
+                    "compare_to": -1
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute as @s at @s run function powers:powers/spider/loop"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "retain_state": true
+    },
+    "a": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "power grant @s powers:powers/spider_eyes/climbing"
+        },
+        "falling_action": {
+            "type": "origins:execute_command",
+            "command": "power revoke @s powers:powers/spider_eyes/climbing"
+        }
+    }
+}

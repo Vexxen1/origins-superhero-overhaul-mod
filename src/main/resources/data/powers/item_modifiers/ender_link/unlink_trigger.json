@@ -1,0 +1,13 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{link:-1,display:{Name:'{\"text\":\"Ender Trigger\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},ender_trigger:1}"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [],
+      "replace": true
+    }
+  ]
+  

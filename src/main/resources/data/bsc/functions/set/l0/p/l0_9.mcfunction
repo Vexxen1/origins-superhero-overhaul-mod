@@ -1,0 +1,16 @@
+execute if score block bsc matches 50 run setblock ~ ~ ~ minecraft:lava[level=0]{level:0}
+execute if score block bsc matches 51 run setblock ~ ~ ~ minecraft:lava[level=1]{level:1}
+execute if score block bsc matches 52 run setblock ~ ~ ~ minecraft:lava[level=2]{level:2}
+execute if score block bsc matches 53 run setblock ~ ~ ~ minecraft:lava[level=3]{level:3}
+execute if score block bsc matches 54 run setblock ~ ~ ~ minecraft:lava[level=4]{level:4}
+execute if score block bsc matches 55 run setblock ~ ~ ~ minecraft:lava[level=5]{level:5}
+execute if score block bsc matches 56 run setblock ~ ~ ~ minecraft:lava[level=6]{level:6}
+execute if score block bsc matches 57 run setblock ~ ~ ~ minecraft:lava[level=7]{level:7}
+execute if score block bsc matches 58 run setblock ~ ~ ~ minecraft:lava[level=8]{level:8}
+execute if score block bsc matches 59 run setblock ~ ~ ~ minecraft:lava[level=9]{level:9}
+execute if score block bsc matches 60 run setblock ~ ~ ~ minecraft:lava[level=10]{level:10}
+execute if score block bsc matches 61 run setblock ~ ~ ~ minecraft:lava[level=11]{level:11}
+execute if score block bsc matches 62 run setblock ~ ~ ~ minecraft:lava[level=12]{level:12}
+execute if score block bsc matches 63 run setblock ~ ~ ~ minecraft:lava[level=13]{level:13}
+execute if score block bsc matches 64 run setblock ~ ~ ~ minecraft:lava[level=14]{level:14}
+execute if score block bsc matches 65 run setblock ~ ~ ~ minecraft:lava[level=15]{level:15}

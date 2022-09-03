@@ -1,0 +1,16 @@
+execute if score block bsc matches 1321 run setblock ~ ~ ~ minecraft:black_bed[facing=north,occupied=true,part=head]{facing:north,occupied:true,part:head}
+execute if score block bsc matches 1322 run setblock ~ ~ ~ minecraft:black_bed[facing=north,occupied=true,part=foot]{facing:north,occupied:true,part:foot}
+execute if score block bsc matches 1323 run setblock ~ ~ ~ minecraft:black_bed[facing=north,occupied=false,part=head]{facing:north,occupied:false,part:head}
+execute if score block bsc matches 1324 run setblock ~ ~ ~ minecraft:black_bed[facing=north,occupied=false,part=foot]{facing:north,occupied:false,part:foot}
+execute if score block bsc matches 1325 run setblock ~ ~ ~ minecraft:black_bed[facing=south,occupied=true,part=head]{facing:south,occupied:true,part:head}
+execute if score block bsc matches 1326 run setblock ~ ~ ~ minecraft:black_bed[facing=south,occupied=true,part=foot]{facing:south,occupied:true,part:foot}
+execute if score block bsc matches 1327 run setblock ~ ~ ~ minecraft:black_bed[facing=south,occupied=false,part=head]{facing:south,occupied:false,part:head}
+execute if score block bsc matches 1328 run setblock ~ ~ ~ minecraft:black_bed[facing=south,occupied=false,part=foot]{facing:south,occupied:false,part:foot}
+execute if score block bsc matches 1329 run setblock ~ ~ ~ minecraft:black_bed[facing=west,occupied=true,part=head]{facing:west,occupied:true,part:head}
+execute if score block bsc matches 1330 run setblock ~ ~ ~ minecraft:black_bed[facing=west,occupied=true,part=foot]{facing:west,occupied:true,part:foot}
+execute if score block bsc matches 1331 run setblock ~ ~ ~ minecraft:black_bed[facing=west,occupied=false,part=head]{facing:west,occupied:false,part:head}
+execute if score block bsc matches 1332 run setblock ~ ~ ~ minecraft:black_bed[facing=west,occupied=false,part=foot]{facing:west,occupied:false,part:foot}
+execute if score block bsc matches 1333 run setblock ~ ~ ~ minecraft:black_bed[facing=east,occupied=true,part=head]{facing:east,occupied:true,part:head}
+execute if score block bsc matches 1334 run setblock ~ ~ ~ minecraft:black_bed[facing=east,occupied=true,part=foot]{facing:east,occupied:true,part:foot}
+execute if score block bsc matches 1335 run setblock ~ ~ ~ minecraft:black_bed[facing=east,occupied=false,part=head]{facing:east,occupied:false,part:head}
+execute if score block bsc matches 1336 run setblock ~ ~ ~ minecraft:black_bed[facing=east,occupied=false,part=foot]{facing:east,occupied:false,part:foot}

@@ -1,0 +1,8 @@
+execute if score block bsc matches 17702..17713 run function bsc:falling/l0/p/l0_511
+execute if score block bsc matches 17714 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:tuff",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 17715 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:calcite",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 17716 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:tinted_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 17717 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:powder_snow",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 17718..17813 run function bsc:falling/l0/p/l0_512
+execute if score block bsc matches 17814 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:oxidized_copper",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 17815 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:weathered_copper",Properties:{}},Time:1,Tags:["bsc_falling"]}]}

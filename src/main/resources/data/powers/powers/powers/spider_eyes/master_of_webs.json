@@ -1,0 +1,91 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "webbing": {
+      "type": "origins:target_action_on_hit",
+      "entity_action": {
+          "type": "origins:block_action_at",
+          "block_action": {
+              "type": "origins:if_else",
+              "condition": {
+                  "type": "origins:replacable"
+              },
+              "if_action": {
+                  "type": "origins:set_block",
+                  "block": "origins:temporary_cobweb"
+              }
+          }
+      },
+      "cooldown": 120,
+      "hud_render": {
+          "should_render": true,
+          "sprite_location": "origins:textures/gui/resource_bar.png",
+          "bar_index": 5
+      }
+  },
+  "punch_through": {
+      "condition": {
+          "inverted": true,
+          "type": "origins:sneaking"
+      },
+      "type": "origins:prevent_block_selection",
+      "block_condition": {
+          "type": "origins:in_tag",
+          "tag": "origins:cobwebs"
+      }
+  },
+  "sense": {
+      "type": "origins:entity_glow",
+      "entity_condition": {
+          "type": "origins:and",
+          "conditions": [
+              {
+                  "type": "origins:in_block_anywhere",
+                  "block_condition": {
+                      "type": "origins:in_tag",
+                      "tag": "origins:cobwebs"
+                  },
+                  "comparison": ">=",
+                  "compare_to": 1
+              },
+              {
+                  "inverted": true,
+                  "type": "origins:entity_group",
+                  "group": "arthropod"
+              }
+          ]
+      },
+      "use_teams": true
+  },
+  "web_crafting": {
+      "type": "origins:recipe",
+      "recipe": {
+          "id": "origins:master_of_webs/web_crafting",
+          "type": "minecraft:crafting_shapeless",
+          "ingredients": [
+              {
+                  "item": "minecraft:string"
+              },
+              {
+                  "item": "minecraft:string"
+              }
+          ],
+          "result": {
+              "item": "minecraft:cobweb"
+          }
+      }
+  },
+  "phase": {
+      "type": "origins:phasing",
+      "block_condition": {
+          "type": "origins:in_tag",
+          "tag": "origins:cobwebs"
+      },
+      "render_type": "none",
+      "view_distance": 10,
+      "phase_down_condition": {
+          "type": "origins:constant",
+          "value": true
+      }
+  }
+}

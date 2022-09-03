@@ -1,0 +1,14 @@
+{
+    "name": "§6§nCrafting Master",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cRecipe Know-how\n§3You know many recipes normal people simply can't use. Includes some… fun and special items. Like throwable tnt, and ender links. As well as some more normal recipes like bundles, reinforced deepslate, and record disks. You are also a important asset due to you being able to craft power orbs used to reroll powers. \n",
+    "powers": [
+        "powers:powers/crafting_master",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:crafting_table",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

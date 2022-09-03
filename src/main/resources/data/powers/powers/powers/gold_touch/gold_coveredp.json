@@ -1,0 +1,1228 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:entity_type",
+                                    "entity_type": "minecraft:player"
+                                },
+                                "if_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                },
+                                "else_action": {
+                                    "type": "origins:execute_command",
+                                    "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.75,
+                                "action": {
+                                    "type": "origins:nothing"
+                                },
+                                "fail_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.75,
+                                "action": {
+                                    "type": "origins:nothing"
+                                },
+                                "fail_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:nothing"
+                                },
+                                "fail_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.25,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.75,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.25,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.25,
+                                "action": {
+                                    "type": "origins:nothing"
+                                },
+                                "fail_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.25,
+                                "action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "inverted": true,
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "head",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "chest",
+                                        "item_condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:empty"
+                                                },
+                                                {
+                                                    "inverted": true,
+                                                    "type": "origins:ingredient",
+                                                    "ingredient": {
+                                                        "item": "minecraft:elytra"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "legs",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:equipped_item",
+                                        "equipment_slot": "feet",
+                                        "item_condition": {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        }
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:chance",
+                                "chance": 0.25,
+                                "action": {
+                                    "type": "origins:nothing"
+                                },
+                                "fail_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:entity_type",
+                                        "entity_type": "minecraft:player"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_coveredps"
+                                    },
+                                    "else_action": {
+                                        "type": "origins:execute_command",
+                                        "command": "power grant @s powers:powers/gold_touch/gold_covered"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "head",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:execute_command",
+                                "command": "function powers:powers/gold_touch/armor/head"
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "feet",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:execute_command",
+                                "command": "function powers:powers/gold_touch/armor/boots"
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "chest",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_chestplate"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:execute_command",
+                                "command": "function powers:powers/gold_touch/armor/chest"
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "legs",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:empty"
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_leggings"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:execute_command",
+                                "command": "function powers:powers/gold_touch/armor/legs"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "power revoke @s powers:powers/gold_touch/gold_coveredp"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

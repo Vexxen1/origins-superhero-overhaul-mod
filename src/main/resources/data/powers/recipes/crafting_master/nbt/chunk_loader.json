@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "DMD",
+        "SSS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:ender_pearl",
+            "data": "{display:{Name:'{\"text\":\"Ender Link\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},Enchantments:[{}],ender_link:1}"
+        },
+        "M": {
+            "item": "minecraft:iron_block"
+        },
+        "S": {
+            "item": "minecraft:obsidian"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "simplechunkloader:chunkloader",
+        "count": 1
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "§6§nNo Jumping",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cNo Jumping\n§3You can't jump… That's it. Slabs will be your friends. \n",
+    "powers": [
+        "powers:powers/no_jumping"
+    ],
+    "icon": {
+        "item": "minecraft:rabbit_foot",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

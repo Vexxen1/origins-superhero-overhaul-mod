@@ -1,0 +1,14 @@
+{
+    "name": "§6§nSacrifice",
+    "description": "§c§lRarity: §rCommon\n\n§cDamage Taken\n§3When you friends on your friend list are near you, and take damage, you take damage instead. Making your friends immortal as long as you are alive. Better stack up on totems, and instant health potions. \n",
+    "powers": [
+        "powers:powers/sacrafice"
+    ],
+    "icon": {
+        "item": "minecraft:potion",
+        "amount": 1,
+        "tag": "{Potion:\"minecraft:healing\"}"
+    },
+    "unchoosable": true,
+    "impact": 1
+}

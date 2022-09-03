@@ -1,0 +1,14 @@
+{
+    "name": "§6§nSelf Destruction",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cDeath throes\n§3When you die, you explode with a charged creeper explosion.\n\n§cExplosion Charging\n§3You can charge up an explosion by holding crouch, and right click. The explosion also damages you as well. So better have some totems handy. You can charge some massive explosions if given enough time. Will make power powder if you hold some while pressing primary. \n",
+    "powers": [
+        "powers:powers/self-destruction",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:tnt",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

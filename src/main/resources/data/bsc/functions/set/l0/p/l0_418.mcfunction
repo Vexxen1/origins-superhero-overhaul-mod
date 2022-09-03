@@ -1,0 +1,16 @@
+execute if score block bsc matches 15083 run setblock ~ ~ ~ minecraft:lectern[facing=north,has_book=true,powered=true]{facing:north,has_book:true,powered:true}
+execute if score block bsc matches 15084 run setblock ~ ~ ~ minecraft:lectern[facing=north,has_book=true,powered=false]{facing:north,has_book:true,powered:false}
+execute if score block bsc matches 15085 run setblock ~ ~ ~ minecraft:lectern[facing=north,has_book=false,powered=true]{facing:north,has_book:false,powered:true}
+execute if score block bsc matches 15086 run setblock ~ ~ ~ minecraft:lectern[facing=north,has_book=false,powered=false]{facing:north,has_book:false,powered:false}
+execute if score block bsc matches 15087 run setblock ~ ~ ~ minecraft:lectern[facing=south,has_book=true,powered=true]{facing:south,has_book:true,powered:true}
+execute if score block bsc matches 15088 run setblock ~ ~ ~ minecraft:lectern[facing=south,has_book=true,powered=false]{facing:south,has_book:true,powered:false}
+execute if score block bsc matches 15089 run setblock ~ ~ ~ minecraft:lectern[facing=south,has_book=false,powered=true]{facing:south,has_book:false,powered:true}
+execute if score block bsc matches 15090 run setblock ~ ~ ~ minecraft:lectern[facing=south,has_book=false,powered=false]{facing:south,has_book:false,powered:false}
+execute if score block bsc matches 15091 run setblock ~ ~ ~ minecraft:lectern[facing=west,has_book=true,powered=true]{facing:west,has_book:true,powered:true}
+execute if score block bsc matches 15092 run setblock ~ ~ ~ minecraft:lectern[facing=west,has_book=true,powered=false]{facing:west,has_book:true,powered:false}
+execute if score block bsc matches 15093 run setblock ~ ~ ~ minecraft:lectern[facing=west,has_book=false,powered=true]{facing:west,has_book:false,powered:true}
+execute if score block bsc matches 15094 run setblock ~ ~ ~ minecraft:lectern[facing=west,has_book=false,powered=false]{facing:west,has_book:false,powered:false}
+execute if score block bsc matches 15095 run setblock ~ ~ ~ minecraft:lectern[facing=east,has_book=true,powered=true]{facing:east,has_book:true,powered:true}
+execute if score block bsc matches 15096 run setblock ~ ~ ~ minecraft:lectern[facing=east,has_book=true,powered=false]{facing:east,has_book:true,powered:false}
+execute if score block bsc matches 15097 run setblock ~ ~ ~ minecraft:lectern[facing=east,has_book=false,powered=true]{facing:east,has_book:false,powered:true}
+execute if score block bsc matches 15098 run setblock ~ ~ ~ minecraft:lectern[facing=east,has_book=false,powered=false]{facing:east,has_book:false,powered:false}

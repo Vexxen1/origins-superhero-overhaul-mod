@@ -1,0 +1,12 @@
+execute if score block bsc matches 17690 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=north,waterlogged=true]{facing:north,waterlogged:true}
+execute if score block bsc matches 17691 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=north,waterlogged=false]{facing:north,waterlogged:false}
+execute if score block bsc matches 17692 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=east,waterlogged=true]{facing:east,waterlogged:true}
+execute if score block bsc matches 17693 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=east,waterlogged=false]{facing:east,waterlogged:false}
+execute if score block bsc matches 17694 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=south,waterlogged=true]{facing:south,waterlogged:true}
+execute if score block bsc matches 17695 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=south,waterlogged=false]{facing:south,waterlogged:false}
+execute if score block bsc matches 17696 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=west,waterlogged=true]{facing:west,waterlogged:true}
+execute if score block bsc matches 17697 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=west,waterlogged=false]{facing:west,waterlogged:false}
+execute if score block bsc matches 17698 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=up,waterlogged=true]{facing:up,waterlogged:true}
+execute if score block bsc matches 17699 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=up,waterlogged=false]{facing:up,waterlogged:false}
+execute if score block bsc matches 17700 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=down,waterlogged=true]{facing:down,waterlogged:true}
+execute if score block bsc matches 17701 run setblock ~ ~ ~ minecraft:medium_amethyst_bud[facing=down,waterlogged=false]{facing:down,waterlogged:false}

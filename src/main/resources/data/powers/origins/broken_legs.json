@@ -1,0 +1,15 @@
+{
+    "name": "§6§nBroken Legs",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cBeing Disabled\n§3Yep… wasd does not work, jumping does not work. You can only move by sprint jumping, and very slowly at that. I recommend you get use too using boats, minecarts, and such too move. This is in the challenge playstyle for a reason. \n",
+    "powers": [
+        "powers:powers/broken_legs",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:iron_leggings",
+        "amount": 1,
+        "tag": "{Damage:200}"
+    },
+    "unchoosable": true,
+    "impact": 3
+}

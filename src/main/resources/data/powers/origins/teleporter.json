@@ -1,0 +1,15 @@
+{
+    "name": "§6§nSpace Manipulation",
+    "description": "§c§lRarity: §r§bRare\n\n§cShort* Range Teleport\n§3By pressing primary teleport where you are looking. You can also teleport to a mob if you are looking at it, and if there is space you will teleport behind it. If you are looking into the sky, then you will teleport 50 blocks forward. Teleporting resets fall damage. No distance limit. No cooldown.\n\n§cBlink\n§3By pressing secondary you can teleport 10 blocks in a direction. This direction is determined by wasd, space, and crouch. It will teleport you only into safe spaces, and auto correct height differences up to 2 blocks. Resets fall damage, no cooldown. \n\n§cLong Range Teleport\n§3You can make and use waypoints using a menu opened with “/trigger waypoint_menu” or the spectator outline key when not crouching. By using save and load hotbar you can manipulate your waypoints on the fly. Save set a waypoints position. Load teleports you too a waypoint. You can cycle through waypoints using crouch save, and load. \n\n§cLong Range Random Teleport\n§3By holding crouch and spectator outline key, you can charge up this ability. When it finishes charging you randomly teleport throughout your entire minecraft world. You could end up at the world border, you can end up in a cave,you can end up in the end, anywhere. But it does guarantee that you will be on solid ground. It has a cooldown of 1 minecraft day, and you gain weakness and slowness for 1 minecraft day after its use. It teleports all within 5 blocks with you.\n\n§cMulti Person Teleport\n§3All entities that are touching you will teleport with you, no matter what method you use too teleport. \n",
+    "powers": [
+        "powers:track_directions",
+        "powers:powers/teleporter/main",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:ender_pearl",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

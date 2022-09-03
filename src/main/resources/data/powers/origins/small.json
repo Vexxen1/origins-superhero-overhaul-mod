@@ -1,0 +1,13 @@
+{
+    "name": "§6§nSmall",
+    "description": "§c§lRarity: §rCommon\n\n§c4x smaller\n§3You are 4x smaller. This makes you no longer able too take fall damage. \n",
+    "powers": [
+        "powers:powers/small"
+    ],
+    "icon": {
+        "item": "minecraft:iron_nugget",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

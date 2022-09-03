@@ -1,0 +1,368 @@
+{
+    "0": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "<=",
+            "compare_to": 20
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5
+        }
+    },
+    "1": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 0.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">",
+            "compare_to": 20
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": -10
+        }
+    },
+    "1_": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 1,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1__": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 1.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1___": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 4
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 2,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1____": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 5
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 2.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1_____": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 6
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 3,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1______": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 7
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 3.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1_______": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 8
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 4,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 9
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 4.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1_________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 10
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1__________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 11
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 5.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1___________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 12
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 6,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1____________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 13
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 6.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1_____________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 14
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 7,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1______________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 15
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 7.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1_______________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 16
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 8,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1________________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 17
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 8.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1_________________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 18
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 9,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1__________________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "==",
+            "compare_to": 19
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 9.5,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    },
+    "1___________________": {
+        "type": "origins:attacker_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">=",
+            "compare_to": 20
+        },
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 10,
+            "source": {
+                "name": "generic",
+                "bypasses_armor": true
+            }
+        },
+        "cooldown": 1
+    }
+}

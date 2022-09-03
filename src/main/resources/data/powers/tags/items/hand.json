@@ -1,0 +1,15 @@
+{
+    "values": [
+        "#c:axes",
+        "#c:swords",
+        "minecraft:trident",
+        "#c:bows",
+        "#c:foods",
+        "#c:hoes",
+        "#c:pickaxes",
+        "#c:potions",
+        "#c:shears",
+        "#c:shovels",
+        "#c:spears"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "C",
+        "S"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:tnt",
+            "data": "{throwable_tnt:1}"
+        },
+        "C": {
+            "item": "minecraft:comparator"
+        },
+        "S": {
+            "item": "minecraft:sculk_sensor"
+        }
+    },
+    "result": {
+        "item": "minecraft:tnt",
+        "count": 1,
+        "data": "{display:{Name:'{\"text\":\"Trigger TNT\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},trigger_tnt:1}"
+    },
+    "group": "tnt"
+}

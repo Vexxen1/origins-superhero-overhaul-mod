@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:purple_bed[facing=north,occupied=true,part=head] run scoreboard players set block bsc 1241
+execute if block ~ ~ ~ minecraft:purple_bed[facing=north,occupied=true,part=foot] run scoreboard players set block bsc 1242
+execute if block ~ ~ ~ minecraft:purple_bed[facing=north,occupied=false,part=head] run scoreboard players set block bsc 1243
+execute if block ~ ~ ~ minecraft:purple_bed[facing=north,occupied=false,part=foot] run scoreboard players set block bsc 1244
+execute if block ~ ~ ~ minecraft:purple_bed[facing=south,occupied=true,part=head] run scoreboard players set block bsc 1245
+execute if block ~ ~ ~ minecraft:purple_bed[facing=south,occupied=true,part=foot] run scoreboard players set block bsc 1246
+execute if block ~ ~ ~ minecraft:purple_bed[facing=south,occupied=false,part=head] run scoreboard players set block bsc 1247
+execute if block ~ ~ ~ minecraft:purple_bed[facing=south,occupied=false,part=foot] run scoreboard players set block bsc 1248
+execute if block ~ ~ ~ minecraft:purple_bed[facing=west,occupied=true,part=head] run scoreboard players set block bsc 1249
+execute if block ~ ~ ~ minecraft:purple_bed[facing=west,occupied=true,part=foot] run scoreboard players set block bsc 1250
+execute if block ~ ~ ~ minecraft:purple_bed[facing=west,occupied=false,part=head] run scoreboard players set block bsc 1251
+execute if block ~ ~ ~ minecraft:purple_bed[facing=west,occupied=false,part=foot] run scoreboard players set block bsc 1252
+execute if block ~ ~ ~ minecraft:purple_bed[facing=east,occupied=true,part=head] run scoreboard players set block bsc 1253
+execute if block ~ ~ ~ minecraft:purple_bed[facing=east,occupied=true,part=foot] run scoreboard players set block bsc 1254
+execute if block ~ ~ ~ minecraft:purple_bed[facing=east,occupied=false,part=head] run scoreboard players set block bsc 1255
+execute if block ~ ~ ~ minecraft:purple_bed[facing=east,occupied=false,part=foot] run scoreboard players set block bsc 1256

@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=north,waterlogged=true] run scoreboard players set block bsc 17678
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=north,waterlogged=false] run scoreboard players set block bsc 17679
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=east,waterlogged=true] run scoreboard players set block bsc 17680
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=east,waterlogged=false] run scoreboard players set block bsc 17681
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=south,waterlogged=true] run scoreboard players set block bsc 17682
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=south,waterlogged=false] run scoreboard players set block bsc 17683
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=west,waterlogged=true] run scoreboard players set block bsc 17684
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=west,waterlogged=false] run scoreboard players set block bsc 17685
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=up,waterlogged=true] run scoreboard players set block bsc 17686
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=up,waterlogged=false] run scoreboard players set block bsc 17687
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=down,waterlogged=true] run scoreboard players set block bsc 17688
+execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=down,waterlogged=false] run scoreboard players set block bsc 17689

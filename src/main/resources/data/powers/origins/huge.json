@@ -1,0 +1,14 @@
+{
+    "name": "§6§nHuge",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§c5x Larger\n§3You are 5x larger. Due too this you do 20 damage per hit no matter what you hold, as swords are more like toothpicks. You are much faster then a normal player. Normal food does 5x less hunger, and simply by killing animals you eat them, and they feed you alot more.\n\n§cMega Blocks\n§3By using primary too toggle, you can pick up and place mega blocks. 5x5x5 cubes that can be collected and placed down remembering the things inside. Simply press the break key to pick up a mega block, and the place key too place a mega block while holding it. ",
+    "powers": [
+        "powers:powers/huge/huge",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:iron_block",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

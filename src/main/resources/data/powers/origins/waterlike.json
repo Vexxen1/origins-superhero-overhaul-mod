@@ -1,0 +1,16 @@
+{
+    "name": "§6§nWater-Like",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cWater-Like Skin\n§3Your body is like water, and needs too be covered in water constantly otherwise you will shrink and shrink till you die. Due to your body you gain the ability to breath under water, and skin faster. \n",
+    "powers": [
+        "powers:powers/waterlike/water_vision",
+        "powers:powers/waterlike/aqua_affinity",
+        "powers:powers/waterlike/like_water",
+        "powers:powers/waterlike"
+    ],
+    "icon": {
+        "item": "minecraft:tropical_fish",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

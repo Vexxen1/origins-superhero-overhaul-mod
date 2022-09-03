@@ -1,0 +1,150 @@
+{
+    "0": {
+        "type": "origins:prevent_entity_use"
+    },
+    "1": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "addition",
+            "value": -5
+        }
+    },
+    "3": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s as @e[tag=look_lock,limit=1,sort=nearest] rotated as @e[tag=look_lock,limit=1,sort=nearest] run tp @s ~ ~ ~"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s at @e[tag=look_lock,limit=1,sort=nearest] rotated as @e[tag=look_lock,limit=1,sort=nearest] run tp @s ~ ~ ~ ~ ~"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "stopsound @s *"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:weakness",
+                            "duration": 100,
+                            "amplifier": 9,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:resistance",
+                            "duration": 100,
+                            "amplifier": 9,
+                            "is_ambient": true,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_tt",
+                    "change": 1,
+                    "operation": "add"
+                }
+            ]
+        },
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:poof ~ ~ ~ 0 0 0 0.1 10"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run tellraw @a [\"\",{\"selector\":\"@s\"},{\"text\":\" was slain by \"},{\"selector\":\"@e[distance=0.01..20,sort=nearest,limit=1]\"}]"
+                }
+            ]
+        }
+    },
+    "4": {
+        "type": "origins:invisibility",
+        "render_armor": false
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "4_": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon marker ~ ~ ~ {Tags:[\"look_lock\"]}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s rotated as @s run tp @e[tag=look_lock,limit=1,sort=nearest] ~ ~ ~ ~ ~"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "kill @e[tag=look_lock,limit=1,sort=nearest]"
+        }
+    },
+    "0____": {
+        "type": "origins:prevent_item_use"
+    },
+    "0___": {
+        "type": "origins:prevent_block_selection"
+    },
+    "0__": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 1
+        }
+    },
+    "1_": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": -99
+        },
+        "update_health": false
+    },
+    "tt": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 6000,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 4
+        },
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "power revoke @s powers:powers/hyper_regeneration/dead"
+        }
+    },
+    "0_": {
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/black_wool.png",
+        "strength": 1,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    }
+}

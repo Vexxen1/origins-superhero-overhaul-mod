@@ -1,0 +1,16 @@
+execute if score block bsc matches 8275 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=0]{rotation:0}
+execute if score block bsc matches 8276 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=1]{rotation:1}
+execute if score block bsc matches 8277 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=2]{rotation:2}
+execute if score block bsc matches 8278 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=3]{rotation:3}
+execute if score block bsc matches 8279 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=4]{rotation:4}
+execute if score block bsc matches 8280 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=5]{rotation:5}
+execute if score block bsc matches 8281 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=6]{rotation:6}
+execute if score block bsc matches 8282 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=7]{rotation:7}
+execute if score block bsc matches 8283 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=8]{rotation:8}
+execute if score block bsc matches 8284 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=9]{rotation:9}
+execute if score block bsc matches 8285 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=10]{rotation:10}
+execute if score block bsc matches 8286 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=11]{rotation:11}
+execute if score block bsc matches 8287 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=12]{rotation:12}
+execute if score block bsc matches 8288 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=13]{rotation:13}
+execute if score block bsc matches 8289 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=14]{rotation:14}
+execute if score block bsc matches 8290 run setblock ~ ~ ~ minecraft:light_gray_banner[rotation=15]{rotation:15}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "EYL",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:shulker_shell"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "Y": {
+            "item": "minecraft:ender_chest"
+        },
+        "L": {
+            "item": "minecraft:lead"
+        }
+    },
+    "result": {
+        "item": "minecraft:shulker_box",
+        "count": 1,
+        "data": "{display:{Name:'{\"text\":\"Animal Box\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},animal_crystal:1}"
+    }
+}

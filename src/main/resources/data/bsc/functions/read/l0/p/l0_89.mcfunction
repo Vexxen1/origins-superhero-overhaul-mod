@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=true,part=head] run scoreboard players set block bsc 1209
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=true,part=foot] run scoreboard players set block bsc 1210
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=false,part=head] run scoreboard players set block bsc 1211
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=false,part=foot] run scoreboard players set block bsc 1212
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=true,part=head] run scoreboard players set block bsc 1213
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=true,part=foot] run scoreboard players set block bsc 1214
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=false,part=head] run scoreboard players set block bsc 1215
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=false,part=foot] run scoreboard players set block bsc 1216
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=true,part=head] run scoreboard players set block bsc 1217
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=true,part=foot] run scoreboard players set block bsc 1218
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=false,part=head] run scoreboard players set block bsc 1219
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=false,part=foot] run scoreboard players set block bsc 1220
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=true,part=head] run scoreboard players set block bsc 1221
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=true,part=foot] run scoreboard players set block bsc 1222
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=false,part=head] run scoreboard players set block bsc 1223
+execute if block ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=false,part=foot] run scoreboard players set block bsc 1224

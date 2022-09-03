@@ -1,0 +1,9 @@
+{
+    "0": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/spider.json",
+        "toggleable": false
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

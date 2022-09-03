@@ -1,0 +1,15 @@
+{
+    "name": "§6§nBattle Glory",
+    "description": "§c§lRarity: §r§bRare\n\n§cWeaken the enemy\n§3You weaken all not in your friends list when they are near you.\n\n§cStrengthen your allies\n§3You strengthen all in your friends list when they are near you.\n",
+    "powers": [
+        "powers:powers/battle_glory",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:iron_sword",
+        "amount": 1,
+        "tag": "{Enchantments:[{}]}"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

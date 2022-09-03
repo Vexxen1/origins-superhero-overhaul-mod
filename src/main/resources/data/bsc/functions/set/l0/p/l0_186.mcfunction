@@ -1,0 +1,16 @@
+execute if score block bsc matches 6884 run setblock ~ ~ ~ minecraft:comparator[facing=north,mode=compare,powered=true]{facing:north,mode:compare,powered:true}
+execute if score block bsc matches 6885 run setblock ~ ~ ~ minecraft:comparator[facing=north,mode=compare,powered=false]{facing:north,mode:compare,powered:false}
+execute if score block bsc matches 6886 run setblock ~ ~ ~ minecraft:comparator[facing=north,mode=subtract,powered=true]{facing:north,mode:subtract,powered:true}
+execute if score block bsc matches 6887 run setblock ~ ~ ~ minecraft:comparator[facing=north,mode=subtract,powered=false]{facing:north,mode:subtract,powered:false}
+execute if score block bsc matches 6888 run setblock ~ ~ ~ minecraft:comparator[facing=south,mode=compare,powered=true]{facing:south,mode:compare,powered:true}
+execute if score block bsc matches 6889 run setblock ~ ~ ~ minecraft:comparator[facing=south,mode=compare,powered=false]{facing:south,mode:compare,powered:false}
+execute if score block bsc matches 6890 run setblock ~ ~ ~ minecraft:comparator[facing=south,mode=subtract,powered=true]{facing:south,mode:subtract,powered:true}
+execute if score block bsc matches 6891 run setblock ~ ~ ~ minecraft:comparator[facing=south,mode=subtract,powered=false]{facing:south,mode:subtract,powered:false}
+execute if score block bsc matches 6892 run setblock ~ ~ ~ minecraft:comparator[facing=west,mode=compare,powered=true]{facing:west,mode:compare,powered:true}
+execute if score block bsc matches 6893 run setblock ~ ~ ~ minecraft:comparator[facing=west,mode=compare,powered=false]{facing:west,mode:compare,powered:false}
+execute if score block bsc matches 6894 run setblock ~ ~ ~ minecraft:comparator[facing=west,mode=subtract,powered=true]{facing:west,mode:subtract,powered:true}
+execute if score block bsc matches 6895 run setblock ~ ~ ~ minecraft:comparator[facing=west,mode=subtract,powered=false]{facing:west,mode:subtract,powered:false}
+execute if score block bsc matches 6896 run setblock ~ ~ ~ minecraft:comparator[facing=east,mode=compare,powered=true]{facing:east,mode:compare,powered:true}
+execute if score block bsc matches 6897 run setblock ~ ~ ~ minecraft:comparator[facing=east,mode=compare,powered=false]{facing:east,mode:compare,powered:false}
+execute if score block bsc matches 6898 run setblock ~ ~ ~ minecraft:comparator[facing=east,mode=subtract,powered=true]{facing:east,mode:subtract,powered:true}
+execute if score block bsc matches 6899 run setblock ~ ~ ~ minecraft:comparator[facing=east,mode=subtract,powered=false]{facing:east,mode:subtract,powered:false}

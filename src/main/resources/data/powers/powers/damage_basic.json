@@ -1,0 +1,2517 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 1,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 2
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 2,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 3
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 3,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 4
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 4,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 5
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 5,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 6
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 6,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 7
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 7,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 8
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 8,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 9
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 9,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 10
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 10,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 11
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 11,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 12
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 12,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 13
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 13,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 14
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 14,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 15
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 15,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 16
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 16,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 17
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 17,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 18
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 18,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 19
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 19,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 20
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 20,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 21
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 21,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 22
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 22,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 23
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 23,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 24
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 24,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 25
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 25,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 26
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 26,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 27
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 27,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 28,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 29,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 30
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 30,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 31
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 31,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 32
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 32,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 33
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 33,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 34
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 34,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 35
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 35,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 36
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 36,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 37
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 37,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 38
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 38,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 39
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 39,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 40
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 40,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 41
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 41,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 42
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 42,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 43
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 43,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 44
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 44,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 45
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 45,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 46
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 46,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 47
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 47,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 48
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 48,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 49
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 49,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 50
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 50,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 51
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 51,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 52
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 52,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 53
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 53,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 54
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 54,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 55
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 55,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 56
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 56,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 57
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 57,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 58
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 58,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 59
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 59,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 60
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 60,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 61
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 61,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 62
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 62,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 63
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 63,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 64
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 64,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 65
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 65,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 66
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 66,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 67
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 67,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 68
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 68,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 69
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 69,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 70
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 70,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 71
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 71,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 72
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 72,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 73
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 73,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 74
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 74,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 75
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 75,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 76
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 76,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 77
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 77,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 78
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 78,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 79
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 79,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 80
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 80,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 81
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 81,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 82
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 82,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 83
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 83,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 84
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 84,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 85
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 85,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 86
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 86,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 87
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 87,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 88
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 88,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 89
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 89,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 90
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 90,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 91
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 91,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 92
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 92,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 93
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 93,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 94
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 94,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 95
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 95,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 96
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 96,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 97
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 97,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 98
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 98,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": "==",
+                        "compare_to": 99
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 99,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "damage",
+                        "comparison": ">=",
+                        "compare_to": 100
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 100,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s damage 0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "power revoke @s powers:damage_basic"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

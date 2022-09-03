@@ -1,0 +1,8 @@
+execute if score block bsc matches 4174 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:purple_stained_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4175 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:blue_stained_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4176 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:brown_stained_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4177 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:green_stained_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4178 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:red_stained_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4179 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:black_stained_glass",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 4180..4243 run function bsc:falling/l0/p/l0_119
+execute if score block bsc matches 4244..4307 run function bsc:falling/l0/p/l0_120

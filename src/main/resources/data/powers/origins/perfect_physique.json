@@ -1,0 +1,13 @@
+{
+    "name": "§6§nPerfect Physique",
+    "description": "§c§lRarity: §rCommon\n\n§cLess Friction\n§3Due to your running technique you have less friction and can run faster. \n\n§cB-Hoping\n§3You can just farther, and move faster by jumping\n\n§cWall-Running\n§3You can run on walls, and climb them. The more you stay on them the more you lose stamina, and will eventually slip off. You can also jump off of walls. \n\n§cFall Damage Canceling\n§3By holding space before you hit the ground, you cancel fall damage. ",
+    "powers": [
+        "powers:powers/perfect_physique"
+    ],
+    "icon": {
+        "item": "minecraft:cooked_rabbit",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

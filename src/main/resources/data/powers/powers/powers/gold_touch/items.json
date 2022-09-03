@@ -1,0 +1,1222 @@
+{
+    "0": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:pickaxes"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:pickaxes"
+                        }
+                    }
+                }
+            ]
+        },
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:mineable/pickaxe"
+        },
+        "allow": true
+    },
+    "1": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "function powers:powers/gold_touch/hand/save"
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:apple"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_apple"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:blaze_powder"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item modify entity @s weapon.mainhand powers:power_powder/gold_touch"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:apple"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_apple"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:carrot"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_carrot"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:carrot"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_carrot"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:axes"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_axe"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_axe"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:axes"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_axe"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_axe"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:hoes"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_hoe"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_hoe"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:hoes"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_hoe"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_hoe"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:pickaxes"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_pickaxe"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_pickaxe"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:pickaxes"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_pickaxe"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_pickaxe"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:shovels"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_shovel"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_shovel"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:shovels"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_shovel"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_shovel"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:swords"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_sword"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_sword"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "c:swords"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_sword"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_sword"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:boots"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_boots"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:boots"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_boots"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_boots"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:helmet"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_helmet"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:helmet"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_helmet"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_helmet"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:chestplate"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_chestplate"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_chestplate"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:chestplate"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_chestplate"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_chestplate"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:horse_armor"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_horse_armor"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_horse_armor"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:horse_armor"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_horse_armor"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_horse_armor"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:leggings"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_leggings"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.mainhand with minecraft:golden_leggings"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replacem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "offhand",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "tag": "powers:leggings"
+                                            }
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:golden_leggings"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "item replace entity @s weapon.offhand with minecraft:golden_leggings"
+                                    },
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "tag @s add replaceo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/gold_touch/hand/loado"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/gold_touch/hand/loadm"
+                }
+            ]
+        }
+    },
+    "name": "Gold Touch Items",
+    "description": "Items become gold",
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "inverted": true,
+                                    "type": "origins:empty"
+                                },
+                                {
+                                    "inverted": true,
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:golden_helmet"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "function powers:powers/gold_touch/armor/head"
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "feet",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "inverted": true,
+                                    "type": "origins:empty"
+                                },
+                                {
+                                    "inverted": true,
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:golden_boots"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "function powers:powers/gold_touch/armor/boots"
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "chest",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "inverted": true,
+                                    "type": "origins:empty"
+                                },
+                                {
+                                    "inverted": true,
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:golden_chestplate"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "function powers:powers/gold_touch/armor/chest"
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "legs",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "inverted": true,
+                                    "type": "origins:empty"
+                                },
+                                {
+                                    "inverted": true,
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:golden_leggings"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "function powers:powers/gold_touch/armor/legs"
+                    }
+                }
+            ]
+        }
+    },
+    "0__": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:axes"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:axes"
+                        }
+                    }
+                }
+            ]
+        },
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:mineable/axe"
+        },
+        "allow": true
+    },
+    "0___": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:shovels"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:shovels"
+                        }
+                    }
+                }
+            ]
+        },
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:mineable/shovel"
+        },
+        "allow": true
+    },
+    "0____": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:hoes"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "c:hoes"
+                        }
+                    }
+                }
+            ]
+        },
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:mineable/hoe"
+        },
+        "allow": true
+    }
+}

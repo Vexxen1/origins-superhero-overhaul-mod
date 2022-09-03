@@ -1,0 +1,13 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{link:-1,display:{Name:'{\"text\":\"Ender Link\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},ender_link:1,Enchantments:[{}]}"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [],
+      "replace": true
+    }
+  ]
+  

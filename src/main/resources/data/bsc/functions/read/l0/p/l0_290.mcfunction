@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:command_block[conditional=true,facing=north] run scoreboard players set block bsc 5850
+execute if block ~ ~ ~ minecraft:command_block[conditional=true,facing=east] run scoreboard players set block bsc 5851
+execute if block ~ ~ ~ minecraft:command_block[conditional=true,facing=south] run scoreboard players set block bsc 5852
+execute if block ~ ~ ~ minecraft:command_block[conditional=true,facing=west] run scoreboard players set block bsc 5853
+execute if block ~ ~ ~ minecraft:command_block[conditional=true,facing=up] run scoreboard players set block bsc 5854
+execute if block ~ ~ ~ minecraft:command_block[conditional=true,facing=down] run scoreboard players set block bsc 5855
+execute if block ~ ~ ~ minecraft:command_block[conditional=false,facing=north] run scoreboard players set block bsc 5856
+execute if block ~ ~ ~ minecraft:command_block[conditional=false,facing=east] run scoreboard players set block bsc 5857
+execute if block ~ ~ ~ minecraft:command_block[conditional=false,facing=south] run scoreboard players set block bsc 5858
+execute if block ~ ~ ~ minecraft:command_block[conditional=false,facing=west] run scoreboard players set block bsc 5859
+execute if block ~ ~ ~ minecraft:command_block[conditional=false,facing=up] run scoreboard players set block bsc 5860
+execute if block ~ ~ ~ minecraft:command_block[conditional=false,facing=down] run scoreboard players set block bsc 5861

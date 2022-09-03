@@ -1,0 +1,21 @@
+{
+    "0": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:execute_command",
+            "command": "execute unless entity @s[tag=power_disable] run function powers:one_of_a_kind/add"
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute unless entity @s[tag=removed_power] unless entity @s[tag=power_disable] run function powers:one_of_a_kind/remove"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

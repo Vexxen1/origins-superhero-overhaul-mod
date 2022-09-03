@@ -1,0 +1,10 @@
+{
+    "name": "§6§nNone",
+    "description": "§c§lRarity: §r§3§lImposible\n",
+    "icon": {
+        "item": "minecraft:barrier",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,469 @@
+{
+    "0": {
+        "type": "origins:prevent_sleep",
+        "message": "You are too big",
+        "set_spawn_point": true
+    },
+    "1": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "operation": "addition",
+                "value": 10
+            },
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "addition",
+                "value": -9999
+            },
+            {
+                "attribute": "minecraft:generic.armor",
+                "operation": "addition",
+                "value": 20
+            },
+            {
+                "attribute": "minecraft:generic.armor_toughness",
+                "operation": "addition",
+                "value": 20
+            }
+        ],
+        "tick_rate": 1,
+        "update_health": true
+    },
+    "2": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:power_active",
+                                "power": "*:*_big_blocks"
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:raycast",
+                        "distance": 40,
+                        "block": true,
+                        "entity": false,
+                        "shape_type": "outline",
+                        "fluid_handling": "any",
+                        "block_action": {
+                            "type": "origins:execute_command",
+                            "command": "function powers:powers/huge/block_highlight"
+                        },
+                        "miss_action": {
+                            "type": "origins:execute_command",
+                            "command": "kill @e[tag=sel]"
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:execute_command",
+                        "command": "kill @e[tag=sel]"
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run function powers:powers/huge/loop"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[tag=sel]"
+                }
+            ]
+        }
+    },
+    "3": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_big_blocks"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add pickup"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.attack"
+        }
+    },
+    "6": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:damage",
+                    "amount": 20,
+                    "source": {
+                        "name": "player"
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:explosion_emitter"
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "7": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "powers:small"
+            }
+        }
+    },
+    "9": {
+        "type": "origins:modify_food",
+        "food_modifier": {
+            "operation": "multiply_total",
+            "value": 0.2
+        },
+        "saturation_modifier": {
+            "operation": "multiply_total",
+            "value": 0.2
+        },
+        "prevent_effects": true
+    },
+    "11": {
+        "type": "origins:effect_immunity",
+        "inverted": true,
+        "effect": "minecraft:luck"
+    },
+    "12": {
+        "type": "origins:self_action_on_kill",
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:pig"
+        },
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 9,
+            "saturation": 5.4
+        },
+        "cooldown": 1
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/huge/scale"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                }
+            ]
+        },
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/huge/scale"
+                }
+            ]
+        },
+        "entity_action_removed": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                }
+            ]
+        },
+        "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/huge/scale"
+                }
+            ]
+        }
+    },
+    "3__": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{megablock:1}"
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_big_blocks"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add place"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "big_blocks": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "primary",
+        "retain_state": true
+    },
+    "7_": {
+        "type": "origins:conditioned_restrict_armor",
+        "head": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "powers:small"
+            }
+        },
+        "chest": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "powers:small"
+            }
+        },
+        "legs": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "powers:small"
+            }
+        },
+        "feet": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "powers:small"
+            }
+        },
+        "tick_rate": 80
+    },
+    "3_": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function vexxens_datapacks:friends/tag_friends"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:sneaking"
+                    },
+                    "if_action": {
+                        "type": "origins:raycast",
+                        "distance": 40,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "outline",
+                        "fluid_handling": "any",
+                        "bientity_condition": {
+                            "type": "origins:target_condition",
+                            "condition": {
+                                "type": "origins:command",
+                                "command": "execute unless entity @s[tag=friend] run scoreboard players get 1 num",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        },
+                        "bientity_action": {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:target_condition",
+                                "condition": {
+                                    "inverted": true,
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:health",
+                                            "comparison": "<=",
+                                            "compare_to": 20
+                                        },
+                                        {
+                                            "type": "origins:in_tag",
+                                            "tag": "powers:food"
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:damage",
+                                    "amount": 20,
+                                    "source": {
+                                        "name": "player"
+                                    }
+                                }
+                            },
+                            "else_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:target_action",
+                                        "action": {
+                                            "type": "origins:damage",
+                                            "amount": 20,
+                                            "source": {
+                                                "name": "player"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:actor_action",
+                                        "action": {
+                                            "type": "origins:feed",
+                                            "food": 12,
+                                            "saturation": 5.4
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:raycast",
+                        "distance": 40,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "outline",
+                        "fluid_handling": "any",
+                        "bientity_action": {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:target_condition",
+                                "condition": {
+                                    "inverted": true,
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:health",
+                                            "comparison": "<=",
+                                            "compare_to": 20
+                                        },
+                                        {
+                                            "type": "origins:in_tag",
+                                            "tag": "powers:food"
+                                        }
+                                    ]
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:damage",
+                                    "amount": 20,
+                                    "source": {
+                                        "name": "player"
+                                    }
+                                }
+                            },
+                            "else_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:target_action",
+                                        "action": {
+                                            "type": "origins:damage",
+                                            "amount": 20,
+                                            "source": {
+                                                "name": "player"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:actor_action",
+                                        "action": {
+                                            "type": "origins:feed",
+                                            "food": 12,
+                                            "saturation": 5.4
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @e[tag=friend] remove friend"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.attack"
+        }
+    }
+}

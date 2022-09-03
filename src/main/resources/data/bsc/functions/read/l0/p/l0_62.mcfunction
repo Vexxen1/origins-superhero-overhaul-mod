@@ -1,0 +1,14 @@
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=1,persistent=true] run scoreboard players set block bsc 148
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=1,persistent=false] run scoreboard players set block bsc 149
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=2,persistent=true] run scoreboard players set block bsc 150
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=2,persistent=false] run scoreboard players set block bsc 151
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=3,persistent=true] run scoreboard players set block bsc 152
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=3,persistent=false] run scoreboard players set block bsc 153
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=4,persistent=true] run scoreboard players set block bsc 154
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=4,persistent=false] run scoreboard players set block bsc 155
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=5,persistent=true] run scoreboard players set block bsc 156
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=5,persistent=false] run scoreboard players set block bsc 157
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=6,persistent=true] run scoreboard players set block bsc 158
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=6,persistent=false] run scoreboard players set block bsc 159
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=7,persistent=true] run scoreboard players set block bsc 160
+execute if block ~ ~ ~ minecraft:oak_leaves[distance=7,persistent=false] run scoreboard players set block bsc 161

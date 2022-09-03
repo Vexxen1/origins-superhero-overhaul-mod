@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:barrier"
+        }
+    },
+    "result": {
+        "item": "minecraft:barrier",
+        "data": "{a:1}",
+        "count": 4
+    }
+}

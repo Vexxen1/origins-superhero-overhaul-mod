@@ -1,0 +1,661 @@
+{
+    "9": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[tag=speed] run scoreboard players get 1 num",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 5,
+                    "space": "local",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s anchored eyes run particle minecraft:flash ^ ^ ^1 0 0 0 1 1 force"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:dust 0 0 1 1 ~ ~ ~ 0.25 0.25 0.25 1 100 force"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove speed"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2 2"
+                }
+            ]
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s remove speed"
+        }
+    },
+    "10": {
+        "type": "origins:prevent_death",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "fall"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "flyIntoWall"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "1_": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:fall_flying"
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "scoreboard players set 1 num 1"
+                    },
+                    {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[tag=speed] run scoreboard players get 1 num",
+                            "comparison": ">=",
+                            "compare_to": 1
+                        },
+                        "if_action": {
+                            "type": "origins:if_else_list",
+                            "actions": [
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=!w,tag=!a,tag=!s,tag=!d,tag=!space] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.8,
+                                                "z": 0.8,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 0.1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=space,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 1.2,
+                                                "z": 0.4,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 0.1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=w,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.4,
+                                                "z": 1.2,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 0.1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=s,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.05,
+                                                "z": -0.35,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true,
+                                                "set": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 3
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=a,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "x": 1.2,
+                                                "y": 0.4,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=d,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "x": -1.2,
+                                                "y": 0.4,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 2
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "else_action": {
+                            "type": "origins:if_else_list",
+                            "actions": [
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=!w,tag=!a,tag=!s,tag=!d,tag=!space] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 2"
+                                            },
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.1,
+                                                "z": 0.1,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 0.1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=space,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 2"
+                                            },
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.15,
+                                                "z": 0.05,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 0.1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=w,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 2"
+                                            },
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.05,
+                                                "z": 0.15,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 0.1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=s,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 2"
+                                            },
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "y": 0.05,
+                                                "z": -0.35,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true,
+                                                "set": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 3
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=a,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 2"
+                                            },
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "x": 0.35,
+                                                "y": 0.05,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "type": "origins:command",
+                                        "command": "execute if entity @s[tag=d,tag=!done] run scoreboard players get 1 num",
+                                        "comparison": ">=",
+                                        "compare_to": 1
+                                    },
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 2"
+                                            },
+                                            {
+                                                "type": "origins:execute_command",
+                                                "command": "tag @s add done"
+                                            },
+                                            {
+                                                "type": "origins:add_velocity",
+                                                "x": -0.35,
+                                                "y": 0.05,
+                                                "space": "local",
+                                                "client": true,
+                                                "server": true
+                                            },
+                                            {
+                                                "type": "origins:exhaust",
+                                                "amount": 2
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove done"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove w"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove a"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove d"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove s"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove space"
+                    }
+                ]
+            }
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.sneak"
+        }
+    },
+    "1___": {
+        "condition": {
+            "type": "origins:fall_flying"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add speed"
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        }
+    },
+    "1____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add s"
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.back",
+            "continuous": true
+        }
+    },
+    "1_____": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add a"
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.left",
+            "continuous": true
+        }
+    },
+    "1______": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add d"
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.right",
+            "continuous": true
+        }
+    },
+    "1_______": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add space"
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.jump",
+            "continuous": true
+        }
+    },
+    "0_": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true
+    },
+    "2_": {
+        "type": "origins:conditioned_restrict_armor",
+        "chest": {
+            "inverted": true,
+            "type": "origins:ingredient",
+            "ingredient": [
+                {
+                    "item": "minecraft:chainmail_chestplate"
+                },
+                {
+                    "item": "minecraft:leather_chestplate"
+                }
+            ]
+        },
+        "tick_rate": 1
+    },
+    "1________": {
+        "condition": {
+            "type": "origins:fall_flying"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add w"
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.forward",
+            "continuous": true
+        }
+    }
+}

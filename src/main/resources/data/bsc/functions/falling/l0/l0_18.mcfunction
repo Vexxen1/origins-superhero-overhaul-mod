@@ -1,0 +1,8 @@
+execute if score block bsc matches 1488 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:bookshelf",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 1489 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:mossy_cobblestone",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 1490 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:obsidian",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 1491 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:torch",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 1492..1495 run function bsc:falling/l0/p/l0_68
+execute if score block bsc matches 1496..2007 run function bsc:falling/l0/p/l0_69
+execute if score block bsc matches 2008 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:soul_fire",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 2009 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:spawner",Properties:{}},Time:1,Tags:["bsc_falling"]}]}

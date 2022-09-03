@@ -1,0 +1,12 @@
+execute if score block bsc matches 5850 run setblock ~ ~ ~ minecraft:command_block[conditional=true,facing=north]{conditional:true,facing:north}
+execute if score block bsc matches 5851 run setblock ~ ~ ~ minecraft:command_block[conditional=true,facing=east]{conditional:true,facing:east}
+execute if score block bsc matches 5852 run setblock ~ ~ ~ minecraft:command_block[conditional=true,facing=south]{conditional:true,facing:south}
+execute if score block bsc matches 5853 run setblock ~ ~ ~ minecraft:command_block[conditional=true,facing=west]{conditional:true,facing:west}
+execute if score block bsc matches 5854 run setblock ~ ~ ~ minecraft:command_block[conditional=true,facing=up]{conditional:true,facing:up}
+execute if score block bsc matches 5855 run setblock ~ ~ ~ minecraft:command_block[conditional=true,facing=down]{conditional:true,facing:down}
+execute if score block bsc matches 5856 run setblock ~ ~ ~ minecraft:command_block[conditional=false,facing=north]{conditional:false,facing:north}
+execute if score block bsc matches 5857 run setblock ~ ~ ~ minecraft:command_block[conditional=false,facing=east]{conditional:false,facing:east}
+execute if score block bsc matches 5858 run setblock ~ ~ ~ minecraft:command_block[conditional=false,facing=south]{conditional:false,facing:south}
+execute if score block bsc matches 5859 run setblock ~ ~ ~ minecraft:command_block[conditional=false,facing=west]{conditional:false,facing:west}
+execute if score block bsc matches 5860 run setblock ~ ~ ~ minecraft:command_block[conditional=false,facing=up]{conditional:false,facing:up}
+execute if score block bsc matches 5861 run setblock ~ ~ ~ minecraft:command_block[conditional=false,facing=down]{conditional:false,facing:down}

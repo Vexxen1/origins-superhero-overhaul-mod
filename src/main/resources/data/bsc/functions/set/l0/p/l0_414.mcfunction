@@ -1,0 +1,12 @@
+execute if score block bsc matches 15041 run setblock ~ ~ ~ minecraft:barrel[facing=north,open=true]{facing:north,open:true}
+execute if score block bsc matches 15042 run setblock ~ ~ ~ minecraft:barrel[facing=north,open=false]{facing:north,open:false}
+execute if score block bsc matches 15043 run setblock ~ ~ ~ minecraft:barrel[facing=east,open=true]{facing:east,open:true}
+execute if score block bsc matches 15044 run setblock ~ ~ ~ minecraft:barrel[facing=east,open=false]{facing:east,open:false}
+execute if score block bsc matches 15045 run setblock ~ ~ ~ minecraft:barrel[facing=south,open=true]{facing:south,open:true}
+execute if score block bsc matches 15046 run setblock ~ ~ ~ minecraft:barrel[facing=south,open=false]{facing:south,open:false}
+execute if score block bsc matches 15047 run setblock ~ ~ ~ minecraft:barrel[facing=west,open=true]{facing:west,open:true}
+execute if score block bsc matches 15048 run setblock ~ ~ ~ minecraft:barrel[facing=west,open=false]{facing:west,open:false}
+execute if score block bsc matches 15049 run setblock ~ ~ ~ minecraft:barrel[facing=up,open=true]{facing:up,open:true}
+execute if score block bsc matches 15050 run setblock ~ ~ ~ minecraft:barrel[facing=up,open=false]{facing:up,open:false}
+execute if score block bsc matches 15051 run setblock ~ ~ ~ minecraft:barrel[facing=down,open=true]{facing:down,open:true}
+execute if score block bsc matches 15052 run setblock ~ ~ ~ minecraft:barrel[facing=down,open=false]{facing:down,open:false}

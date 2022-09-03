@@ -1,0 +1,463 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:block_collision",
+                                        "offset_x": -0.01,
+                                        "offset_y": 0,
+                                        "offset_z": -0.01
+                                    },
+                                    {
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0.01,
+                                        "offset_y": 0,
+                                        "offset_z": 0.01
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:block_collision",
+                                "offset_x": 0,
+                                "offset_y": -0.01,
+                                "offset_z": 0
+                            },
+                            {
+                                "type": "origins:moving"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:levitation",
+                                    "duration": 2,
+                                    "amplifier": -1,
+                                    "show_particles": true,
+                                    "show_icon": true
+                                }
+                            },
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "*:*_wallrunt",
+                                    "comparison": "!=",
+                                    "compare_to": 0
+                                },
+                                "if_action": {
+                                    "type": "origins:add_velocity",
+                                    "z": 0.75,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "set": true
+                                },
+                                "else_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:add_velocity",
+                                            "z": 0.375,
+                                            "space": "local_horizontal",
+                                            "client": true,
+                                            "server": true,
+                                            "set": true
+                                        },
+                                        {
+                                            "type": "origins:add_velocity",
+                                            "y": -0.2,
+                                            "space": "local_horizontal",
+                                            "client": true,
+                                            "server": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "resource change @s powers:powers/perfect_physique_wallrunt -1"
+                            },
+                            {
+                                "type": "origins:chance",
+                                "chance": 0.5,
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "playsound minecraft:block.stone.step player @a ~ ~ ~"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "tag @s add wallrun"
+                            }
+                        ]
+                    },
+                    "else_action": {
+                        "type": "origins:if_else",
+                        "else_action": {
+                            "type": "origins:execute_command",
+                            "command": "resource set @s powers:powers/perfect_physique_wallrunt 9999"
+                        },
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:or",
+                                            "conditions": [
+                                                {
+                                                    "type": "origins:block_collision",
+                                                    "offset_x": -0.01,
+                                                    "offset_y": 0,
+                                                    "offset_z": -0.01
+                                                },
+                                                {
+                                                    "type": "origins:block_collision",
+                                                    "offset_x": 0.01,
+                                                    "offset_y": 0,
+                                                    "offset_z": 0.01
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "inverted": true,
+                                            "type": "origins:block_collision",
+                                            "offset_x": 0,
+                                            "offset_y": -0.01,
+                                            "offset_z": 0
+                                        },
+                                        {
+                                            "type": "origins:sneaking"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "origins:resource",
+                                    "resource": "*:*_wallrunt",
+                                    "comparison": "!=",
+                                    "compare_to": 0
+                                }
+                            ]
+                        },
+                        "if_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:apply_effect",
+                                    "effect": {
+                                        "effect": "minecraft:levitation",
+                                        "duration": 2,
+                                        "amplifier": -1,
+                                        "show_particles": true,
+                                        "show_icon": true
+                                    }
+                                },
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "resource change @s powers:powers/perfect_physique_wallrunt -1"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove wallrun"
+                }
+            ]
+        }
+    },
+    "1": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:step_height 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1.25"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:step_height 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1"
+                }
+            ]
+        },
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:step_height 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1.25"
+                }
+            ]
+        },
+        "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:step_height 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1.25"
+                }
+            ]
+        }
+    },
+    "2": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "addition",
+                "value": 0.1
+            },
+            {
+                "attribute": "minecraft:generic.armor",
+                "operation": "addition",
+                "value": 2
+            },
+            {
+                "attribute": "minecraft:generic.attack_knockback",
+                "operation": "addition",
+                "value": 1
+            },
+            {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "operation": "addition",
+                "value": 0.5
+            }
+        ],
+        "update_health": true
+    },
+    "4": {
+        "condition": {
+            "type": "origins:sprinting"
+        },
+        "type": "origins:modify_slipperiness",
+        "modifiers": [
+            {
+                "operation": "multiply_total",
+                "value": 0
+            },
+            {
+                "operation": "addition",
+                "value": 0.3
+            }
+        ]
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "wallrunt": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 15,
+        "start_value": 15,
+        "hud_render": {
+            "should_render": true
+        }
+    },
+    "1_": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:block_collision",
+                                        "offset_x": -0.01,
+                                        "offset_y": 0,
+                                        "offset_z": -0.01
+                                    },
+                                    {
+                                        "type": "origins:block_collision",
+                                        "offset_x": 0.01,
+                                        "offset_y": 0,
+                                        "offset_z": 0.01
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:block_collision",
+                                "offset_x": 0,
+                                "offset_y": -0.01,
+                                "offset_z": 0
+                            },
+                            {
+                                "type": "origins:moving"
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:block_collision",
+                                    "offset_x": 0.01,
+                                    "offset_y": 0,
+                                    "offset_z": 0
+                                },
+                                "action": {
+                                    "type": "origins:add_velocity",
+                                    "x": -0.5,
+                                    "y": 0.3,
+                                    "space": "world",
+                                    "client": true,
+                                    "server": true
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:block_collision",
+                                    "offset_x": -0.01,
+                                    "offset_y": 0,
+                                    "offset_z": 0
+                                },
+                                "action": {
+                                    "type": "origins:add_velocity",
+                                    "x": 0.5,
+                                    "y": 0.3,
+                                    "space": "world",
+                                    "client": true,
+                                    "server": true
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:block_collision",
+                                    "offset_x": 0,
+                                    "offset_y": 0,
+                                    "offset_z": -0.01
+                                },
+                                "action": {
+                                    "type": "origins:add_velocity",
+                                    "y": 0.3,
+                                    "z": 0.5,
+                                    "space": "world",
+                                    "client": true,
+                                    "server": true
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:block_collision",
+                                    "offset_x": 0,
+                                    "offset_y": 0,
+                                    "offset_z": 0.01
+                                },
+                                "action": {
+                                    "type": "origins:add_velocity",
+                                    "y": 0.3,
+                                    "z": -0.5,
+                                    "space": "world",
+                                    "client": true,
+                                    "server": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0,
+                        "offset_y": -1,
+                        "offset_z": 0
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:set_fall_distance",
+                                "fall_distance": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block_collision",
+                                "offset_x": 0,
+                                "offset_y": -0.01,
+                                "offset_z": 0
+                            },
+                            {
+                                "type": "origins:sprinting"
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.5,
+                        "z": 0.75,
+                        "space": "local_horizontal",
+                        "client": true,
+                        "server": true
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.jump",
+            "continuous": true
+        }
+    }
+}

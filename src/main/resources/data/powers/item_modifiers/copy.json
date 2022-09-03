@@ -1,0 +1,138 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.display",
+        "target": "display",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.Enchantments",
+        "target": "Enchantments",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.HideFlags",
+        "target": "HideFlags",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.RepairCost",
+        "target": "RepairCost",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.Unbreakable",
+        "target": "Unbreakable",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.Damage",
+        "target": "Damage",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.CustomModelData",
+        "target": "CustomModelData",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.AttributeModifiers",
+        "target": "AttributeModifiers",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "powers:temp"
+    },
+    "ops": [
+      {
+        "source": "data4.AttributeModifiers",
+        "target": "AttributeModifiers",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_count",
+    "count": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "datatransfur",
+      "scale": 1
+    },
+    "add": false
+  }
+]

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:ender_pearl",
+            "data": "{display:{Name:'{\"text\":\"Ender Link\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},Enchantments:[{}],ender_link:1}"
+        },
+        "S": {
+            "item": "minecraft:bundle"
+        }
+    },
+    "result": {
+        "item": "enderbundle:enderbundle",
+        "count": 1
+    },
+    "group": "ender"
+}

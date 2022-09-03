@@ -1,0 +1,12 @@
+execute if score block bsc matches 9487 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=north]{conditional:true,facing:north}
+execute if score block bsc matches 9488 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=east]{conditional:true,facing:east}
+execute if score block bsc matches 9489 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=south]{conditional:true,facing:south}
+execute if score block bsc matches 9490 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=west]{conditional:true,facing:west}
+execute if score block bsc matches 9491 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=up]{conditional:true,facing:up}
+execute if score block bsc matches 9492 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=true,facing=down]{conditional:true,facing:down}
+execute if score block bsc matches 9493 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=north]{conditional:false,facing:north}
+execute if score block bsc matches 9494 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=east]{conditional:false,facing:east}
+execute if score block bsc matches 9495 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=south]{conditional:false,facing:south}
+execute if score block bsc matches 9496 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=west]{conditional:false,facing:west}
+execute if score block bsc matches 9497 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=up]{conditional:false,facing:up}
+execute if score block bsc matches 9498 run setblock ~ ~ ~ minecraft:chain_command_block[conditional=false,facing=down]{conditional:false,facing:down}

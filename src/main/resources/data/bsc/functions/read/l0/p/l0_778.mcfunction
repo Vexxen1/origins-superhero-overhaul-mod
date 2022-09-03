@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:white_candle[candles=1,lit=true,waterlogged=true] run scoreboard players set block bsc 17374
+execute if block ~ ~ ~ minecraft:white_candle[candles=1,lit=true,waterlogged=false] run scoreboard players set block bsc 17375
+execute if block ~ ~ ~ minecraft:white_candle[candles=1,lit=false,waterlogged=true] run scoreboard players set block bsc 17376
+execute if block ~ ~ ~ minecraft:white_candle[candles=1,lit=false,waterlogged=false] run scoreboard players set block bsc 17377
+execute if block ~ ~ ~ minecraft:white_candle[candles=2,lit=true,waterlogged=true] run scoreboard players set block bsc 17378
+execute if block ~ ~ ~ minecraft:white_candle[candles=2,lit=true,waterlogged=false] run scoreboard players set block bsc 17379
+execute if block ~ ~ ~ minecraft:white_candle[candles=2,lit=false,waterlogged=true] run scoreboard players set block bsc 17380
+execute if block ~ ~ ~ minecraft:white_candle[candles=2,lit=false,waterlogged=false] run scoreboard players set block bsc 17381
+execute if block ~ ~ ~ minecraft:white_candle[candles=3,lit=true,waterlogged=true] run scoreboard players set block bsc 17382
+execute if block ~ ~ ~ minecraft:white_candle[candles=3,lit=true,waterlogged=false] run scoreboard players set block bsc 17383
+execute if block ~ ~ ~ minecraft:white_candle[candles=3,lit=false,waterlogged=true] run scoreboard players set block bsc 17384
+execute if block ~ ~ ~ minecraft:white_candle[candles=3,lit=false,waterlogged=false] run scoreboard players set block bsc 17385
+execute if block ~ ~ ~ minecraft:white_candle[candles=4,lit=true,waterlogged=true] run scoreboard players set block bsc 17386
+execute if block ~ ~ ~ minecraft:white_candle[candles=4,lit=true,waterlogged=false] run scoreboard players set block bsc 17387
+execute if block ~ ~ ~ minecraft:white_candle[candles=4,lit=false,waterlogged=true] run scoreboard players set block bsc 17388
+execute if block ~ ~ ~ minecraft:white_candle[candles=4,lit=false,waterlogged=false] run scoreboard players set block bsc 17389

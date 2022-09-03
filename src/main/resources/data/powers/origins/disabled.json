@@ -1,0 +1,13 @@
+{
+    "name": "§6§nDisabled",
+    "description": "§c§lRarity: §rCommon\n",
+    "powers": [
+        "powers:powers/power_disable/power_disabled"
+    ],
+    "icon": {
+        "item": "minecraft:barrier",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:barrel[facing=north,open=true] run scoreboard players set block bsc 15041
+execute if block ~ ~ ~ minecraft:barrel[facing=north,open=false] run scoreboard players set block bsc 15042
+execute if block ~ ~ ~ minecraft:barrel[facing=east,open=true] run scoreboard players set block bsc 15043
+execute if block ~ ~ ~ minecraft:barrel[facing=east,open=false] run scoreboard players set block bsc 15044
+execute if block ~ ~ ~ minecraft:barrel[facing=south,open=true] run scoreboard players set block bsc 15045
+execute if block ~ ~ ~ minecraft:barrel[facing=south,open=false] run scoreboard players set block bsc 15046
+execute if block ~ ~ ~ minecraft:barrel[facing=west,open=true] run scoreboard players set block bsc 15047
+execute if block ~ ~ ~ minecraft:barrel[facing=west,open=false] run scoreboard players set block bsc 15048
+execute if block ~ ~ ~ minecraft:barrel[facing=up,open=true] run scoreboard players set block bsc 15049
+execute if block ~ ~ ~ minecraft:barrel[facing=up,open=false] run scoreboard players set block bsc 15050
+execute if block ~ ~ ~ minecraft:barrel[facing=down,open=true] run scoreboard players set block bsc 15051
+execute if block ~ ~ ~ minecraft:barrel[facing=down,open=false] run scoreboard players set block bsc 15052

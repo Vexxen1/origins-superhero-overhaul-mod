@@ -1,0 +1,20 @@
+{
+    "name": "§6§nSpider",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cPart-Spider\n§3You gain the abilities of a spider. Specifically Climbing, Silk production, web movement, web sensing, spider eyes, and night vision. Toggle climbing with primary. Produce Silk with secondary. Craft a web with 2 string. ",
+    "powers": [
+        "powers:powers/spider_eyes/night_vision",
+        "powers:powers/spider_eyes/8eyes",
+        "powers:powers/spider_eyes/fragile",
+        "powers:powers/spider_eyes/carnivore",
+        "powers:powers/spider_eyes/walk",
+        "powers:powers/spider_eyes/master_of_webs",
+        "powers:powers/spider_eyes/arthropod",
+        "powers:powers/spider_eyes/string"
+    ],
+    "icon": {
+        "item": "minecraft:spider_eye",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

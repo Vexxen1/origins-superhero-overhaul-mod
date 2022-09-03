@@ -1,0 +1,138 @@
+{
+    "1": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function powers:powers/projectile_control/reload"
+        }
+    },
+    "2": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @s at @s anchored eyes run function powers:powers/projectile_control/raystart"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        }
+    },
+    "3": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "enchantment": "minecraft:quick_charge",
+                            "comparison": "==",
+                            "compare_to": 3
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:remove_enchantment",
+                                    "enchantment": "minecraft:quick_charge"
+                                },
+                                {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:quick"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "enchantment": "minecraft:quick_charge",
+                            "comparison": "==",
+                            "compare_to": 3
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:remove_enchantment",
+                                    "enchantment": "minecraft:quick_charge"
+                                },
+                                {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:quick"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "1_": {
+        "type": "origins:modify_projectile_damage",
+        "target_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add hit"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove hit"
+                    },
+                    "ticks": 1
+                }
+            ]
+        }
+    },
+    "2_": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/projectile_control/reset_all"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": "secondary"
+    }
+}

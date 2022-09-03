@@ -1,0 +1,16 @@
+execute if score block bsc matches 1209 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=true,part=head]{facing:north,occupied:true,part:head}
+execute if score block bsc matches 1210 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=true,part=foot]{facing:north,occupied:true,part:foot}
+execute if score block bsc matches 1211 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=false,part=head]{facing:north,occupied:false,part:head}
+execute if score block bsc matches 1212 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=north,occupied=false,part=foot]{facing:north,occupied:false,part:foot}
+execute if score block bsc matches 1213 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=true,part=head]{facing:south,occupied:true,part:head}
+execute if score block bsc matches 1214 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=true,part=foot]{facing:south,occupied:true,part:foot}
+execute if score block bsc matches 1215 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=false,part=head]{facing:south,occupied:false,part:head}
+execute if score block bsc matches 1216 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=south,occupied=false,part=foot]{facing:south,occupied:false,part:foot}
+execute if score block bsc matches 1217 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=true,part=head]{facing:west,occupied:true,part:head}
+execute if score block bsc matches 1218 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=true,part=foot]{facing:west,occupied:true,part:foot}
+execute if score block bsc matches 1219 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=false,part=head]{facing:west,occupied:false,part:head}
+execute if score block bsc matches 1220 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=west,occupied=false,part=foot]{facing:west,occupied:false,part:foot}
+execute if score block bsc matches 1221 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=true,part=head]{facing:east,occupied:true,part:head}
+execute if score block bsc matches 1222 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=true,part=foot]{facing:east,occupied:true,part:foot}
+execute if score block bsc matches 1223 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=false,part=head]{facing:east,occupied:false,part:head}
+execute if score block bsc matches 1224 run setblock ~ ~ ~ minecraft:light_gray_bed[facing=east,occupied=false,part=foot]{facing:east,occupied:false,part:foot}

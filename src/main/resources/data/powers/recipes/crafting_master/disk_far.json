@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "BLB",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:lime_dye"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        },
+        "L": {
+            "item": "minecraft:light_blue_dye"
+        },
+        "C": {
+            "item": "minecraft:clay_ball"
+        }
+    },
+    "result": {
+        "item": "minecraft:music_disc_far",
+        "count": 1
+    },
+    "group": "disks"
+}

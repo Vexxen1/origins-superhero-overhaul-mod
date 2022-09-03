@@ -1,0 +1,8 @@
+{
+    "values": [
+        "minecraft:lever",
+        "#minecraft:buttons",
+        "#minecraft:pressure_plates",
+        "redstone_wire"
+    ]
+}

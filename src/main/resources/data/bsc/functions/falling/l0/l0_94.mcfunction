@@ -1,0 +1,8 @@
+execute if score block bsc matches 16088 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:potted_crimson_fungus",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 16089 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:potted_warped_fungus",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 16090 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:potted_crimson_roots",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 16091 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:potted_warped_roots",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 16092 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:lodestone",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 16093 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:blackstone",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 16094..16173 run function bsc:falling/l0/p/l0_463
+execute if score block bsc matches 16174..16497 run function bsc:falling/l0/p/l0_464

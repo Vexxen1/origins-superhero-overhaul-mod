@@ -1,0 +1,217 @@
+{
+    "0": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:attack true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:height true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:width true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:held_item true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:height 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:attack 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:width 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:held_item 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:held_item 4"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                }
+            ]
+        },
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:attack true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:height true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:width true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:held_item true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:height 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:attack 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:width 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:held_item 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:held_item 4"
+                }
+            ]
+        },
+        "entity_action_removed": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                }
+            ]
+        }
+    },
+    "1": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        }
+    },
+    "2": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:paper"
+                }
+            }
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slow_falling",
+                "duration": 2,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        }
+    },
+    "3": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=east,waterlogged=false] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=east,waterlogged=false]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=east,waterlogged=true] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=east,waterlogged=true]"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=north,waterlogged=false] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=north,waterlogged=false]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=north,waterlogged=true] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=north,waterlogged=true]"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=south,waterlogged=false] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=south,waterlogged=false]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=south,waterlogged=true] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=south,waterlogged=true]"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=west,waterlogged=false] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=west,waterlogged=false]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute if block ~ ~-0.01 ~ minecraft:big_dripleaf[facing=west,waterlogged=true] run setblock ~ ~-0.01 ~ minecraft:big_dripleaf[tilt=none,facing=west,waterlogged=true]"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

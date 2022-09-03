@@ -1,0 +1,14 @@
+{
+    "name": "§6§n0 Gravity",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cFloat\n§3You float, and can move freely in the air.\n\n§cGravity Switch\n§3You can turn on/off gravity for all non-player mobs within 8 blocks. Primary too activate.\n\n§cPower Powder\n§3Make power powder by holding blaze powder, and activating your gravity switch\n\n§cPower Crystal\n§3Make a power crystal by holding an empty power crystal, and activating your gravity switch.",
+    "powers": [
+        "powers:powers/gravity/gravity",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:bone_meal",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

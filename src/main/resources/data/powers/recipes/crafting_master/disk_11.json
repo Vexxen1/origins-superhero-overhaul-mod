@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  #",
+        "##C",
+        "CC "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:black_dye"
+        },
+        "C": {
+            "item": "minecraft:clay_ball"
+        }
+    },
+    "result": {
+        "item": "minecraft:music_disc_11",
+        "count": 1
+    },
+    "group": "disks"
+}

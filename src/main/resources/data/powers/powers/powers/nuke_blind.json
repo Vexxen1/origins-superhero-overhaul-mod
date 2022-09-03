@@ -1,0 +1,405 @@
+{
+    "1": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_stun_timer",
+                    "change": 1,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_stun_timer",
+                        "comparison": "<=",
+                        "compare_to": 60
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "stopsound @s"
+                    }
+                }
+            ]
+        }
+    },
+    "2": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "<=",
+            "compare_to": 60
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 1,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "stun_timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 80,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "power revoke @s powers:powers/nuke_blind"
+        }
+    },
+    "2_": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 61
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.95,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2__": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 62
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.9,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2___": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 63
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.85,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2____": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 64
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.8,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2_____": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 65
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.75,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2______": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 66
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.7,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2_______": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 67
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.65,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 68
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.6,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2_________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 69
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.55,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2__________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 70
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.5,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2___________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 71
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.45,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2____________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 72
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.4,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2_____________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 73
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.35,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2______________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 74
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.3,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2_______________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 75
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.25,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2________________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 76
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.2,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2_________________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 77
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.15,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2__________________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 78
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.1,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    },
+    "2___________________": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_stun_timer",
+            "comparison": "==",
+            "compare_to": 79
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/white_concrete.png",
+        "strength": 0.05,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true
+    }
+}

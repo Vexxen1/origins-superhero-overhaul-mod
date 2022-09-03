@@ -1,0 +1,13 @@
+{
+    "name": "Attack",
+    "description": "You want a power that will allow you to deal more damage too others. This playstyle will make sure of that. As for how much damage, or how it will be given. That will depend on the power.",
+    "icon": {
+        "item": "minecraft:diamond_sword",
+        "amount": 1
+    },
+    "order": 0,
+    "powers": [
+        "powers:playstyles/random_attack"
+    ],
+    "impact": 0
+}

@@ -1,0 +1,71 @@
+{
+    "1": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_look"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:shulker_spawn_egg"
+                            }
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:modify",
+                            "modifier": "powers:power_crystal/red_eyes"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function powers:powers/red_eyes/loop"
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @s[tag=!looking_at_target] run scoreboard players get 1 num",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:toggle",
+                        "power": "*:*_look"
+                    }
+                }
+            ]
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "function powers:powers/red_eyes/tag_ray"
+        },
+        "falling_action": {
+            "type": "origins:execute_command",
+            "command": "function powers:powers/red_eyes/reset"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "look": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "retain_state": false
+    }
+}

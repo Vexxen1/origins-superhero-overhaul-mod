@@ -1,0 +1,310 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s power_id -1"
+                },
+                {
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "weight": 25,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 12
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 12"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:stun"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 25,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 15
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 15"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:strength"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 10,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 17
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 17"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:aim"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 25,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 19
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 19"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:perfect_physique"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 25,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 23
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 23"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:duel_weiding"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 30,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 29
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 29"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:battle_glory"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 10,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 30
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 30"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:fire_breath"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 10,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 31
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 31"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:earth_bending"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 30,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 34
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 34"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:damage_transfur"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "weight": 10,
+                            "element": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "prev_power_id",
+                                    "comparison": "!=",
+                                    "compare_to": 35
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s power_id 35"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "origin set @s powers:powers powers:self-destruction"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "1": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s power_id -1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s playstyle 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove stored"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s power_id -1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s playstyle 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove stored"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

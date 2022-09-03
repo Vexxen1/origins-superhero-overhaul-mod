@@ -1,0 +1,16 @@
+execute if score block bsc matches 4017 run setblock ~ ~ ~ minecraft:sugar_cane[age=0]{age:0}
+execute if score block bsc matches 4018 run setblock ~ ~ ~ minecraft:sugar_cane[age=1]{age:1}
+execute if score block bsc matches 4019 run setblock ~ ~ ~ minecraft:sugar_cane[age=2]{age:2}
+execute if score block bsc matches 4020 run setblock ~ ~ ~ minecraft:sugar_cane[age=3]{age:3}
+execute if score block bsc matches 4021 run setblock ~ ~ ~ minecraft:sugar_cane[age=4]{age:4}
+execute if score block bsc matches 4022 run setblock ~ ~ ~ minecraft:sugar_cane[age=5]{age:5}
+execute if score block bsc matches 4023 run setblock ~ ~ ~ minecraft:sugar_cane[age=6]{age:6}
+execute if score block bsc matches 4024 run setblock ~ ~ ~ minecraft:sugar_cane[age=7]{age:7}
+execute if score block bsc matches 4025 run setblock ~ ~ ~ minecraft:sugar_cane[age=8]{age:8}
+execute if score block bsc matches 4026 run setblock ~ ~ ~ minecraft:sugar_cane[age=9]{age:9}
+execute if score block bsc matches 4027 run setblock ~ ~ ~ minecraft:sugar_cane[age=10]{age:10}
+execute if score block bsc matches 4028 run setblock ~ ~ ~ minecraft:sugar_cane[age=11]{age:11}
+execute if score block bsc matches 4029 run setblock ~ ~ ~ minecraft:sugar_cane[age=12]{age:12}
+execute if score block bsc matches 4030 run setblock ~ ~ ~ minecraft:sugar_cane[age=13]{age:13}
+execute if score block bsc matches 4031 run setblock ~ ~ ~ minecraft:sugar_cane[age=14]{age:14}
+execute if score block bsc matches 4032 run setblock ~ ~ ~ minecraft:sugar_cane[age=15]{age:15}

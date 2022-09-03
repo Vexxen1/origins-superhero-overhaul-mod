@@ -1,0 +1,15 @@
+{
+    "0": {
+        "type": "origins:invisibility",
+        "render_armor": false
+    },
+    "2": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

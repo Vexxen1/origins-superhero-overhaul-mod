@@ -1,0 +1,13 @@
+{
+    "name": "§6§nReverse Gravity",
+    "description": "§c§lRarity: §rCommon\n\n§cFalling upwards\n§3You fall upwards instead of down. Pretty simple.",
+    "powers": [
+        "powers:powers/reverse_gravity"
+    ],
+    "icon": {
+        "item": "gravity_api:gravity_changer_up",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

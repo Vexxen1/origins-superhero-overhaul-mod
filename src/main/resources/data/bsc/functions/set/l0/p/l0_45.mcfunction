@@ -1,0 +1,16 @@
+execute if score block bsc matches 1097 run setblock ~ ~ ~ minecraft:orange_bed[facing=north,occupied=true,part=head]{facing:north,occupied:true,part:head}
+execute if score block bsc matches 1098 run setblock ~ ~ ~ minecraft:orange_bed[facing=north,occupied=true,part=foot]{facing:north,occupied:true,part:foot}
+execute if score block bsc matches 1099 run setblock ~ ~ ~ minecraft:orange_bed[facing=north,occupied=false,part=head]{facing:north,occupied:false,part:head}
+execute if score block bsc matches 1100 run setblock ~ ~ ~ minecraft:orange_bed[facing=north,occupied=false,part=foot]{facing:north,occupied:false,part:foot}
+execute if score block bsc matches 1101 run setblock ~ ~ ~ minecraft:orange_bed[facing=south,occupied=true,part=head]{facing:south,occupied:true,part:head}
+execute if score block bsc matches 1102 run setblock ~ ~ ~ minecraft:orange_bed[facing=south,occupied=true,part=foot]{facing:south,occupied:true,part:foot}
+execute if score block bsc matches 1103 run setblock ~ ~ ~ minecraft:orange_bed[facing=south,occupied=false,part=head]{facing:south,occupied:false,part:head}
+execute if score block bsc matches 1104 run setblock ~ ~ ~ minecraft:orange_bed[facing=south,occupied=false,part=foot]{facing:south,occupied:false,part:foot}
+execute if score block bsc matches 1105 run setblock ~ ~ ~ minecraft:orange_bed[facing=west,occupied=true,part=head]{facing:west,occupied:true,part:head}
+execute if score block bsc matches 1106 run setblock ~ ~ ~ minecraft:orange_bed[facing=west,occupied=true,part=foot]{facing:west,occupied:true,part:foot}
+execute if score block bsc matches 1107 run setblock ~ ~ ~ minecraft:orange_bed[facing=west,occupied=false,part=head]{facing:west,occupied:false,part:head}
+execute if score block bsc matches 1108 run setblock ~ ~ ~ minecraft:orange_bed[facing=west,occupied=false,part=foot]{facing:west,occupied:false,part:foot}
+execute if score block bsc matches 1109 run setblock ~ ~ ~ minecraft:orange_bed[facing=east,occupied=true,part=head]{facing:east,occupied:true,part:head}
+execute if score block bsc matches 1110 run setblock ~ ~ ~ minecraft:orange_bed[facing=east,occupied=true,part=foot]{facing:east,occupied:true,part:foot}
+execute if score block bsc matches 1111 run setblock ~ ~ ~ minecraft:orange_bed[facing=east,occupied=false,part=head]{facing:east,occupied:false,part:head}
+execute if score block bsc matches 1112 run setblock ~ ~ ~ minecraft:orange_bed[facing=east,occupied=false,part=foot]{facing:east,occupied:false,part:foot}

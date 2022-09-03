@@ -1,0 +1,94 @@
+{
+    "0": {
+        "type": "origins:model_color",
+        "red": 1,
+        "green": 0.84,
+        "blue": 0,
+        "alpha": 1
+    },
+    "1": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s if block ~ ~-0.05 ~ air run tp @s ~ ~-0.05 ~"
+        },
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "data modify entity @s NoAI set value 1b"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "data modify entity @s Silent set value 1b"
+                }
+            ]
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "data modify entity @s NoAI set value 0b"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "data modify entity @s Silent set value 0b"
+                }
+            ]
+        }
+    },
+    "2": {
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:weakness"
+        },
+        "type": "origins:action_on_being_used",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "data modify entity @s NoAI set value 0b"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "data modify entity @s Silent set value 0b"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "power revoke @s powers:powers/gold_touch/gold_covered"
+                    }
+                ]
+            }
+        },
+        "item_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:golden_apple"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:enchanted_golden_apple"
+                    }
+                }
+            ]
+        },
+        "held_item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "action_result": "success"
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

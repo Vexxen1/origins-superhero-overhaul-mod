@@ -1,0 +1,8 @@
+execute if score block bsc matches 70 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:deepslate_gold_ore",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 71 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:iron_ore",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 72 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:deepslate_iron_ore",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 73 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:coal_ore",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 74 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:deepslate_coal_ore",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 75 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:nether_gold_ore",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 76..78 run function bsc:falling/l0/p/l0_10
+execute if score block bsc matches 79..81 run function bsc:falling/l0/p/l0_11

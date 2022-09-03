@@ -1,0 +1,16 @@
+execute if score block bsc matches 8339 run setblock ~ ~ ~ minecraft:brown_banner[rotation=0]{rotation:0}
+execute if score block bsc matches 8340 run setblock ~ ~ ~ minecraft:brown_banner[rotation=1]{rotation:1}
+execute if score block bsc matches 8341 run setblock ~ ~ ~ minecraft:brown_banner[rotation=2]{rotation:2}
+execute if score block bsc matches 8342 run setblock ~ ~ ~ minecraft:brown_banner[rotation=3]{rotation:3}
+execute if score block bsc matches 8343 run setblock ~ ~ ~ minecraft:brown_banner[rotation=4]{rotation:4}
+execute if score block bsc matches 8344 run setblock ~ ~ ~ minecraft:brown_banner[rotation=5]{rotation:5}
+execute if score block bsc matches 8345 run setblock ~ ~ ~ minecraft:brown_banner[rotation=6]{rotation:6}
+execute if score block bsc matches 8346 run setblock ~ ~ ~ minecraft:brown_banner[rotation=7]{rotation:7}
+execute if score block bsc matches 8347 run setblock ~ ~ ~ minecraft:brown_banner[rotation=8]{rotation:8}
+execute if score block bsc matches 8348 run setblock ~ ~ ~ minecraft:brown_banner[rotation=9]{rotation:9}
+execute if score block bsc matches 8349 run setblock ~ ~ ~ minecraft:brown_banner[rotation=10]{rotation:10}
+execute if score block bsc matches 8350 run setblock ~ ~ ~ minecraft:brown_banner[rotation=11]{rotation:11}
+execute if score block bsc matches 8351 run setblock ~ ~ ~ minecraft:brown_banner[rotation=12]{rotation:12}
+execute if score block bsc matches 8352 run setblock ~ ~ ~ minecraft:brown_banner[rotation=13]{rotation:13}
+execute if score block bsc matches 8353 run setblock ~ ~ ~ minecraft:brown_banner[rotation=14]{rotation:14}
+execute if score block bsc matches 8354 run setblock ~ ~ ~ minecraft:brown_banner[rotation=15]{rotation:15}

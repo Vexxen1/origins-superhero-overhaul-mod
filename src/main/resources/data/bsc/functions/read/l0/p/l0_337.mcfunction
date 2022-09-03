@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=0] run scoreboard players set block bsc 6796
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=1] run scoreboard players set block bsc 6797
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=2] run scoreboard players set block bsc 6798
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=3] run scoreboard players set block bsc 6799
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=4] run scoreboard players set block bsc 6800
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=5] run scoreboard players set block bsc 6801
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=6] run scoreboard players set block bsc 6802
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=7] run scoreboard players set block bsc 6803
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=8] run scoreboard players set block bsc 6804
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=9] run scoreboard players set block bsc 6805
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=10] run scoreboard players set block bsc 6806
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=11] run scoreboard players set block bsc 6807
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=12] run scoreboard players set block bsc 6808
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=13] run scoreboard players set block bsc 6809
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=14] run scoreboard players set block bsc 6810
+execute if block ~ ~ ~ minecraft:dragon_head[rotation=15] run scoreboard players set block bsc 6811

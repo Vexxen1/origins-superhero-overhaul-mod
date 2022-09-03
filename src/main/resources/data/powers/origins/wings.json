@@ -1,0 +1,13 @@
+{
+    "name": "§6§nWings",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cWings\n§3You have real, boned wings. You can flap these wings and use them to fly and glide. Flap your wings with crouch, you can change which direction they flap with wasd, and space. \n\n§cAir Burst\n§3You can burst some energy out of your wings and push yourself forward faster than fireworks. Use primary while flying.\n",
+    "powers": [
+        "powers:powers/wings"
+    ],
+    "icon": {
+        "item": "minecraft:elytra",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

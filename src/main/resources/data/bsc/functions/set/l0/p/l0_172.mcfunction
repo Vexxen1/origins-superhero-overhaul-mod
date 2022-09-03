@@ -1,0 +1,16 @@
+execute if score block bsc matches 6736 run setblock ~ ~ ~ minecraft:zombie_head[rotation=0]{rotation:0}
+execute if score block bsc matches 6737 run setblock ~ ~ ~ minecraft:zombie_head[rotation=1]{rotation:1}
+execute if score block bsc matches 6738 run setblock ~ ~ ~ minecraft:zombie_head[rotation=2]{rotation:2}
+execute if score block bsc matches 6739 run setblock ~ ~ ~ minecraft:zombie_head[rotation=3]{rotation:3}
+execute if score block bsc matches 6740 run setblock ~ ~ ~ minecraft:zombie_head[rotation=4]{rotation:4}
+execute if score block bsc matches 6741 run setblock ~ ~ ~ minecraft:zombie_head[rotation=5]{rotation:5}
+execute if score block bsc matches 6742 run setblock ~ ~ ~ minecraft:zombie_head[rotation=6]{rotation:6}
+execute if score block bsc matches 6743 run setblock ~ ~ ~ minecraft:zombie_head[rotation=7]{rotation:7}
+execute if score block bsc matches 6744 run setblock ~ ~ ~ minecraft:zombie_head[rotation=8]{rotation:8}
+execute if score block bsc matches 6745 run setblock ~ ~ ~ minecraft:zombie_head[rotation=9]{rotation:9}
+execute if score block bsc matches 6746 run setblock ~ ~ ~ minecraft:zombie_head[rotation=10]{rotation:10}
+execute if score block bsc matches 6747 run setblock ~ ~ ~ minecraft:zombie_head[rotation=11]{rotation:11}
+execute if score block bsc matches 6748 run setblock ~ ~ ~ minecraft:zombie_head[rotation=12]{rotation:12}
+execute if score block bsc matches 6749 run setblock ~ ~ ~ minecraft:zombie_head[rotation=13]{rotation:13}
+execute if score block bsc matches 6750 run setblock ~ ~ ~ minecraft:zombie_head[rotation=14]{rotation:14}
+execute if score block bsc matches 6751 run setblock ~ ~ ~ minecraft:zombie_head[rotation=15]{rotation:15}

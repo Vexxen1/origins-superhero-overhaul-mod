@@ -1,0 +1,63 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 200,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function vexxens_datapacks:friends/tag_friends"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[tag=!friend,distance=0.01..25] minecraft:weakness 10 0 true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @e[tag=!friend,distance=0.01..25] minecraft:slowness 10 0 true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @e remove friend"
+                }
+            ]
+        }
+    },
+    "1": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:weakness 3 5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:slowness 3 2"
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "1_": {
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:weakness 3 5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:slowness 3 2"
+                }
+            ]
+        },
+        "cooldown": 1
+    }
+}

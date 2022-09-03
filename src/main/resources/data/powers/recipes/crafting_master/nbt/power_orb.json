@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "BFB",
+        "#B#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:enchanted_book"
+        },
+        "B": {
+            "item": "minecraft:blaze_powder",
+            "data": "{display:{Name:'{\"text\":\"Neutral Power Powder\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',Lore:['{\"text\":\"Can be crafted into a power orb by a master crafter\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}']},npp:1,Enchantments:[{}]}"
+        },
+        "F": {
+            "item": "minecraft:fire_charge"
+        }
+    },
+    "result": {
+        "item": "origins:orb_of_origin",
+        "data": "{display:{Name:'{\"text\":\"Power Orb\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',Lore:['{\"text\":\"Use too get a random power.\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}']},Enchantments:[{}]}",
+        "count": 1
+    }
+}

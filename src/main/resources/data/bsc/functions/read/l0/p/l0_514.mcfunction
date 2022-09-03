@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=true,facing=north] run scoreboard players set block bsc 9475
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=true,facing=east] run scoreboard players set block bsc 9476
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=true,facing=south] run scoreboard players set block bsc 9477
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=true,facing=west] run scoreboard players set block bsc 9478
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=true,facing=up] run scoreboard players set block bsc 9479
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=true,facing=down] run scoreboard players set block bsc 9480
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=north] run scoreboard players set block bsc 9481
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=east] run scoreboard players set block bsc 9482
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=south] run scoreboard players set block bsc 9483
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=west] run scoreboard players set block bsc 9484
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=up] run scoreboard players set block bsc 9485
+execute if block ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=down] run scoreboard players set block bsc 9486

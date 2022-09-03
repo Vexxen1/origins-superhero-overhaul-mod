@@ -1,0 +1,13 @@
+{
+    "name": "§6§nLeather Skin",
+    "description": "§c§lRarity: §rCommon\n\n§cLeather Skin\n§3You have skin that gives the same defense as leather armor. This can stack with armor.\n",
+    "powers": [
+        "powers:powers/leather_skin"
+    ],
+    "icon": {
+        "item": "minecraft:leather_chestplate",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

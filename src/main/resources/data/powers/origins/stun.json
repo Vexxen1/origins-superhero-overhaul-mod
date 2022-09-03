@@ -1,0 +1,13 @@
+{
+    "name": "§6§nStun",
+    "description": "§c§lRarity: §rCommon\n\n§cStun Ball\n§3By  pressing primary you can shoot out stun balls that blind all nearby when they hit something. \n",
+    "powers": [
+        "powers:powers/stun/stun"
+    ],
+    "icon": {
+        "item": "minecraft:sea_lantern",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

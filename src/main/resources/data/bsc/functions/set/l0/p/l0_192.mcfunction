@@ -1,0 +1,12 @@
+execute if score block bsc matches 7053 run setblock ~ ~ ~ minecraft:dropper[facing=north,triggered=true]{facing:north,triggered:true}
+execute if score block bsc matches 7054 run setblock ~ ~ ~ minecraft:dropper[facing=north,triggered=false]{facing:north,triggered:false}
+execute if score block bsc matches 7055 run setblock ~ ~ ~ minecraft:dropper[facing=east,triggered=true]{facing:east,triggered:true}
+execute if score block bsc matches 7056 run setblock ~ ~ ~ minecraft:dropper[facing=east,triggered=false]{facing:east,triggered:false}
+execute if score block bsc matches 7057 run setblock ~ ~ ~ minecraft:dropper[facing=south,triggered=true]{facing:south,triggered:true}
+execute if score block bsc matches 7058 run setblock ~ ~ ~ minecraft:dropper[facing=south,triggered=false]{facing:south,triggered:false}
+execute if score block bsc matches 7059 run setblock ~ ~ ~ minecraft:dropper[facing=west,triggered=true]{facing:west,triggered:true}
+execute if score block bsc matches 7060 run setblock ~ ~ ~ minecraft:dropper[facing=west,triggered=false]{facing:west,triggered:false}
+execute if score block bsc matches 7061 run setblock ~ ~ ~ minecraft:dropper[facing=up,triggered=true]{facing:up,triggered:true}
+execute if score block bsc matches 7062 run setblock ~ ~ ~ minecraft:dropper[facing=up,triggered=false]{facing:up,triggered:false}
+execute if score block bsc matches 7063 run setblock ~ ~ ~ minecraft:dropper[facing=down,triggered=true]{facing:down,triggered:true}
+execute if score block bsc matches 7064 run setblock ~ ~ ~ minecraft:dropper[facing=down,triggered=false]{facing:down,triggered:false}

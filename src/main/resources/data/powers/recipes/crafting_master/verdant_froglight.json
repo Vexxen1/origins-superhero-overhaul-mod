@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#I#",
+        "IMI",
+        "#I#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:slime_ball"
+        },
+        "I": {
+            "item": "minecraft:ice"
+        },
+        "M": {
+            "item": "minecraft:magma_cream"
+        }
+    },
+    "result": {
+        "item": "minecraft:verdant_froglight",
+        "count": 1
+    }
+}

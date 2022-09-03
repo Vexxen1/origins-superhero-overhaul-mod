@@ -1,0 +1,25 @@
+{
+    "0": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function vexxens_datapacks:friends/tag_friends"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run function powers:powers/sacrafice"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @e remove friend"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

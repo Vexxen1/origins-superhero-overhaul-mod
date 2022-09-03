@@ -1,0 +1,7 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{power:9,display:{Name:'{\"text\":\"Power Crystal\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',Lore:['{\"text\":\"Power: Red Eyes\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}']},Enchantments:[{}],EntityTag:{id:\"minecraft:end_crystal\",Tags:[\"pc.RedEyes\"],ShowBottom:0b}}"
+    }
+  ]
+  

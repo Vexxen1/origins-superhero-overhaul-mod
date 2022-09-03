@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#P#",
+        "PWP",
+        "#P#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:enchanted_book"
+        },
+        "P": {
+            "item": "minecraft:prismarine_shard"
+        },
+        "W": {
+            "item": "minecraft:pufferfish"
+        }
+    },
+    "result": {
+        "item": "minecraft:heart_of_the_sea",
+        "count": 1
+    }
+}

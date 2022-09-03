@@ -1,0 +1,16 @@
+execute if score block bsc matches 6696 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=0]{rotation:0}
+execute if score block bsc matches 6697 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=1]{rotation:1}
+execute if score block bsc matches 6698 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=2]{rotation:2}
+execute if score block bsc matches 6699 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=3]{rotation:3}
+execute if score block bsc matches 6700 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=4]{rotation:4}
+execute if score block bsc matches 6701 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=5]{rotation:5}
+execute if score block bsc matches 6702 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=6]{rotation:6}
+execute if score block bsc matches 6703 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=7]{rotation:7}
+execute if score block bsc matches 6704 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=8]{rotation:8}
+execute if score block bsc matches 6705 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=9]{rotation:9}
+execute if score block bsc matches 6706 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=10]{rotation:10}
+execute if score block bsc matches 6707 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=11]{rotation:11}
+execute if score block bsc matches 6708 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=12]{rotation:12}
+execute if score block bsc matches 6709 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=13]{rotation:13}
+execute if score block bsc matches 6710 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=14]{rotation:14}
+execute if score block bsc matches 6711 run setblock ~ ~ ~ minecraft:skeleton_skull[rotation=15]{rotation:15}

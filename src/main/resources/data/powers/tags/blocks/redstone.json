@@ -1,0 +1,19 @@
+{
+    "values": [
+        "minecraft:redstone_wire",
+        "minecraft:observer",
+        "minecraft:comparator",
+        "minecraft:repeater",
+        "minecraft:lever",
+        "#minecraft:buttons",
+        "#minecraft:pressure_plates",
+        "minecraft:redstone_torch",
+        "redstone_wall_torch",
+        "minecraft:dispenser",
+        "minecraft:dropper",
+        "minecraft:piston",
+        "minecraft:sticky_piston",
+        "minecraft:note_block",
+        "minecraft:redstone_lamp"
+    ]
+}

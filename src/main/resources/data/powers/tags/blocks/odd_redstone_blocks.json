@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#minecraft:slabs",
+        "#minecraft:stairs",
+        "#c:glass_blocks",
+        "#c:glass_panes",
+        "#c:chests",
+        "#c:shulker_boxes"
+    ]
+}

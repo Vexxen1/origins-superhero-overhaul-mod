@@ -1,0 +1,13 @@
+{
+    "name": "§6§nGhost",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cGhost form\n§3Toggle with primary. When active you will be unseeable, unattackable, and able to fly, and pass through blocks. When in this state, no one can find you. Will make power powder if you hold some and press primary. ",
+    "powers": [
+        "powers:powers/ghost"
+    ],
+    "icon": {
+        "item": "minecraft:phantom_membrane",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

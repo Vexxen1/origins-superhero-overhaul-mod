@@ -1,0 +1,13 @@
+{
+    "name": "§6§nEarth Bending",
+    "description": "§c§lRarity: §r§bRare\n\n§cPull up\n§3Pull up the ground by crouch right clicking a block. Only works when there is support on the sides. This can launch entities. \n\n§cPull down\n§3By left clicking a block while not couching, if there is space under it, and support on the sides, it will bring it down.\n\n§cLaunch a rock\n§3By crouch right clicking a block, you can make it float in from of you. Then you can punch the block and launch it forward. Different blocks do more or less damage. \n\n§cWall\n§3By punching while sprinting you can pull up three blocks in front of you, forming a short wall. \n\n§cSoft fall\n§3By landing on sand or other sand-like materials, you have less fall damage. You automatically convert blocks you fall on too sand-like materials if possible. \n",
+    "powers": [
+        "powers:powers/earth_bending/earth_bending"
+    ],
+    "icon": {
+        "item": "minecraft:stone",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

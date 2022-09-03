@@ -1,0 +1,14 @@
+execute if score block bsc matches 246 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=1,persistent=true]{distance:1,persistent:true}
+execute if score block bsc matches 247 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=1,persistent=false]{distance:1,persistent:false}
+execute if score block bsc matches 248 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=2,persistent=true]{distance:2,persistent:true}
+execute if score block bsc matches 249 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=2,persistent=false]{distance:2,persistent:false}
+execute if score block bsc matches 250 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=3,persistent=true]{distance:3,persistent:true}
+execute if score block bsc matches 251 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=3,persistent=false]{distance:3,persistent:false}
+execute if score block bsc matches 252 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=4,persistent=true]{distance:4,persistent:true}
+execute if score block bsc matches 253 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=4,persistent=false]{distance:4,persistent:false}
+execute if score block bsc matches 254 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=5,persistent=true]{distance:5,persistent:true}
+execute if score block bsc matches 255 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=5,persistent=false]{distance:5,persistent:false}
+execute if score block bsc matches 256 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=6,persistent=true]{distance:6,persistent:true}
+execute if score block bsc matches 257 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=6,persistent=false]{distance:6,persistent:false}
+execute if score block bsc matches 258 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=7,persistent=true]{distance:7,persistent:true}
+execute if score block bsc matches 259 run setblock ~ ~ ~ minecraft:flowering_azalea_leaves[distance=7,persistent=false]{distance:7,persistent:false}

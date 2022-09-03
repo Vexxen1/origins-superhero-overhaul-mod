@@ -1,0 +1,14 @@
+{
+    "name": "§6§nDamage Transfer",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cThorns+\n§3When you take damage, if the damage is less then or equal too 10 hearts, 50% of the damage is transferred to the attacker, and you only take 50% of the damage. If higher than 10 hearts, only 10 hearts of damage will be transferred, and lessened. \n",
+    "powers": [
+        "powers:powers/damage_transfur"
+    ],
+    "icon": {
+        "item": "minecraft:potion",
+        "amount": 1,
+        "tag": "{Potion:\"minecraft:instant_damage\"}"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

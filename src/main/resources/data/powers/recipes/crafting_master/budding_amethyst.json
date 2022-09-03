@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:water_bucket",
+            "remainder": { "item": "minecraft:water_bucket" }
+        },
+        {
+            "item": "minecraft:amethyst_block"
+        },
+        {
+            "item": "minecraft:small_amethyst_bud"
+        }
+    ],
+    "result": {
+        "item": "minecraft:budding_amethyst",
+        "count": 1
+    }
+}

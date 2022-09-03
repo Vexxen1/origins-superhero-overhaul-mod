@@ -1,0 +1,133 @@
+{
+    "0": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:power_active",
+            "power": "*:*_reg"
+        },
+        "type": "origins:action_over_time",
+        "interval": 17,
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 1
+        }
+    },
+    "3": {
+        "type": "origins:disable_regen"
+    },
+    "4": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:amount",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:out_of_world"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_t",
+            "change": 0,
+            "operation": "set"
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "9": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "power revoke @s powers:powers/hyper_regeneration/dead"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_reg"
+        },
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 1
+        }
+    },
+    "reg": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "retain_state": true
+    },
+    "t": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "min_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_reg"
+            },
+            "if_action": {
+                "type": "origins:toggle",
+                "power": "*:*_reg"
+            }
+        },
+        "max_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "inverted": true,
+                "type": "origins:power_active",
+                "power": "*:*_reg"
+            },
+            "if_action": {
+                "type": "origins:toggle",
+                "power": "*:*_reg"
+            }
+        }
+    },
+    "0__": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:health",
+                        "comparison": "<",
+                        "compare_to": 20
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_t",
+                        "change": 1,
+                        "operation": "add"
+                    },
+                    "else_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_t",
+                        "change": 0,
+                        "operation": "set"
+                    }
+                }
+            ]
+        }
+    }
+}

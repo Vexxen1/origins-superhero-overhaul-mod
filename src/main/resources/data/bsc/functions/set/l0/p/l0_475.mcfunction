@@ -1,0 +1,16 @@
+execute if score block bsc matches 17374 run setblock ~ ~ ~ minecraft:white_candle[candles=1,lit=true,waterlogged=true]{candles:1,lit:true,waterlogged:true}
+execute if score block bsc matches 17375 run setblock ~ ~ ~ minecraft:white_candle[candles=1,lit=true,waterlogged=false]{candles:1,lit:true,waterlogged:false}
+execute if score block bsc matches 17376 run setblock ~ ~ ~ minecraft:white_candle[candles=1,lit=false,waterlogged=true]{candles:1,lit:false,waterlogged:true}
+execute if score block bsc matches 17377 run setblock ~ ~ ~ minecraft:white_candle[candles=1,lit=false,waterlogged=false]{candles:1,lit:false,waterlogged:false}
+execute if score block bsc matches 17378 run setblock ~ ~ ~ minecraft:white_candle[candles=2,lit=true,waterlogged=true]{candles:2,lit:true,waterlogged:true}
+execute if score block bsc matches 17379 run setblock ~ ~ ~ minecraft:white_candle[candles=2,lit=true,waterlogged=false]{candles:2,lit:true,waterlogged:false}
+execute if score block bsc matches 17380 run setblock ~ ~ ~ minecraft:white_candle[candles=2,lit=false,waterlogged=true]{candles:2,lit:false,waterlogged:true}
+execute if score block bsc matches 17381 run setblock ~ ~ ~ minecraft:white_candle[candles=2,lit=false,waterlogged=false]{candles:2,lit:false,waterlogged:false}
+execute if score block bsc matches 17382 run setblock ~ ~ ~ minecraft:white_candle[candles=3,lit=true,waterlogged=true]{candles:3,lit:true,waterlogged:true}
+execute if score block bsc matches 17383 run setblock ~ ~ ~ minecraft:white_candle[candles=3,lit=true,waterlogged=false]{candles:3,lit:true,waterlogged:false}
+execute if score block bsc matches 17384 run setblock ~ ~ ~ minecraft:white_candle[candles=3,lit=false,waterlogged=true]{candles:3,lit:false,waterlogged:true}
+execute if score block bsc matches 17385 run setblock ~ ~ ~ minecraft:white_candle[candles=3,lit=false,waterlogged=false]{candles:3,lit:false,waterlogged:false}
+execute if score block bsc matches 17386 run setblock ~ ~ ~ minecraft:white_candle[candles=4,lit=true,waterlogged=true]{candles:4,lit:true,waterlogged:true}
+execute if score block bsc matches 17387 run setblock ~ ~ ~ minecraft:white_candle[candles=4,lit=true,waterlogged=false]{candles:4,lit:true,waterlogged:false}
+execute if score block bsc matches 17388 run setblock ~ ~ ~ minecraft:white_candle[candles=4,lit=false,waterlogged=true]{candles:4,lit:false,waterlogged:true}
+execute if score block bsc matches 17389 run setblock ~ ~ ~ minecraft:white_candle[candles=4,lit=false,waterlogged=false]{candles:4,lit:false,waterlogged:false}

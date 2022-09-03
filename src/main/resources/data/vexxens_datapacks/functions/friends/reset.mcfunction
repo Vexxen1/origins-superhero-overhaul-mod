@@ -1,0 +1,1 @@
+data remove storage vexxens_datapacks:friends players

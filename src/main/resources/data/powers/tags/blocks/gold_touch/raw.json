@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#minecraft:base_stone_nether",
+        "#minecraft:base_stone_overworld",
+        "minecraft:end_stone",
+        "#minecraft:dirt",
+        "#minecraft:sand"
+    ]
+}

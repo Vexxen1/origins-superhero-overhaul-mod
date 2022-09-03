@@ -1,0 +1,78 @@
+{
+    "2": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:power",
+            "power": "powers:powers/aim"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "enchantment": "minecraft:quick_charge",
+                            "comparison": "==",
+                            "compare_to": 5
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:remove_enchantment",
+                                    "enchantment": "minecraft:quick_charge"
+                                },
+                                {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:rquick"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "enchantment": "minecraft:quick_charge",
+                            "comparison": "==",
+                            "compare_to": 5
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:remove_enchantment",
+                                    "enchantment": "minecraft:quick_charge"
+                                },
+                                {
+                                    "type": "origins:modify",
+                                    "modifier": "powers:rquick"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

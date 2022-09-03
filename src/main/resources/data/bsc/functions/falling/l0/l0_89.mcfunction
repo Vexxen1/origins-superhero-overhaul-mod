@@ -1,0 +1,8 @@
+execute if score block bsc matches 15243 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:shroomlight",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 15244..15269 run function bsc:falling/l0/p/l0_434
+execute if score block bsc matches 15270 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:weeping_vines_plant",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 15271..15296 run function bsc:falling/l0/p/l0_435
+execute if score block bsc matches 15297 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:twisting_vines_plant",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 15298 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:crimson_roots",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 15299 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:crimson_planks",Properties:{}},Time:1,Tags:["bsc_falling"]}]}
+execute if score block bsc matches 15300 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:warped_planks",Properties:{}},Time:1,Tags:["bsc_falling"]}]}

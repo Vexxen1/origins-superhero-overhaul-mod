@@ -1,0 +1,122 @@
+{
+    "0": {
+        "type": "origins:fire_projectile",
+        "entity_type": "minecraft:tnt",
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "count": 1,
+        "interval": 0,
+        "start_delay": 0,
+        "speed": 0.5,
+        "divergence": 1,
+        "sound": "minecraft:entity.creeper.primed",
+        "tag": "{Fuse:160,Tags:[\"sticky_tnt\"]}",
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "1": {
+        "type": "origins:prevent_entity_use"
+    },
+    "3": {
+        "type": "origins:prevent_block_selection",
+        "block_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "name": "Recipes:",
+    "hidden": true,
+    "type": "origins:multiple",
+    "1_": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
+    "0_": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:gamemode",
+                        "gamemode": "survival"
+                    },
+                    {
+                        "type": "origins:gamemode",
+                        "gamemode": "adventure"
+                    }
+                ]
+            },
+            "if_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:nbt",
+                        "nbt": "{sticky_tnt:1}"
+                    }
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:equipped_item_action",
+                            "equipment_slot": "mainhand",
+                            "action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            }
+                        },
+                        {
+                            "type": "origins:swing_hand",
+                            "hand": "MAIN_HAND"
+                        }
+                    ]
+                },
+                "else_action": {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:nbt",
+                            "nbt": "{sticky_tnt:1}"
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "offhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "type": "origins:swing_hand",
+                                "hand": "OFF_HAND"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use"
+        }
+    }
+}

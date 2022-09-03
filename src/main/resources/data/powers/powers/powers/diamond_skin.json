@@ -1,0 +1,27 @@
+{
+    "0": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor",
+                "operation": "addition",
+                "value": 20
+            },
+            {
+                "attribute": "minecraft:generic.armor_toughness",
+                "operation": "addition",
+                "value": 8
+            }
+        ],
+        "update_health": false
+    },
+    "1": {
+        "type": "origins:model_color",
+        "red": 0.29,
+        "green": 0.92,
+        "blue": 0.85,
+        "alpha": 1
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

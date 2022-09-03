@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=0] run scoreboard players set block bsc 8243
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=1] run scoreboard players set block bsc 8244
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=2] run scoreboard players set block bsc 8245
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=3] run scoreboard players set block bsc 8246
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=4] run scoreboard players set block bsc 8247
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=5] run scoreboard players set block bsc 8248
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=6] run scoreboard players set block bsc 8249
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=7] run scoreboard players set block bsc 8250
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=8] run scoreboard players set block bsc 8251
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=9] run scoreboard players set block bsc 8252
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=10] run scoreboard players set block bsc 8253
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=11] run scoreboard players set block bsc 8254
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=12] run scoreboard players set block bsc 8255
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=13] run scoreboard players set block bsc 8256
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=14] run scoreboard players set block bsc 8257
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=15] run scoreboard players set block bsc 8258

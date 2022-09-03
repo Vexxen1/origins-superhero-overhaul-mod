@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "BWB",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:yellow_dye"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        },
+        "C": {
+            "item": "minecraft:clay_ball"
+        }
+    },
+    "result": {
+        "item": "minecraft:music_disc_13",
+        "count": 1
+    },
+    "group": "disks"
+}

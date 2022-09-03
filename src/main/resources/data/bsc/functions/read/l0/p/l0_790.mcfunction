@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:brown_candle[candles=1,lit=true,waterlogged=true] run scoreboard players set block bsc 17566
+execute if block ~ ~ ~ minecraft:brown_candle[candles=1,lit=true,waterlogged=false] run scoreboard players set block bsc 17567
+execute if block ~ ~ ~ minecraft:brown_candle[candles=1,lit=false,waterlogged=true] run scoreboard players set block bsc 17568
+execute if block ~ ~ ~ minecraft:brown_candle[candles=1,lit=false,waterlogged=false] run scoreboard players set block bsc 17569
+execute if block ~ ~ ~ minecraft:brown_candle[candles=2,lit=true,waterlogged=true] run scoreboard players set block bsc 17570
+execute if block ~ ~ ~ minecraft:brown_candle[candles=2,lit=true,waterlogged=false] run scoreboard players set block bsc 17571
+execute if block ~ ~ ~ minecraft:brown_candle[candles=2,lit=false,waterlogged=true] run scoreboard players set block bsc 17572
+execute if block ~ ~ ~ minecraft:brown_candle[candles=2,lit=false,waterlogged=false] run scoreboard players set block bsc 17573
+execute if block ~ ~ ~ minecraft:brown_candle[candles=3,lit=true,waterlogged=true] run scoreboard players set block bsc 17574
+execute if block ~ ~ ~ minecraft:brown_candle[candles=3,lit=true,waterlogged=false] run scoreboard players set block bsc 17575
+execute if block ~ ~ ~ minecraft:brown_candle[candles=3,lit=false,waterlogged=true] run scoreboard players set block bsc 17576
+execute if block ~ ~ ~ minecraft:brown_candle[candles=3,lit=false,waterlogged=false] run scoreboard players set block bsc 17577
+execute if block ~ ~ ~ minecraft:brown_candle[candles=4,lit=true,waterlogged=true] run scoreboard players set block bsc 17578
+execute if block ~ ~ ~ minecraft:brown_candle[candles=4,lit=true,waterlogged=false] run scoreboard players set block bsc 17579
+execute if block ~ ~ ~ minecraft:brown_candle[candles=4,lit=false,waterlogged=true] run scoreboard players set block bsc 17580
+execute if block ~ ~ ~ minecraft:brown_candle[candles=4,lit=false,waterlogged=false] run scoreboard players set block bsc 17581

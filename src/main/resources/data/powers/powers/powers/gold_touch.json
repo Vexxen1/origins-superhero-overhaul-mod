@@ -1,0 +1,104 @@
+{
+    "0": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": "primary",
+        "retain_state": true
+    },
+    "1": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "powers:2/gold_touch/toggle_0"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:grant_power",
+                    "power": "powers:1/gold_touch/block",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "powers:1/gold_touch/entity",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "powers:1/gold_touch/items",
+                    "source": "powers:gold_touch"
+                }
+            ]
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/block",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/entity",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/items",
+                    "source": "powers:gold_touch"
+                }
+            ]
+        }
+    },
+    "2": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/block",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/entity",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/items",
+                    "source": "powers:gold_touch"
+                }
+            ]
+        },
+        "entity_action_removed": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/block",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/entity",
+                    "source": "powers:gold_touch"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "powers:1/gold_touch/items",
+                    "source": "powers:gold_touch"
+                }
+            ]
+        }
+    },
+    "name": "Toggle",
+    "description": "Toggle your powers",
+    "hidden": true,
+    "type": "origins:multiple"
+}

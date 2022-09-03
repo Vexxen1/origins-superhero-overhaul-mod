@@ -1,0 +1,11 @@
+{
+    "origins": [
+        "origins:human"
+    ],
+    "enabled": false,
+    "replace": true,
+    "allow_random": false,
+    "default_origin": "origins:human",
+    "auto_choose": true,
+    "hidden": true
+}

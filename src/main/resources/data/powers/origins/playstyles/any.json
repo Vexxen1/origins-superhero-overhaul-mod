@@ -1,0 +1,13 @@
+{
+    "name": "Any",
+    "description": "You want too go full random. Get any power in the book, weak or strong. Anoying, or helpful. This can allow you too get powers others can only dream of, but  can also cause you too get any other power. No limits.",
+    "icon": {
+        "item": "origins:orb_of_origin",
+        "amount": 1
+    },
+    "order": 5,
+    "powers": [
+        "powers:playstyles/random_any"
+    ],
+    "impact": 0
+}

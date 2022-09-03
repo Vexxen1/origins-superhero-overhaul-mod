@@ -1,0 +1,13 @@
+{
+    "name": "§6§nIron Skin",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cIron Skin\n§3You have skin that gives the same defense as iron armor. This can stack with armor.\n",
+    "powers": [
+        "powers:powers/iron_skin"
+    ],
+    "icon": {
+        "item": "minecraft:iron_chestplate",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

@@ -1,0 +1,14 @@
+execute if score block bsc matches 162 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=1,persistent=true]{distance:1,persistent:true}
+execute if score block bsc matches 163 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=1,persistent=false]{distance:1,persistent:false}
+execute if score block bsc matches 164 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=2,persistent=true]{distance:2,persistent:true}
+execute if score block bsc matches 165 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=2,persistent=false]{distance:2,persistent:false}
+execute if score block bsc matches 166 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=3,persistent=true]{distance:3,persistent:true}
+execute if score block bsc matches 167 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=3,persistent=false]{distance:3,persistent:false}
+execute if score block bsc matches 168 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=4,persistent=true]{distance:4,persistent:true}
+execute if score block bsc matches 169 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=4,persistent=false]{distance:4,persistent:false}
+execute if score block bsc matches 170 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=5,persistent=true]{distance:5,persistent:true}
+execute if score block bsc matches 171 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=5,persistent=false]{distance:5,persistent:false}
+execute if score block bsc matches 172 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=6,persistent=true]{distance:6,persistent:true}
+execute if score block bsc matches 173 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=6,persistent=false]{distance:6,persistent:false}
+execute if score block bsc matches 174 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=7,persistent=true]{distance:7,persistent:true}
+execute if score block bsc matches 175 run setblock ~ ~ ~ minecraft:spruce_leaves[distance=7,persistent=false]{distance:7,persistent:false}

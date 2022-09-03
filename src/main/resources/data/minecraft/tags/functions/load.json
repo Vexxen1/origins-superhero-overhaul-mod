@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "powers:load",
+        "nnmath:setup",
+        "vexxens_datapacks:load"
+    ]
+}

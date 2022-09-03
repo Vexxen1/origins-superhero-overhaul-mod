@@ -1,0 +1,13 @@
+{
+    "name": "§6§nRedstone Merging",
+    "description": "§c§lRarity: §r§9Uncommon\n\n§cRedstone Power\n§3When near powered redstone, you get positive effects. The more powered redstone you are near, the stronger the effects.\n\n§cRedstone Merging\n§3By pressing primary while looking at some redstone wire, you can enter it. You can only move in the direction the redstone is going. You can go thru all kinds of redstone things. Touch towers, repeaters thru blocks, observer chains, and more. You can exit a wire simply by pressing primary again. If you are in a harder to get out of redstone component you break it, and damage yourself. If someone breaks the redstone you are inside of, you get damaged and exit the wire. You can activate some redstone devices, by holding primary or sometimes simply entering them. \n",
+    "powers": [
+        "powers:powers/redstone_travel"
+    ],
+    "icon": {
+        "item": "minecraft:redstone",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 2
+}

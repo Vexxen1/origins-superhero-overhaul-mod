@@ -1,0 +1,12 @@
+execute if score block bsc matches 5363 run setblock ~ ~ ~ minecraft:cocoa[age=0,facing=north]{age:0,facing:north}
+execute if score block bsc matches 5364 run setblock ~ ~ ~ minecraft:cocoa[age=0,facing=south]{age:0,facing:south}
+execute if score block bsc matches 5365 run setblock ~ ~ ~ minecraft:cocoa[age=0,facing=west]{age:0,facing:west}
+execute if score block bsc matches 5366 run setblock ~ ~ ~ minecraft:cocoa[age=0,facing=east]{age:0,facing:east}
+execute if score block bsc matches 5367 run setblock ~ ~ ~ minecraft:cocoa[age=1,facing=north]{age:1,facing:north}
+execute if score block bsc matches 5368 run setblock ~ ~ ~ minecraft:cocoa[age=1,facing=south]{age:1,facing:south}
+execute if score block bsc matches 5369 run setblock ~ ~ ~ minecraft:cocoa[age=1,facing=west]{age:1,facing:west}
+execute if score block bsc matches 5370 run setblock ~ ~ ~ minecraft:cocoa[age=1,facing=east]{age:1,facing:east}
+execute if score block bsc matches 5371 run setblock ~ ~ ~ minecraft:cocoa[age=2,facing=north]{age:2,facing:north}
+execute if score block bsc matches 5372 run setblock ~ ~ ~ minecraft:cocoa[age=2,facing=south]{age:2,facing:south}
+execute if score block bsc matches 5373 run setblock ~ ~ ~ minecraft:cocoa[age=2,facing=west]{age:2,facing:west}
+execute if score block bsc matches 5374 run setblock ~ ~ ~ minecraft:cocoa[age=2,facing=east]{age:2,facing:east}

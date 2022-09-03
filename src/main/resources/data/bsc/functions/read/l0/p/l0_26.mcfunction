@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:water[level=0] run scoreboard players set block bsc 34
+execute if block ~ ~ ~ minecraft:water[level=1] run scoreboard players set block bsc 35
+execute if block ~ ~ ~ minecraft:water[level=2] run scoreboard players set block bsc 36
+execute if block ~ ~ ~ minecraft:water[level=3] run scoreboard players set block bsc 37
+execute if block ~ ~ ~ minecraft:water[level=4] run scoreboard players set block bsc 38
+execute if block ~ ~ ~ minecraft:water[level=5] run scoreboard players set block bsc 39
+execute if block ~ ~ ~ minecraft:water[level=6] run scoreboard players set block bsc 40
+execute if block ~ ~ ~ minecraft:water[level=7] run scoreboard players set block bsc 41
+execute if block ~ ~ ~ minecraft:water[level=8] run scoreboard players set block bsc 42
+execute if block ~ ~ ~ minecraft:water[level=9] run scoreboard players set block bsc 43
+execute if block ~ ~ ~ minecraft:water[level=10] run scoreboard players set block bsc 44
+execute if block ~ ~ ~ minecraft:water[level=11] run scoreboard players set block bsc 45
+execute if block ~ ~ ~ minecraft:water[level=12] run scoreboard players set block bsc 46
+execute if block ~ ~ ~ minecraft:water[level=13] run scoreboard players set block bsc 47
+execute if block ~ ~ ~ minecraft:water[level=14] run scoreboard players set block bsc 48
+execute if block ~ ~ ~ minecraft:water[level=15] run scoreboard players set block bsc 49

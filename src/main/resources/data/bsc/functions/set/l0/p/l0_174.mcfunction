@@ -1,0 +1,16 @@
+execute if score block bsc matches 6756 run setblock ~ ~ ~ minecraft:player_head[rotation=0]{rotation:0}
+execute if score block bsc matches 6757 run setblock ~ ~ ~ minecraft:player_head[rotation=1]{rotation:1}
+execute if score block bsc matches 6758 run setblock ~ ~ ~ minecraft:player_head[rotation=2]{rotation:2}
+execute if score block bsc matches 6759 run setblock ~ ~ ~ minecraft:player_head[rotation=3]{rotation:3}
+execute if score block bsc matches 6760 run setblock ~ ~ ~ minecraft:player_head[rotation=4]{rotation:4}
+execute if score block bsc matches 6761 run setblock ~ ~ ~ minecraft:player_head[rotation=5]{rotation:5}
+execute if score block bsc matches 6762 run setblock ~ ~ ~ minecraft:player_head[rotation=6]{rotation:6}
+execute if score block bsc matches 6763 run setblock ~ ~ ~ minecraft:player_head[rotation=7]{rotation:7}
+execute if score block bsc matches 6764 run setblock ~ ~ ~ minecraft:player_head[rotation=8]{rotation:8}
+execute if score block bsc matches 6765 run setblock ~ ~ ~ minecraft:player_head[rotation=9]{rotation:9}
+execute if score block bsc matches 6766 run setblock ~ ~ ~ minecraft:player_head[rotation=10]{rotation:10}
+execute if score block bsc matches 6767 run setblock ~ ~ ~ minecraft:player_head[rotation=11]{rotation:11}
+execute if score block bsc matches 6768 run setblock ~ ~ ~ minecraft:player_head[rotation=12]{rotation:12}
+execute if score block bsc matches 6769 run setblock ~ ~ ~ minecraft:player_head[rotation=13]{rotation:13}
+execute if score block bsc matches 6770 run setblock ~ ~ ~ minecraft:player_head[rotation=14]{rotation:14}
+execute if score block bsc matches 6771 run setblock ~ ~ ~ minecraft:player_head[rotation=15]{rotation:15}

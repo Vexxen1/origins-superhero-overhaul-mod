@@ -1,0 +1,14 @@
+{
+    "name": "Support",
+    "description": "You want too help your alies? Then this is for you. It will make sure you help them, wether thru direct, or indirect ways. This playstyle can give you powers too help others, or powers that dont fit very well into any of the other playstyles. So powers here are very unique. ",
+    "icon": {
+        "item": "minecraft:potion",
+        "amount": 1,
+        "tag": "{Potion:\"minecraft:swiftness\"}"
+    },
+    "powers": [
+        "powers:playstyles/random_support"
+    ],
+    "order": 2,
+    "impact": 0
+}

@@ -1,0 +1,16 @@
+execute if score block bsc matches 4000 run setblock ~ ~ ~ minecraft:cactus[age=0]{age:0}
+execute if score block bsc matches 4001 run setblock ~ ~ ~ minecraft:cactus[age=1]{age:1}
+execute if score block bsc matches 4002 run setblock ~ ~ ~ minecraft:cactus[age=2]{age:2}
+execute if score block bsc matches 4003 run setblock ~ ~ ~ minecraft:cactus[age=3]{age:3}
+execute if score block bsc matches 4004 run setblock ~ ~ ~ minecraft:cactus[age=4]{age:4}
+execute if score block bsc matches 4005 run setblock ~ ~ ~ minecraft:cactus[age=5]{age:5}
+execute if score block bsc matches 4006 run setblock ~ ~ ~ minecraft:cactus[age=6]{age:6}
+execute if score block bsc matches 4007 run setblock ~ ~ ~ minecraft:cactus[age=7]{age:7}
+execute if score block bsc matches 4008 run setblock ~ ~ ~ minecraft:cactus[age=8]{age:8}
+execute if score block bsc matches 4009 run setblock ~ ~ ~ minecraft:cactus[age=9]{age:9}
+execute if score block bsc matches 4010 run setblock ~ ~ ~ minecraft:cactus[age=10]{age:10}
+execute if score block bsc matches 4011 run setblock ~ ~ ~ minecraft:cactus[age=11]{age:11}
+execute if score block bsc matches 4012 run setblock ~ ~ ~ minecraft:cactus[age=12]{age:12}
+execute if score block bsc matches 4013 run setblock ~ ~ ~ minecraft:cactus[age=13]{age:13}
+execute if score block bsc matches 4014 run setblock ~ ~ ~ minecraft:cactus[age=14]{age:14}
+execute if score block bsc matches 4015 run setblock ~ ~ ~ minecraft:cactus[age=15]{age:15}

@@ -1,0 +1,14 @@
+{
+    "name": "§6§nSuper Speed",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cLonger you run, faster you run\n§3When you sprint, the longer you run. The faster you run. Its quite difficult too control, and if you let it reach max speed you leave a fire trail behind you.\n",
+    "powers": [
+        "powers:powers/speed",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:sugar",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

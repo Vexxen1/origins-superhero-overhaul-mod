@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=0] run scoreboard players set block bsc 6776
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=1] run scoreboard players set block bsc 6777
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=2] run scoreboard players set block bsc 6778
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=3] run scoreboard players set block bsc 6779
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=4] run scoreboard players set block bsc 6780
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=5] run scoreboard players set block bsc 6781
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=6] run scoreboard players set block bsc 6782
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=7] run scoreboard players set block bsc 6783
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=8] run scoreboard players set block bsc 6784
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=9] run scoreboard players set block bsc 6785
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=10] run scoreboard players set block bsc 6786
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=11] run scoreboard players set block bsc 6787
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=12] run scoreboard players set block bsc 6788
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=13] run scoreboard players set block bsc 6789
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=14] run scoreboard players set block bsc 6790
+execute if block ~ ~ ~ minecraft:creeper_head[rotation=15] run scoreboard players set block bsc 6791

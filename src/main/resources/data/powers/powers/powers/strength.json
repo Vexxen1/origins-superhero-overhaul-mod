@@ -1,0 +1,24 @@
+{
+    "1": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:execute_command",
+            "command": "attribute @s minecraft:generic.attack_damage base set 7"
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "attribute @s minecraft:generic.attack_damage base set 1"
+        },
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "attribute @s minecraft:generic.attack_damage base set 7"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "attribute @s minecraft:generic.attack_damage base set 1"
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

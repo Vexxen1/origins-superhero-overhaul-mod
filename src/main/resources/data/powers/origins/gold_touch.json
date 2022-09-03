@@ -1,0 +1,16 @@
+{
+    "name": "§6§nGold Touch",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cGolden Touch\n§3Anything you touch turns to gold. Punch a mob, use a block, hold an item, walking on the ground. They all turn to gold. Wearing armor can help, and holding an item stops you from turning blocks you use too gold. There is many interesting ways to use this power, experiment. \n\n§cPower Powder\n§3You can make power powder by holding blaze powder",
+    "powers": [
+        "powers:powers/gold_touch/block",
+        "powers:powers/gold_touch/items",
+        "powers:powers/gold_touch/entity",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:gold_ingot",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

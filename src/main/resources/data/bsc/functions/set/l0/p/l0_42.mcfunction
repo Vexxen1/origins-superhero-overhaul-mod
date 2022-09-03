@@ -1,0 +1,12 @@
+execute if score block bsc matches 266 run setblock ~ ~ ~ minecraft:dispenser[facing=north,triggered=true]{facing:north,triggered:true}
+execute if score block bsc matches 267 run setblock ~ ~ ~ minecraft:dispenser[facing=north,triggered=false]{facing:north,triggered:false}
+execute if score block bsc matches 268 run setblock ~ ~ ~ minecraft:dispenser[facing=east,triggered=true]{facing:east,triggered:true}
+execute if score block bsc matches 269 run setblock ~ ~ ~ minecraft:dispenser[facing=east,triggered=false]{facing:east,triggered:false}
+execute if score block bsc matches 270 run setblock ~ ~ ~ minecraft:dispenser[facing=south,triggered=true]{facing:south,triggered:true}
+execute if score block bsc matches 271 run setblock ~ ~ ~ minecraft:dispenser[facing=south,triggered=false]{facing:south,triggered:false}
+execute if score block bsc matches 272 run setblock ~ ~ ~ minecraft:dispenser[facing=west,triggered=true]{facing:west,triggered:true}
+execute if score block bsc matches 273 run setblock ~ ~ ~ minecraft:dispenser[facing=west,triggered=false]{facing:west,triggered:false}
+execute if score block bsc matches 274 run setblock ~ ~ ~ minecraft:dispenser[facing=up,triggered=true]{facing:up,triggered:true}
+execute if score block bsc matches 275 run setblock ~ ~ ~ minecraft:dispenser[facing=up,triggered=false]{facing:up,triggered:false}
+execute if score block bsc matches 276 run setblock ~ ~ ~ minecraft:dispenser[facing=down,triggered=true]{facing:down,triggered:true}
+execute if score block bsc matches 277 run setblock ~ ~ ~ minecraft:dispenser[facing=down,triggered=false]{facing:down,triggered:false}

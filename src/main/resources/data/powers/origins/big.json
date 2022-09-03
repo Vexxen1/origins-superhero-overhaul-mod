@@ -1,0 +1,13 @@
+{
+    "name": "§6§nBig",
+    "description": "§c§lRarity: §rCommon\n\n§c1.5x larger\n§3You are 1.5x larger. This makes you stronger, and able to reach farther, but much slower.",
+    "powers": [
+        "powers:powers/big"
+    ],
+    "icon": {
+        "item": "minecraft:iron_ingot",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

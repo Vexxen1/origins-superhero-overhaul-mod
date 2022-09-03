@@ -1,0 +1,15 @@
+{
+    "name": "§6§nHyper Regeneration",
+    "description": "§c§lRarity: §r§5§lEpic\n\n§cForever Regenerating\n§3You will regenerate. This can not be stopped by anything. You will still regenerate even when hungry. This regeneration is usually weak, but if you are damaged for a bit of time, it kicks in and you heal at a great speed.\n\n§cUndying\n§3You can not die. Except form the void. If its fall damage or something non-mob related, you will be left on half a heart. But if its mob related, like being hit by an arrow or sword. Then you will enter a death state for 5 minutes, then come back to life. In this death state, you are incapable of doing anything, moving, seeing, etc. You can only wait. But its impossible for anyone to attack you during this, you can't take damage. But they can push you.",
+    "powers": [
+        "powers:powers/hyper_regeneration/basic",
+        "powers:powers/hyper_regeneration/hyper_regeneration",
+        "powers:one_of_a_kind"
+    ],
+    "icon": {
+        "item": "minecraft:ghast_tear",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

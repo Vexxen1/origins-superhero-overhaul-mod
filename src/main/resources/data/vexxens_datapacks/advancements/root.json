@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Vexxen's Datapacks",
+            "color": "gold",
+            "bold": true
+        },
+        "description": {
+            "text": "Shows what datapacks made by vexxen are installed"
+        },
+        "icon": {
+            "item": "minecraft:command_block",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/amethyst_block.png"
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ]
+}

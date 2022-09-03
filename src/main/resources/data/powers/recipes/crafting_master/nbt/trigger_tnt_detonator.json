@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#N#",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_nugget"
+        },
+        "S": {
+            "item": "minecraft:stone_button"
+        },
+        "N": {
+            "item": "minecraft:note_block"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "minecraft:tripwire_hook",
+        "count": 1,
+        "data": "{display:{Name:'{\"text\":\"Trigger TNT Detonator\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},trigger_tnt_detonator:1}"
+    },
+    "group": "tnt"
+}

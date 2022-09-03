@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=0] run scoreboard players set block bsc 8227
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=1] run scoreboard players set block bsc 8228
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=2] run scoreboard players set block bsc 8229
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=3] run scoreboard players set block bsc 8230
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=4] run scoreboard players set block bsc 8231
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=5] run scoreboard players set block bsc 8232
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=6] run scoreboard players set block bsc 8233
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=7] run scoreboard players set block bsc 8234
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=8] run scoreboard players set block bsc 8235
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=9] run scoreboard players set block bsc 8236
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=10] run scoreboard players set block bsc 8237
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=11] run scoreboard players set block bsc 8238
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=12] run scoreboard players set block bsc 8239
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=13] run scoreboard players set block bsc 8240
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=14] run scoreboard players set block bsc 8241
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=15] run scoreboard players set block bsc 8242

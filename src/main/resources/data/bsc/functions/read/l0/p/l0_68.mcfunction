@@ -1,0 +1,14 @@
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=1,persistent=true] run scoreboard players set block bsc 232
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=1,persistent=false] run scoreboard players set block bsc 233
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=2,persistent=true] run scoreboard players set block bsc 234
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=2,persistent=false] run scoreboard players set block bsc 235
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=3,persistent=true] run scoreboard players set block bsc 236
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=3,persistent=false] run scoreboard players set block bsc 237
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=4,persistent=true] run scoreboard players set block bsc 238
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=4,persistent=false] run scoreboard players set block bsc 239
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=5,persistent=true] run scoreboard players set block bsc 240
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=5,persistent=false] run scoreboard players set block bsc 241
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=6,persistent=true] run scoreboard players set block bsc 242
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=6,persistent=false] run scoreboard players set block bsc 243
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=7,persistent=true] run scoreboard players set block bsc 244
+execute if block ~ ~ ~ minecraft:azalea_leaves[distance=7,persistent=false] run scoreboard players set block bsc 245

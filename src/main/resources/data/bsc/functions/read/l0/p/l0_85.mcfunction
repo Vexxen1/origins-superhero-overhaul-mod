@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=north,occupied=true,part=head] run scoreboard players set block bsc 1145
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=north,occupied=true,part=foot] run scoreboard players set block bsc 1146
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=north,occupied=false,part=head] run scoreboard players set block bsc 1147
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=north,occupied=false,part=foot] run scoreboard players set block bsc 1148
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=south,occupied=true,part=head] run scoreboard players set block bsc 1149
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=south,occupied=true,part=foot] run scoreboard players set block bsc 1150
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=south,occupied=false,part=head] run scoreboard players set block bsc 1151
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=south,occupied=false,part=foot] run scoreboard players set block bsc 1152
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=west,occupied=true,part=head] run scoreboard players set block bsc 1153
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=west,occupied=true,part=foot] run scoreboard players set block bsc 1154
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=west,occupied=false,part=head] run scoreboard players set block bsc 1155
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=west,occupied=false,part=foot] run scoreboard players set block bsc 1156
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=east,occupied=true,part=head] run scoreboard players set block bsc 1157
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=east,occupied=true,part=foot] run scoreboard players set block bsc 1158
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=east,occupied=false,part=head] run scoreboard players set block bsc 1159
+execute if block ~ ~ ~ minecraft:yellow_bed[facing=east,occupied=false,part=foot] run scoreboard players set block bsc 1160

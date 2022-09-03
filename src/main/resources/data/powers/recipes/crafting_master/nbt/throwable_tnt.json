@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "S#S",
+        "TTT"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gunpowder"
+        },
+        "S": {
+            "item": "minecraft:sand"
+        },
+        "T": {
+            "item": "minecraft:slime_ball"
+        }
+    },
+    "result": {
+        "item": "minecraft:tnt",
+        "count": 1,
+        "data": "{display:{Name:'{\"text\":\"Throwable TNT\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},throwable_tnt:1}"
+    },
+    "group": "tnt"
+}

@@ -1,0 +1,228 @@
+{
+    "0": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:projectiles true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:attack_speed true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:health true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:reach true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:jump_height true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:attack true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:height true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:width true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:held_item true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:height 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:width 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:attack 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:jump_height 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:health 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:held_item 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 1.6"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:held_item 0.6666666666"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:attack_speed 0.8 @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.movement_speed base set 0.08"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.armor base set 4"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.movement_speed base set 0.1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.armor base set 0"
+                }
+            ]
+        },
+        "entity_action_added": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:projectiles true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:attack_speed true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:health true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:reach true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:jump_height true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:attack true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:height true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:width true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set pehkui:held_item true"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:height 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:width 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:attack 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:jump_height 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1.25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:health 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set pehkui:held_item 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 1.6"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:held_item 0.6666666666"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:attack_speed 0.8 @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.movement_speed base set 0.08"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.armor base set 4"
+                }
+            ]
+        },
+        "entity_action_removed": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.movement_speed base set 0.1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.armor base set 0"
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

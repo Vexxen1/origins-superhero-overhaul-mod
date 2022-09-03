@@ -1,0 +1,1352 @@
+{
+    "0": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 7
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power revoke @s powers:powers/wings_1___ powers:wings"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power grant @s powers:powers/power_disable/power_disabled"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 8
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 12
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 13
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 14
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 15
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 16
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 17
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 18
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 21
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 22
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:power",
+                                    "power": "powers:powers/redstone",
+                                    "source": "apoli:command"
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "execute at @s run function powers:powers/redstone_travel/exit"
+                                        },
+                                        {
+                                            "type": "origins:damage",
+                                            "amount": 5,
+                                            "source": {
+                                                "name": "generic"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "origin set @s powers:powers powers:disabled"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 30
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 31
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 33
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 34
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 35
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 37
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 38
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 39
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 40
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:gold_touch"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:glowing"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 7
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "power grant @s powers:powers/wings_1___ powers:wings"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 8
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:Gravity"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 12
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:stun"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 13
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:weaken"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 14
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:strengthen"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 15
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:strength"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 16
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:healing"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 17
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:aim"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 18
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:teleporter"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 21
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:reverse_gravity"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 22
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:waterlike"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:size_changer"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 24
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:redstone_travel"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:size_changer"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:battle_glory"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 30
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:fire_breath"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 31
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:earth_bending"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 33
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:sacrafice"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 34
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:damage_transfur"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 35
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:self-destruction"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 37
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:block"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 38
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:flight"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 39
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:telekinesis"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 40
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:superspeed"
+                    }
+                }
+            ]
+        },
+        "entity_action_added": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 7
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power revoke @s powers:powers/wings_1___ powers:wings"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "power grant @s powers:powers/power_disable/power_disabled"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 8
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 12
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 13
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 14
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 15
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 16
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 17
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 18
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 21
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 22
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:power",
+                                    "power": "powers:powers/redstone",
+                                    "source": "apoli:command"
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "execute at @s run function powers:powers/redstone_travel/exit"
+                                        },
+                                        {
+                                            "type": "origins:damage",
+                                            "amount": 5,
+                                            "source": {
+                                                "name": "generic"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "origin set @s powers:powers powers:disabled"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 30
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 31
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 33
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 34
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 35
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 37
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 38
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 39
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 40
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:disabled"
+                    }
+                }
+            ]
+        },
+        "entity_action_removed": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:gold_touch"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:glowing"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 7
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "power grant @s powers:powers/wings_1___ powers:wings"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 8
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:Gravity"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 12
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:stun"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 13
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:weaken"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 14
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:strengthen"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 15
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:strength"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 16
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:healing"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 17
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:aim"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 18
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:teleporter"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 21
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:reverse_gravity"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 22
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:waterlike"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:size_changer"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 24
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:redstone_travel"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 28
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:size_changer"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 29
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:battle_glory"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 30
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:fire_breath"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 31
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:earth_bending"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 33
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:sacrafice"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 34
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:damage_transfur"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 35
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:self-destruction"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 37
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:block"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 38
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:flight"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 39
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:telekinesis"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:scoreboard",
+                        "objective": "power_id",
+                        "comparison": "==",
+                        "compare_to": 40
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s powers:powers powers:superspeed"
+                    }
+                }
+            ]
+        }
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

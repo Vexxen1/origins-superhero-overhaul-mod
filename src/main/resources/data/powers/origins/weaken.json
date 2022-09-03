@@ -1,0 +1,13 @@
+{
+    "name": "§6§nWeaken",
+    "description": "§c§lRarity: §rCommon\n\n§cPassive Weakening\n§3Everyone near you who is not in your friend list will get a low level of weakness, and slowness.\n\n§cPunch Weakening\n§3When you punch someone they gain massive weakness and slowness, you also gain massive weakness and slowness.",
+    "powers": [
+        "powers:powers/weaken"
+    ],
+    "icon": {
+        "item": "minecraft:fermented_spider_eye",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

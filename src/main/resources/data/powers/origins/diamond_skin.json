@@ -1,0 +1,13 @@
+{
+    "name": "§6§nDiamond Skin",
+    "description": "§c§lRarity: §r§bRare\n\n§cDiamond Skin\n§3You have skin that gives the same defense as diamond armor. This can stack with armor.\n",
+    "powers": [
+        "powers:powers/diamond_skin"
+    ],
+    "icon": {
+        "item": "minecraft:diamond_chestplate",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

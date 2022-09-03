@@ -1,0 +1,13 @@
+{
+    "name": "Defense",
+    "description": "This playstyle will make sure you can defend yourself or other. How? That depends on your luck. ",
+    "icon": {
+        "item": "minecraft:shield",
+        "amount": 1
+    },
+    "powers": [
+        "powers:playstyles/random_defense"
+    ],
+    "order": 1,
+    "impact": 0
+}

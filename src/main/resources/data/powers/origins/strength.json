@@ -1,0 +1,13 @@
+{
+    "name": "§6§nStrength",
+    "description": "§c§lRarity: §rCommon\n\n§cMore Damage\n§3All melee attacks gain +6 damage. ",
+    "powers": [
+        "powers:powers/strength"
+    ],
+    "icon": {
+        "item": "minecraft:blaze_rod",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 1
+}

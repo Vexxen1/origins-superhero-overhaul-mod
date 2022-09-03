@@ -1,0 +1,15 @@
+{
+    "0": {
+        "type": "origins:invisibility",
+        "render_armor": false
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "0_": {
+        "type": "origins:prevent_entity_collision",
+        "bientity_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    }
+}

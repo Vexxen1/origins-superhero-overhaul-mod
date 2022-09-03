@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:redstone_wire[power=0] run scoreboard players set power num 0
+execute if block ~ ~ ~ minecraft:redstone_wire[power=1] run scoreboard players set power num 1
+execute if block ~ ~ ~ minecraft:redstone_wire[power=2] run scoreboard players set power num 2
+execute if block ~ ~ ~ minecraft:redstone_wire[power=3] run scoreboard players set power num 3
+execute if block ~ ~ ~ minecraft:redstone_wire[power=4] run scoreboard players set power num 4
+execute if block ~ ~ ~ minecraft:redstone_wire[power=5] run scoreboard players set power num 5
+execute if block ~ ~ ~ minecraft:redstone_wire[power=6] run scoreboard players set power num 6
+execute if block ~ ~ ~ minecraft:redstone_wire[power=7] run scoreboard players set power num 7
+execute if block ~ ~ ~ minecraft:redstone_wire[power=8] run scoreboard players set power num 8
+execute if block ~ ~ ~ minecraft:redstone_wire[power=9] run scoreboard players set power num 9
+execute if block ~ ~ ~ minecraft:redstone_wire[power=10] run scoreboard players set power num 10
+execute if block ~ ~ ~ minecraft:redstone_wire[power=11] run scoreboard players set power num 11
+execute if block ~ ~ ~ minecraft:redstone_wire[power=12] run scoreboard players set power num 12
+execute if block ~ ~ ~ minecraft:redstone_wire[power=13] run scoreboard players set power num 13
+execute if block ~ ~ ~ minecraft:redstone_wire[power=14] run scoreboard players set power num 14
+execute if block ~ ~ ~ minecraft:redstone_wire[power=15] run scoreboard players set power num 15

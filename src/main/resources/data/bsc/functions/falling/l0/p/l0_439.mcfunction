@@ -1,0 +1,2 @@
+execute if score block bsc matches 15315 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:warped_pressure_plate",Properties:{powered:true}},Time:1,Tags:["bsc_falling"]}]} 
+execute if score block bsc matches 15316 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:warped_pressure_plate",Properties:{powered:false}},Time:1,Tags:["bsc_falling"]}]} 

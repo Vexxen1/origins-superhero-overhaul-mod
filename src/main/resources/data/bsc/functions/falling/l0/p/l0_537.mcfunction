@@ -1,0 +1,3 @@
+execute if score block bsc matches 18683 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:deepslate",Properties:{axis:x}},Time:1,Tags:["bsc_falling"]}]} 
+execute if score block bsc matches 18684 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:deepslate",Properties:{axis:y}},Time:1,Tags:["bsc_falling"]}]} 
+execute if score block bsc matches 18685 run summon armor_stand ~ ~ ~ {Small:1b,Marker:0b,Invisible:1b,Tags:["bsc_falling_A"],Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:deepslate",Properties:{axis:z}},Time:1,Tags:["bsc_falling"]}]} 

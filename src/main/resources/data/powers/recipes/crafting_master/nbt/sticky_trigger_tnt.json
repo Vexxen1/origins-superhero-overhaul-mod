@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#T#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:honey_bottle"
+        },
+        "T": {
+            "item": "minecraft:tnt",
+            "data": "{trigger_tnt:1}"
+        }
+    },
+    "result": {
+        "item": "minecraft:tnt",
+        "count": 1,
+        "data": "{display:{Name:'{\"text\":\"Sticky Trigger TNT\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},sticky_trigger_tnt:1}"
+    },
+    "group": "tnt"
+}

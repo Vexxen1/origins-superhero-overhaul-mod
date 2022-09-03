@@ -1,0 +1,12 @@
+execute if score block bsc matches 9902 run setblock ~ ~ ~ minecraft:bamboo[age=0,leaves=none,stage=0]{age:0,leaves:none,stage:0}
+execute if score block bsc matches 9903 run setblock ~ ~ ~ minecraft:bamboo[age=0,leaves=none,stage=1]{age:0,leaves:none,stage:1}
+execute if score block bsc matches 9904 run setblock ~ ~ ~ minecraft:bamboo[age=0,leaves=small,stage=0]{age:0,leaves:small,stage:0}
+execute if score block bsc matches 9905 run setblock ~ ~ ~ minecraft:bamboo[age=0,leaves=small,stage=1]{age:0,leaves:small,stage:1}
+execute if score block bsc matches 9906 run setblock ~ ~ ~ minecraft:bamboo[age=0,leaves=large,stage=0]{age:0,leaves:large,stage:0}
+execute if score block bsc matches 9907 run setblock ~ ~ ~ minecraft:bamboo[age=0,leaves=large,stage=1]{age:0,leaves:large,stage:1}
+execute if score block bsc matches 9908 run setblock ~ ~ ~ minecraft:bamboo[age=1,leaves=none,stage=0]{age:1,leaves:none,stage:0}
+execute if score block bsc matches 9909 run setblock ~ ~ ~ minecraft:bamboo[age=1,leaves=none,stage=1]{age:1,leaves:none,stage:1}
+execute if score block bsc matches 9910 run setblock ~ ~ ~ minecraft:bamboo[age=1,leaves=small,stage=0]{age:1,leaves:small,stage:0}
+execute if score block bsc matches 9911 run setblock ~ ~ ~ minecraft:bamboo[age=1,leaves=small,stage=1]{age:1,leaves:small,stage:1}
+execute if score block bsc matches 9912 run setblock ~ ~ ~ minecraft:bamboo[age=1,leaves=large,stage=0]{age:1,leaves:large,stage:0}
+execute if score block bsc matches 9913 run setblock ~ ~ ~ minecraft:bamboo[age=1,leaves=large,stage=1]{age:1,leaves:large,stage:1}

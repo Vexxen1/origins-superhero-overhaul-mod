@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:orange_candle[candles=1,lit=true,waterlogged=true] run scoreboard players set block bsc 17390
+execute if block ~ ~ ~ minecraft:orange_candle[candles=1,lit=true,waterlogged=false] run scoreboard players set block bsc 17391
+execute if block ~ ~ ~ minecraft:orange_candle[candles=1,lit=false,waterlogged=true] run scoreboard players set block bsc 17392
+execute if block ~ ~ ~ minecraft:orange_candle[candles=1,lit=false,waterlogged=false] run scoreboard players set block bsc 17393
+execute if block ~ ~ ~ minecraft:orange_candle[candles=2,lit=true,waterlogged=true] run scoreboard players set block bsc 17394
+execute if block ~ ~ ~ minecraft:orange_candle[candles=2,lit=true,waterlogged=false] run scoreboard players set block bsc 17395
+execute if block ~ ~ ~ minecraft:orange_candle[candles=2,lit=false,waterlogged=true] run scoreboard players set block bsc 17396
+execute if block ~ ~ ~ minecraft:orange_candle[candles=2,lit=false,waterlogged=false] run scoreboard players set block bsc 17397
+execute if block ~ ~ ~ minecraft:orange_candle[candles=3,lit=true,waterlogged=true] run scoreboard players set block bsc 17398
+execute if block ~ ~ ~ minecraft:orange_candle[candles=3,lit=true,waterlogged=false] run scoreboard players set block bsc 17399
+execute if block ~ ~ ~ minecraft:orange_candle[candles=3,lit=false,waterlogged=true] run scoreboard players set block bsc 17400
+execute if block ~ ~ ~ minecraft:orange_candle[candles=3,lit=false,waterlogged=false] run scoreboard players set block bsc 17401
+execute if block ~ ~ ~ minecraft:orange_candle[candles=4,lit=true,waterlogged=true] run scoreboard players set block bsc 17402
+execute if block ~ ~ ~ minecraft:orange_candle[candles=4,lit=true,waterlogged=false] run scoreboard players set block bsc 17403
+execute if block ~ ~ ~ minecraft:orange_candle[candles=4,lit=false,waterlogged=true] run scoreboard players set block bsc 17404
+execute if block ~ ~ ~ minecraft:orange_candle[candles=4,lit=false,waterlogged=false] run scoreboard players set block bsc 17405

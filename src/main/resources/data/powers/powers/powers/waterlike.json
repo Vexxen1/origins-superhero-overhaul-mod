@@ -1,0 +1,244 @@
+{
+    "2": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.05
+        }
+    },
+    "6": {
+        "condition": {
+            "type": "origins:swimming"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:add_velocity",
+            "z": 0.1,
+            "space": "local",
+            "client": true,
+            "server": true
+        }
+    },
+    "7": {
+        "type": "origins:modify_player_spawn",
+        "dimension": "minecraft:overworld",
+        "biome": "warm_ocean",
+        "spawn_strategy": "default",
+        "dimension_distance_multiplier": 1
+    },
+    "hidden": true,
+    "type": "origins:multiple",
+    "2__": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 999
+        }
+    },
+    "a": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale reset"
+        }
+    },
+    "0__": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "waterlogged",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "powers:swater"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:offset",
+                        "condition": {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:block_state",
+                                    "property": "waterlogged",
+                                    "comparison": "==",
+                                    "value": true
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "powers:swater"
+                                }
+                            ]
+                        },
+                        "y": 2
+                    }
+                }
+            ]
+        },
+        "type": "origins:model_color",
+        "red": 0,
+        "green": 0,
+        "blue": 1,
+        "alpha": 0.5
+    },
+    "1_": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "waterlogged",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "powers:swater"
+                            }
+                        ]
+                    },
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:in_rain"
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:water_breathing"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function powers:powers/waterlike/large"
+        }
+    },
+    "1__": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "waterlogged",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "powers:swater"
+                            }
+                        ]
+                    },
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:in_rain"
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:water_breathing"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function powers:powers/waterlike/shrink"
+        }
+    },
+    "2_": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block_state",
+                                "property": "waterlogged",
+                                "comparison": "==",
+                                "value": true
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "powers:swater"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:offset",
+                        "condition": {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:block_state",
+                                    "property": "waterlogged",
+                                    "comparison": "==",
+                                    "value": true
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "powers:swater"
+                                }
+                            ]
+                        },
+                        "y": 2
+                    }
+                }
+            ]
+        },
+        "type": "origins:model_color",
+        "red": 0,
+        "green": 0,
+        "blue": 1,
+        "alpha": 0.11
+    },
+    "6_": {
+        "type": "origins:conditioned_restrict_armor",
+        "head": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:turtle_helmet"
+            }
+        },
+        "tick_rate": 1
+    }
+}

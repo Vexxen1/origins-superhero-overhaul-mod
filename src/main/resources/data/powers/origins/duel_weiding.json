@@ -1,0 +1,13 @@
+{
+    "name": "§6§nDuel Wielding",
+    "description": "§c§lRarity: §rCommon\n\n§cOffhand Swinging\n§3You can swing your offhand with the use key, and attack with it. It works as expected. Attack speed, enchantments, etc. They all work. The new bar on your hotbar is the attack cooldown for your offhand. \n\n§cSpecial Abilities\n§3Some weapons have special abilities when you hold/press primary. When you have swords in both hands, you can hold primary too do a barrage of attacks. When holding a trident you can fling yourself forward. An axe does the same but with a bit less force. \n",
+    "powers": [
+        "powers:powers/duel_weiding"
+    ],
+    "icon": {
+        "item": "minecraft:iron_sword",
+        "amount": 2
+    },
+    "unchoosable": true,
+    "impact": 1
+}
