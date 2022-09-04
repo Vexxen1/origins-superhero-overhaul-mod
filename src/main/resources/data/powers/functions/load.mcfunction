@@ -74,6 +74,7 @@ scoreboard objectives add cal5 dummy
 
 scoreboard objectives add waypoint_link dummy
 scoreboard objectives add waypoint_menu trigger
+scoreboard objectives add give_custom_items trigger
 scoreboard objectives add charge dummy
 
 scoreboard objectives add list_power_ids trigger
