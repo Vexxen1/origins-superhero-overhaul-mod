@@ -43,6 +43,7 @@ scoreboard objectives add needed_relationship dummy
 scoreboard objectives add pc.t dummy
 scoreboard objectives add reset_power trigger
 scoreboard objectives add reset_one_of_a_kind trigger
+scoreboard objectives add give_custom_items trigger
 
 scoreboard objectives add red_eyes_link dummy
 
