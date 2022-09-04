@@ -256,3 +256,14 @@ scoreboard players reset @a[gamemode=!creative] reset_one_of_a_kind
 execute as @a at @s if score @s reset_one_of_a_kind matches 1.. run data remove storage powers:one_of_a_kind data
 
 scoreboard players set @a reset_one_of_a_kind 0
+
+# give chests
+
+scoreboard players enable @a[gamemode=creative] give_custom_items
+scoreboard players reset @a[gamemode=!creative] give_custom_items
+
+execute as @a at @s if score @s give_custom_items matches 1.. run function powers:useful/give
+
+scoreboard players set @a give_custom_items 0
+
+clear @a[gamemode=!creative] minecraft:chest{co:1}
