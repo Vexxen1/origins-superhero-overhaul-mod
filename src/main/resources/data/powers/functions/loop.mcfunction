@@ -228,8 +228,12 @@ function powers:other/gamerules/gamerules_loop
 execute as @e[type=marker,tag=orb] at @s run function powers:powers/telekinesis/orb_loop
 
 # power disable
+execute as @a[tag=!power_disable2] at @s run tag @s remove power_disable3
 execute as @a[tag=power_disable] at @s run power grant @s powers:powers/power_disable/disable
+execute as @a[tag=power_disable] at @s run tag @s add power_disable2
+execute as @a[tag=power_disable] at @s run tag @s add power_disable3
 execute as @a[tag=!power_disable] at @s run power revoke @s powers:powers/power_disable/disable
+execute as @a[tag=!power_disable] at @s run tag @s remove power_disable2
 
 # reset power
 
